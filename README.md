@@ -120,9 +120,6 @@ or
 ├── styles/
 └── package.json
 
-yaml
-Copy code
-
 ---
 
 ## 🛠️ Development Setup
@@ -139,7 +136,10 @@ npm run build
 
 # Start production server
 npm start
-📅 Timeline (Part-Time, 6–8 weeks)
+
+```
+
+###📅 Timeline (Part-Time, 6–8 weeks)
 Phase	Hours	Description
 Phase 1	10–15	Discovery, UX, sitemap, visual direction
 Phase 2	12–18	Layout + reusable components
@@ -152,34 +152,6 @@ Phase 7	10–15	QA, testing, deployment
 Total Estimate: 110–160 hours
 Delivery Window: 6–8 weeks (15–20 hours/week)
 
-💰 Pricing
-Hourly Rate
-80–90 CAD/hr
-
-Fixed Packages
-Package	Price
-Base Rebuild	6,000 CAD
-Standard (Recommended)	8,500 CAD
-Premium / Enterprise	11,000+ CAD
-
-Retainer (Phase 2 Enhancements)
-Plan	Hours	Rate
-Starter	6 hrs	$450/mo
-Standard	12 hrs	$800/mo
-Premium	25 hrs	$1,500/mo
-
-🔮 Future Enhancements (Phase 2)
-Dealer Locator with interactive map
-
-Product comparison tool
-
-Multi-language support (EN / FR / DE / CN)
-
-Media center for reviewers
-
-Warranty registration system
-
-Dynamic landing page builder
 
 👤 Contact
 Xu Zhang
