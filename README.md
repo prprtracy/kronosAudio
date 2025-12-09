@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/assets/kronos-logo.png" width="180" />
+  <img src="./public/assets/kronos-logo.png" width="180" alt="Kronos Logo"/>
 </p>
 
 <h1 align="center">Kronos Audio Website Rebuild — Next.js Modernization</h1>
@@ -8,25 +8,25 @@
 
 ## 🌟 Project Overview
 
-The Kronos Audio Website Rebuild is a full modernization of the existing KronosAudio.com platform.  
-The new version is powered by **Next.js 14 (App Router)** and delivers:
+This project is a complete modernization of the KronosAudio.com website.  
+The rebuild leverages **Next.js 14 (App Router)** to deliver:
 
-- Premium, modern UI/UX matching the brand identity  
-- Faster global performance (SSR + SSG + advanced image optimization)  
-- Strong SEO foundation with metadata, Open Graph, and structured schema  
-- Scalable component-based architecture  
-- Flexible CMS integration (WordPress Headless / GraphCMS)  
-- Future-ready foundation for dealer locator, product comparison, and more  
+- Premium, modern UI/UX matching the high-end brand identity  
+- Much faster global performance (SSR + SSG + optimized assets)  
+- Enhanced SEO with metadata, structured schema, and OG tags  
+- A scalable, maintainable component-driven architecture  
+- Flexible CMS integration (Headless WordPress or GraphCMS)  
+- Future-ready foundation for dealer tools, product comparisons, and more  
 
 ---
 
 ## 🗂️ Information Architecture
 
 <p align="center">
-  <img src="./public/assets/sitemap.png" width="600" />
+  <img src="./public/assets/sitemap.png" width="600" alt="Sitemap"/>
 </p>
 
-### Proposed new sitemap includes:
+### Proposed Sitemap
 
 - Home  
 - About  
@@ -47,79 +47,87 @@ The new version is powered by **Next.js 14 (App Router)** and delivers:
 ## 🏗️ Technical Architecture
 
 <p align="center">
-  <img src="./public/assets/next-architecture.png" width="600" />
+  <img src="./public/assets/next-architecture.png" width="600" alt="Next.js Architecture"/>
 </p>
 
-### **Frontend Layer**
-- **Framework:** Next.js 14 (App Router)  
-- **Language:** TypeScript  
-- **Styling:** Tailwind CSS + CSS Modules  
-- **Images:** `next/image` with WebP/AVIF + responsive scaling  
-- **Animations:** Framer Motion (optional)
+### Frontend
+- **Next.js 14 (App Router)**
+- TypeScript  
+- Tailwind CSS  
+- Framer Motion (optional)  
+- `next/image` with WebP/AVIF + responsive scaling  
 
-### **Backend / CMS**
+### Backend / CMS
 - Headless WordPress (REST API)  
 or  
 - GraphCMS / Sanity (optional upgrade)
 
-### **Platform**
-- Vercel deployment + global CDN  
-- ISR, caching headers, route-level optimizations  
-- SEO Metadata API + JSON-LD schema  
+### Deployment
+- **Vercel** with global CDN  
+- ISR + caching headers  
+- Metadata API + JSON-LD schema  
 
 ---
 
 ## ⚡ Key Features
 
 ### 🚀 Performance
-- Server-Side Rendering (SSR)  
-- Static Generation (SSG) for product pages  
+- SSR for SEO-critical content  
+- SSG for stable product pages  
 - Automatic image optimization  
-- CDN-level caching & revalidation  
+- CDN-level caching  
 
 ### 🎨 User Experience
-- Premium hi-end audio brand visual redesign  
-- Smooth transitions (SPA-like feel)  
+- High-end brand redesign  
+- Smooth SPA-like page transitions  
 - Mobile-first responsive layout  
-- Modular and reusable component system  
+- Modular product components  
+  - Gallery  
+  - Specifications  
+  - PDF manuals  
 
 ### 🔎 SEO Enhancements
-- Structured schema (Product, Review, Article)  
-- Open Graph + Twitter Card metadata  
+- Product schema  
+- Review schema  
+- Open Graph & Twitter Cards  
 - Dynamic sitemap + robots  
-- Lighthouse performance target: **90+**
 
 ---
 
 ## 📁 Project Structure
 
-```bash
 .
 ├── app/
-│   ├── layout.tsx
-│   ├── page.tsx
-│   ├── products/
-│   │   ├── page.tsx
-│   │   ├── [slug]/page.tsx
-│   ├── technology/
-│   ├── reviews/
-│   ├── dealers/
-│   └── contact/
+│ ├── layout.tsx
+│ ├── page.tsx
+│ ├── products/
+│ │ ├── page.tsx
+│ │ ├── [slug]/page.tsx
+│ ├── technology/
+│ ├── reviews/
+│ ├── dealers/
+│ └── contact/
 ├── components/
-│   ├── ui/
-│   ├── product/
-│   ├── layout/
-│   └── common/
+│ ├── ui/
+│ ├── product/
+│ ├── layout/
+│ └── common/
 ├── lib/
-│   ├── api/
-│   ├── utils/
-│   └── seo/
+│ ├── api/
+│ ├── utils/
+│ └── seo/
 ├── public/assets/
 ├── styles/
 └── package.json
-🛠️ Development Setup
-bash
+
+yaml
 Copy code
+
+---
+
+## 🛠️ Development Setup
+
+```bash
 # Install dependencies
 npm install
 
@@ -134,43 +142,44 @@ npm start
 📅 Timeline (Part-Time, 6–8 weeks)
 Phase	Hours	Description
 Phase 1	10–15	Discovery, UX, sitemap, visual direction
-Phase 2	12–18	Layout + core reusable components
+Phase 2	12–18	Layout + reusable components
 Phase 3	20–30	Home + About
-Phase 4	30–40	Products + product detail template
+Phase 4	30–40	Product pages + detail templates
 Phase 5	18–25	CMS integration
-Phase 6	10–15	SEO + performance
-Phase 7	10–15	QA + testing + deployment
+Phase 6	10–15	SEO + performance optimization
+Phase 7	10–15	QA, testing, deployment
 
 Total Estimate: 110–160 hours
 Delivery Window: 6–8 weeks (15–20 hours/week)
+
 💰 Pricing
 Hourly Rate
 80–90 CAD/hr
 
-Fixed Project Packages
+Fixed Packages
 Package	Price
 Base Rebuild	6,000 CAD
 Standard (Recommended)	8,500 CAD
-Premium	11,000+ CAD
+Premium / Enterprise	11,000+ CAD
 
-Retainer (Post-launch improvements)
+Retainer (Phase 2 Enhancements)
 Plan	Hours	Rate
 Starter	6 hrs	$450/mo
 Standard	12 hrs	$800/mo
 Premium	25 hrs	$1,500/mo
 
 🔮 Future Enhancements (Phase 2)
-Dealer Locator / Map
+Dealer Locator with interactive map
 
-Product Comparison Tool
+Product comparison tool
 
-Multi-language Support (EN / FR / DE / CN)
+Multi-language support (EN / FR / DE / CN)
 
-Reviewer Media Center
+Media center for reviewers
 
-Warranty Registration System
+Warranty registration system
 
-Marketing Landing Page Engine
+Dynamic landing page builder
 
 👤 Contact
 Xu Zhang
@@ -178,4 +187,4 @@ Full-Stack Engineer — React / Next.js / TypeScript
 📧 broxzhang@gmail.com
 🌐 https://broxzhang.github.io
 
-<p align="center">© 2025 Kronos Audio Rebuild — Designed & Built with Next.js</p> ```
+<p align="center"> © 2025 Kronos Audio Website Rebuild — Designed & Built with Next.js </p> ```
