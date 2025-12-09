@@ -95,7 +95,7 @@ or
 ---
 
 ## 📁 Project Structure
-
+```
 .
 ├── app/
 │ ├── layout.tsx
@@ -119,7 +119,7 @@ or
 ├── public/assets/
 ├── styles/
 └── package.json
-
+```
 ---
 
 ## 🛠️ Development Setup
@@ -139,24 +139,23 @@ npm start
 
 ```
 
-###📅 Timeline (Part-Time, 6–8 weeks)
-Phase	Hours	Description
-Phase 1	10–15	Discovery, UX, sitemap, visual direction
-Phase 2	12–18	Layout + reusable components
-Phase 3	20–30	Home + About
-Phase 4	30–40	Product pages + detail templates
-Phase 5	18–25	CMS integration
-Phase 6	10–15	SEO + performance optimization
-Phase 7	10–15	QA, testing, deployment
+## 📅 Timeline (Part-Time, 6–8 weeks)
+| Phase | Hours | Description |
+|-------|-------|-------------|
+| Phase 1 | 10–15 | Discovery, UX, sitemap, visual direction |
+| Phase 2 | 12–18 | Layout + reusable components |
+| Phase 3 | 20–30 | Home + About |
+| Phase 4 | 30–40 | Product pages + detail templates |
+| Phase 5 | 18–25 | CMS integration |
+| Phase 6 | 10–15 | SEO + performance optimization |
+| Phase 7 | 10–15 | QA, testing, deployment |
 
-Total Estimate: 110–160 hours
-Delivery Window: 6–8 weeks (15–20 hours/week)
+**Total Estimate:** 110–160 hours  
+**Delivery Window:** 6–8 weeks (15–20 hours/week)  
+
+---
 
 
-👤 Contact
-Xu Zhang
-Full-Stack Engineer — React / Next.js / TypeScript
-📧 broxzhang@gmail.com
-🌐 https://broxzhang.github.io
-
-<p align="center"> © 2025 Kronos Audio Website Rebuild — Designed & Built with Next.js </p> ```
+<p align="center">
+  © 2025 Kronos Audio Website Rebuild — Designed & Built with Next.js
+</p>
