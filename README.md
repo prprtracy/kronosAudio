@@ -1,116 +1,99 @@
-Kronos Audio Website Rebuild — Next.js Modernization
+<p align="center">
+  <img src="./public/assets/kronos-logo.png" width="180" />
+</p>
 
-🎯 Project Overview
+<h1 align="center">Kronos Audio Website Rebuild — Next.js Modernization</h1>
 
-The Kronos Audio Website Rebuild is a full modernization of the existing KronosAudio.com platform.
-The new version is built using Next.js 14 (App Router) to deliver:
+---
 
-Premium, modern UI/UX matching the brand identity
+## 🌟 Project Overview
 
-Faster global performance (SSR + SSG + image optimization)
+The Kronos Audio Website Rebuild is a full modernization of the existing KronosAudio.com platform.  
+The new version is powered by **Next.js 14 (App Router)** and delivers:
 
-Enhanced SEO, metadata, and structured product data
+- Premium, modern UI/UX matching the brand identity  
+- Faster global performance (SSR + SSG + advanced image optimization)  
+- Strong SEO foundation with metadata, Open Graph, and structured schema  
+- Scalable component-based architecture  
+- Flexible CMS integration (WordPress Headless / GraphCMS)  
+- Future-ready foundation for dealer locator, product comparison, and more  
 
-Scalable, component-driven architecture
+---
 
-Flexible CMS integration (Headless WordPress / GraphCMS)
+## 🗂️ Information Architecture
 
-Future-ready foundation for dealer tools, product comparison, and more
+<p align="center">
+  <img src="./public/assets/sitemap.png" width="600" />
+</p>
 
-📐 Information Architecture
+### Proposed new sitemap includes:
 
-Proposed new sitemap includes:
+- Home  
+- About  
+- Technology  
+- Products  
+  - Turntables  
+  - Tonearms  
+  - Power Supplies  
+  - Accessories  
+- Product Details  
+- Reviews & Awards  
+- Dealers / Distributors  
+- Contact  
+- Media / Manuals  
 
-Home
+---
 
-About
+## 🏗️ Technical Architecture
 
-Technology
+<p align="center">
+  <img src="./public/assets/next-architecture.png" width="600" />
+</p>
 
-Products
+### **Frontend Layer**
+- **Framework:** Next.js 14 (App Router)  
+- **Language:** TypeScript  
+- **Styling:** Tailwind CSS + CSS Modules  
+- **Images:** `next/image` with WebP/AVIF + responsive scaling  
+- **Animations:** Framer Motion (optional)
 
-Turntables
+### **Backend / CMS**
+- Headless WordPress (REST API)  
+or  
+- GraphCMS / Sanity (optional upgrade)
 
-Tonearms
+### **Platform**
+- Vercel deployment + global CDN  
+- ISR, caching headers, route-level optimizations  
+- SEO Metadata API + JSON-LD schema  
 
-Power Supplies
+---
 
-Accessories
+## ⚡ Key Features
 
-Product Details
+### 🚀 Performance
+- Server-Side Rendering (SSR)  
+- Static Generation (SSG) for product pages  
+- Automatic image optimization  
+- CDN-level caching & revalidation  
 
-Reviews & Awards
+### 🎨 User Experience
+- Premium hi-end audio brand visual redesign  
+- Smooth transitions (SPA-like feel)  
+- Mobile-first responsive layout  
+- Modular and reusable component system  
 
-Dealers / Distributors
+### 🔎 SEO Enhancements
+- Structured schema (Product, Review, Article)  
+- Open Graph + Twitter Card metadata  
+- Dynamic sitemap + robots  
+- Lighthouse performance target: **90+**
 
-Contact
+---
 
-Media / Manuals
+## 📁 Project Structure
 
-🏗️ Technical Architecture
-
-Frontend
-Layer	Technology
-Framework	Next.js 14 (App Router)
-Language	TypeScript
-Styling	Tailwind CSS + CSS Modules
-Animations	Framer Motion (optional)
-Images	next/image (WebP/AVIF + responsive)
-Backend / CMS
-
-Headless WordPress (REST API)
-or
-
-GraphCMS / Sanity (optional upgrade)
-
-Platform
-
-Deployed on Vercel with global CDN routing
-
-Incremental Static Regeneration (ISR) for product content
-
-SEO metadata via Metadata API
-
-JSON-LD structured schema for products & reviews
-
-🚀 Key Features
-Performance
-
-Server-Side Rendering (SSR) for SEO-critical pages
-
-Static generation (SSG) for stable product pages
-
-next/image automatic optimization
-
-Global CDN caching
-
-User Experience
-
-Clean, premium visual redesign
-
-Smooth page transitions (SPA-like feel)
-
-Fully responsive mobile-first layout
-
-Modular product components
-
-Photo gallery
-
-Specifications
-
-Downloads (PDF manuals)
-
-SEO Enhancements
-
-Open Graph & Twitter Card
-
-Product schema
-
-Review schema
-
-Sitemap & robots automation
-
-📦 Project Structure
+```bash
 .
 ├── app/
 │   ├── layout.tsx
@@ -134,56 +117,65 @@ Sitemap & robots automation
 ├── public/assets/
 ├── styles/
 └── package.json
-
-🛠️ Setup & Development
+🛠️ Development Setup
+bash
+Copy code
+# Install dependencies
 npm install
-npm run dev
-npm run build
-npm start
 
-📅 Timeline (6–8 weeks, part-time)
+# Start development environment
+npm run dev
+
+# Build production bundle
+npm run build
+
+# Start production server
+npm start
+📅 Timeline (Part-Time, 6–8 weeks)
 Phase	Hours	Description
 Phase 1	10–15	Discovery, UX, sitemap, visual direction
-Phase 2	12–18	Core layout & reusable components
+Phase 2	12–18	Layout + core reusable components
 Phase 3	20–30	Home + About
 Phase 4	30–40	Products + product detail template
 Phase 5	18–25	CMS integration
-Phase 6	10–15	SEO + performance optimization
-Phase 7	10–15	QA testing + deployment
-Total Estimate: 110–160 hours
-💵 Pricing
-Hourly
+Phase 6	10–15	SEO + performance
+Phase 7	10–15	QA + testing + deployment
 
+Total Estimate: 110–160 hours
+Delivery Window: 6–8 weeks (15–20 hours/week)
+💰 Pricing
+Hourly Rate
 80–90 CAD/hr
 
-Fixed Price Options
+Fixed Project Packages
 Package	Price
-Base	6,000 CAD
-Standard	8,500 CAD
+Base Rebuild	6,000 CAD
+Standard (Recommended)	8,500 CAD
 Premium	11,000+ CAD
-Retainer
+
+Retainer (Post-launch improvements)
 Plan	Hours	Rate
 Starter	6 hrs	$450/mo
 Standard	12 hrs	$800/mo
 Premium	25 hrs	$1,500/mo
-🔮 Future Enhancements
 
-Dealer locator (map + geodata)
+🔮 Future Enhancements (Phase 2)
+Dealer Locator / Map
 
-Product comparison tool
+Product Comparison Tool
 
-Multilingual support (EN / FR / DE / CN)
+Multi-language Support (EN / FR / DE / CN)
 
-High-Res Media Center for reviewers
+Reviewer Media Center
 
-Warranty registration system
+Warranty Registration System
 
-Marketing landing pages generator
+Marketing Landing Page Engine
 
 👤 Contact
-
 Xu Zhang
 Full-Stack Engineer — React / Next.js / TypeScript
 📧 broxzhang@gmail.com
-
 🌐 https://broxzhang.github.io
+
+<p align="center">© 2025 Kronos Audio Rebuild — Designed & Built with Next.js</p> ```
