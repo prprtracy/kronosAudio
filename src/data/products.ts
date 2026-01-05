@@ -12,9 +12,9 @@ export const products = [
     ],
     gallery: [
       // TODO: 用你下载到 public/media 的图替换
-      "/media/products/sparta-1.jpg",
-      "/media/products/sparta-2.jpg",
-      "/media/products/sparta-3.jpg",
+      "/media/sparta-image-01-768x768.jpg",
+      "/media/sparta-image-02-768x768.jpg",
+      "/media/sparta-image-03-768x768.jpg",
     ],
     downloads: [
       { label: "Download Assembly Instructions", url: "/media/downloads/sparta-assembly.pdf" },
@@ -46,8 +46,14 @@ export const products = [
       "Kronos developed a wholly new way to attach the chassis to the suspension system, using completely different soft clamping methods...",
     ],
     gallery: [
-      "/media/products/discovery-1.jpg",
-      "/media/products/discovery-2.jpg",
+      "/media/discovery-image-01-768x768.jpg",
+      "/media/discovery-image-02-768x768.jpg",
+      "/media/discovery-image-03-768x768.jpg",
+      "/media/discovery-image-04-768x768.jpg",
+      "/media/discovery-image-05-768x768.jpg",
+      "/media/discovery-image-06-768x768.jpg",
+      "/media/discovery-image-07-768x768.jpg",
+      "/media/discovery-image-08-768x768.jpg",
     ],
     downloads: [
       { label: "Download Assembly Instructions", url: "/media/downloads/discovery-assembly.pdf" },
@@ -75,7 +81,7 @@ export const products = [
     description: [
       "The Sparta features a solid frame base with four suspension towers and the motor housing, from which hangs the subchassis and platter (or platters) off o-rings...",
     ],
-    gallery: ["/media/products/sparta-05-1.jpg"],
+    gallery: ["/media/products-sparta-0.5.jpg"],
     downloads: [],
     specs: [],
     reviews: [

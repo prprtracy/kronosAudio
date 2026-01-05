@@ -24,3 +24,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* =========================
+   Hide Next.js "N" launcher (dev overlay)
+   ========================= */
+[data-nextjs-devtools-launcher],
+[data-nextjs-devtools-button],
+[data-nextjs-dev-overlay],
+[data-nextjs-toast],
+nextjs-portal [data-nextjs-devtools-launcher],
+nextjs-portal [data-nextjs-devtools-button] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

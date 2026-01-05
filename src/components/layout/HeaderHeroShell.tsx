@@ -2,6 +2,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import clsx from "clsx";
 import { useEffect, useMemo, useRef, useState } from "react";
 
@@ -12,17 +13,17 @@ type Props = {
   locale: string;
 };
 
+function withLocale(locale: string, href: string) {
+  if (!href) return `/${locale}`;
+  if (href.startsWith("http")) return href;
+  const normalized = href.startsWith("/") ? href : `/${href}`;
+  return `/${locale}${normalized}`;
+}
+
 export function HeaderHeroShell({ locale }: Props) {
-  // scroll 进度（后面做 Nagra 风格动画用）
-  const [scrollProgress, setScrollProgress] = useState(0); // 0 ~ 1
-
-  // 当前 Hero（SPA 切换）
+  const [scrollProgress, setScrollProgress] = useState(0);
   const [activeHero, setActiveHero] = useState<HeroSectionId>("home");
-
-  // Mega menu 状态：当前打开的顶层 nav id
   const [openMenu, setOpenMenu] = useState<NavId | null>(null);
-
-  // Mega menu：左侧 hover 的项 index（决定右侧显示哪个 children）
   const [activeLeftIndex, setActiveLeftIndex] = useState(0);
 
   const closeTimer = useRef<number | null>(null);
@@ -31,8 +32,7 @@ export function HeaderHeroShell({ locale }: Props) {
     const onScroll = () => {
       const y = window.scrollY;
       const max = 120;
-      const p = Math.min(y / max, 1);
-      setScrollProgress(p);
+      setScrollProgress(Math.min(y / max, 1));
     };
     onScroll();
     window.addEventListener("scroll", onScroll);
@@ -43,8 +43,8 @@ export function HeaderHeroShell({ locale }: Props) {
     return heroSections.find((s) => s.id === activeHero) ?? heroSections[0];
   }, [activeHero]);
 
-  const headerBgOpacity = 0.0 + scrollProgress * 0.85; // 0 -> 0.85
-  const logoScale = 1 - scrollProgress * 0.12; // 1 -> 0.88
+  const headerBgOpacity = 0.0 + scrollProgress * 0.85;
+  const logoScale = 1 - scrollProgress * 0.12;
 
   const openNavMenu = (id: NavId) => {
     if (closeTimer.current) {
@@ -57,9 +57,7 @@ export function HeaderHeroShell({ locale }: Props) {
 
   const scheduleCloseMenu = () => {
     if (closeTimer.current) window.clearTimeout(closeTimer.current);
-    closeTimer.current = window.setTimeout(() => {
-      setOpenMenu(null);
-    }, 120);
+    closeTimer.current = window.setTimeout(() => setOpenMenu(null), 120);
   };
 
   const cancelCloseMenu = () => {
@@ -72,14 +70,11 @@ export function HeaderHeroShell({ locale }: Props) {
   const handleTopClick = (item: NavItem) => {
     if (item.behavior === "spa") {
       setActiveHero(item.id as HeroSectionId);
-      // 点击顶层时，也关闭菜单（可选）
       setOpenMenu(null);
       window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
-    if (item.behavior === "link" && item.href) {
-      window.location.href = item.href;
-    }
+    // link：交给 Link，不走这里
   };
 
   const menuItem = NAV_ITEMS.find((x) => x.id === openMenu);
@@ -89,25 +84,32 @@ export function HeaderHeroShell({ locale }: Props) {
   const activeLeft = leftList[activeLeftIndex];
   const rightList = activeLeft?.children ?? [];
 
+  // “View all →”：优先用 activeLeft.href；否则如果有 productSlug 则直达详情；再否则 fallback 到 /products
+  const viewAllHref =
+    activeLeft?.href
+      ? withLocale(locale, activeLeft.href)
+      : activeLeft?.productSlug
+      ? `/${locale}/products/${activeLeft.productSlug}`
+      : `/${locale}/products`;
+
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Header */}
       <header
         className={clsx(
           "fixed inset-x-0 top-0 z-40 border-b backdrop-blur-md transition-[background-color,border-color] duration-300",
           scrollProgress > 0.02 ? "border-neutral-800" : "border-transparent"
         )}
-        style={{
-          backgroundColor: `rgba(0,0,0,${headerBgOpacity})`,
-        }}
+        style={{ backgroundColor: `rgba(0,0,0,${headerBgOpacity})` }}
         onMouseLeave={scheduleCloseMenu}
         onMouseEnter={cancelCloseMenu}
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
-          <div
+          <Link
+            href={`/${locale}`}
             className="flex items-center gap-3 origin-left transition-transform duration-200"
             style={{ transform: `scale(${logoScale})` }}
+            aria-label="Kronos Audio Home"
           >
             <Image
               src="/media/logo-icon.png"
@@ -125,7 +127,7 @@ export function HeaderHeroShell({ locale }: Props) {
               className="h-7 w-auto object-contain"
               priority
             />
-          </div>
+          </Link>
 
           {/* Top Nav */}
           <nav className="hidden md:flex items-center gap-8 text-[12px] font-semibold tracking-[0.18em] uppercase">
@@ -133,6 +135,34 @@ export function HeaderHeroShell({ locale }: Props) {
               const isActive = activeHero === item.id;
               const isOpen = openMenu === item.id;
               const hasDropdown = !!item.megaMenu;
+
+              // link 行为：用 Link；spa 行为：用 button
+              if (item.behavior === "link" && item.href) {
+                return (
+                  <div
+                    key={item.id}
+                    className="relative"
+                    onMouseEnter={() => (hasDropdown ? openNavMenu(item.id) : setOpenMenu(null))}
+                  >
+                    <Link
+                      href={withLocale(locale, item.href)}
+                      className={clsx(
+                        "transition-colors duration-200",
+                        isOpen ? "text-white" : "text-neutral-200 hover:text-white"
+                      )}
+                    >
+                      {item.label}
+                    </Link>
+
+                    <div
+                      className={clsx(
+                        "mt-1 h-[2px] rounded-full transition-all duration-200",
+                        isOpen ? "bg-amber-400 w-full opacity-90" : "bg-transparent w-0 opacity-0"
+                      )}
+                    />
+                  </div>
+                );
+              }
 
               return (
                 <div
@@ -152,7 +182,6 @@ export function HeaderHeroShell({ locale }: Props) {
                     {item.label}
                   </button>
 
-                  {/* 顶部小 underline（高级感） */}
                   <div
                     className={clsx(
                       "mt-1 h-[2px] rounded-full transition-all duration-200",
@@ -164,7 +193,7 @@ export function HeaderHeroShell({ locale }: Props) {
             })}
           </nav>
 
-          {/* Right controls (lang/theme placeholders) */}
+          {/* Right controls */}
           <div className="flex items-center gap-4 text-xs">
             <div className="hidden sm:flex items-center gap-1 border border-neutral-700 rounded-full px-3 py-1 text-[11px] tracking-[0.18em] uppercase">
               <span className="text-neutral-400">Lang</span>
@@ -182,15 +211,15 @@ export function HeaderHeroShell({ locale }: Props) {
           </div>
         </div>
 
-        {/* Mega Menu panel (像你截图那样：左列 + 右列联动) */}
+        {/* Mega Menu */}
         {hasMega && (
           <div
-            className="hidden md:block"
+            className="hidden md:block relative z-[120] pointer-events-auto"
             onMouseEnter={cancelCloseMenu}
             onMouseLeave={scheduleCloseMenu}
           >
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-6">
-              <div className="mt-3 rounded-2xl overflow-hidden border border-neutral-800 bg-black/90 backdrop-blur-xl shadow-[0_24px_60px_rgba(0,0,0,0.6)]">
+              <div className="relative z-[120] mt-3 rounded-2xl overflow-hidden border border-neutral-800 bg-black/90 backdrop-blur-xl shadow-[0_24px_60px_rgba(0,0,0,0.6)]">
                 <div className="grid grid-cols-[420px_1fr]">
                   {/* Left column */}
                   <div className="bg-white/6 border-r border-white/10">
@@ -232,7 +261,7 @@ export function HeaderHeroShell({ locale }: Props) {
                             href={activeLeft.href}
                             className="text-[11px] uppercase tracking-[0.22em] text-amber-300 hover:text-amber-200 transition-colors"
                           >
-                            Learn more →
+                            View all →
                           </a>
                         )}
                       </div>
@@ -271,18 +300,20 @@ export function HeaderHeroShell({ locale }: Props) {
             </div>
           </div>
         )}
+
       </header>
 
-      {/* Hero */}
+      {/* Hero (保留你原逻辑) */}
       <section className="relative min-h-screen flex items-center">
-        {/* background */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <Image
             src={activeSection.media.posterSrc}
             alt=""
             fill
             priority
+            sizes="100vw"
             className="object-cover"
+            unoptimized
           />
           <div
             className={clsx(
@@ -292,7 +323,6 @@ export function HeaderHeroShell({ locale }: Props) {
           />
         </div>
 
-        {/* content */}
         <div className="relative z-10 w-full pt-16 pb-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center gap-12">
             <div className="flex-1">
@@ -308,20 +338,20 @@ export function HeaderHeroShell({ locale }: Props) {
 
               <div className="flex flex-wrap items-center gap-4">
                 {activeSection.ctaPrimary && (
-                  <a
-                    href={activeSection.ctaPrimary.href}
+                  <Link
+                    href={withLocale(locale, activeSection.ctaPrimary.href)}
                     className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-amber-400 text-black text-[11px] font-semibold tracking-[0.22em] uppercase hover:bg-amber-300 transition-colors"
                   >
                     {activeSection.ctaPrimary.label}
-                  </a>
+                  </Link>
                 )}
                 {activeSection.ctaSecondary && (
-                  <a
-                    href={activeSection.ctaSecondary.href}
+                  <Link
+                    href={withLocale(locale, activeSection.ctaSecondary.href)}
                     className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-neutral-500 text-[11px] font-semibold tracking-[0.22em] uppercase text-neutral-100 hover:border-amber-300 hover:text-amber-200 transition-colors"
                   >
                     {activeSection.ctaSecondary.label}
-                  </a>
+                  </Link>
                 )}
               </div>
             </div>
@@ -335,7 +365,7 @@ export function HeaderHeroShell({ locale }: Props) {
                 <p className="text-xs text-neutral-300">{activeSection.subtitle}</p>
                 <div className="h-px bg-gradient-to-r from-amber-400 via-amber-200/30 to-transparent my-2" />
                 <p className="text-[11px] text-neutral-400">
-                  Hover “Products” to preview the submenu (dynamic, like the reference).
+                  Hover “Products” to preview the submenu.
                 </p>
               </div>
             </div>
@@ -343,7 +373,6 @@ export function HeaderHeroShell({ locale }: Props) {
         </div>
       </section>
 
-      {/* 下面内容（先留空，明天接 preview sections / 地图等） */}
       <div className="h-24" />
     </div>
   );
