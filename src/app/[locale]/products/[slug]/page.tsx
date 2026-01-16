@@ -91,13 +91,15 @@ export default async function ProductDetailPage({ params }: PageProps) {
         <ProductEndorsements
           // 同理：按你现有组件签名微调
           title="Press & Endorsements"
-          items={(product.reviews ?? []).map((r, idx) => ({
-            id: `${product.slug}-${idx}`,
-            source: r.sourceName ?? r.authorName ?? "Press",
-            quote: r.quote,
-            url: r.sourceUrl,
-            logo: r.imageUrl,
-          }))}
+          items={(product.reviews ?? [])
+            .filter((r) => typeof r.sourceUrl === "string" && r.sourceUrl.length > 0)
+            .map((r, idx) => ({
+              id: `${product.slug}-${idx}`,
+              source: r.sourceName ?? r.authorName ?? "Press",
+              quote: r.quote,
+              url: r.sourceUrl ?? "#",       // ✅ 永远是 string
+              logo: r.imageUrl,
+            }))}
         />
 
       </section>

@@ -1,20 +1,60 @@
-export const products = [
+// src/data/products.ts
+
+export type Money = {
+  amount: number;
+  currency: "USD" | "CAD" | "EUR" | string;
+  display: string;
+};
+
+export type DownloadItem = {
+  label: string;
+  url: string;
+};
+
+export type SpecItem = {
+  key: string;
+  value: string;
+};
+
+export type ReviewItem = {
+  authorName?: string;
+  sourceName?: string;
+  sourceUrl?: string;
+  quote: string;
+  imageUrl?: string;
+};
+
+export type Product = {
+  id: string;
+  slug: string;
+  name: string;
+  tagline?: string;
+  description: string[];
+
+  msrp?: Money;       // ✅ 关键：不再用 null
+  upgradeKit?: Money; // ✅ 同步统一
+
+  gallery: string[];
+  downloads: DownloadItem[];
+  specs: SpecItem[];
+  reviews: ReviewItem[];
+};
+
+
+export const products: Product[] = [
   // --- 1. Discovery ---
   {
     id: "discovery",
     slug: "discovery",
     name: "Discovery",
     tagline: "The Flagship Platform",
-    // 
     description: [
       "Our flagship two tonearm platform featuring a radically new exo-skeleton chassis system designed to minimize resonances and optimize isolation.",
       "Kronos developed a wholly new way to attach the chassis to the suspension system, using completely different soft clamping methods.",
     ],
     msrp: { amount: 120000, currency: "USD", display: "120,000 USD" },
-    upgradeKit: null,
-    gallery: [
-      "/media/placeholder-discovery.jpg",
-    ],
+    
+    gallery: ["/media/placeholder-discovery.jpg"],
     downloads: [
       { label: "Download Assembly Instructions", url: "/media/downloads/discovery-assembly.pdf" },
     ],
@@ -25,37 +65,34 @@ export const products = [
     reviews: [],
   },
 
-  // --- 2. Perpetual (新增) ---
+  // --- 2. Perpetual ---
   {
     id: "perpetual",
     slug: "perpetual",
     name: "Perpetual",
     tagline: "Advanced Resonance Control",
-    // 
-    description: [
-      "Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point.",
-    ],
-    msrp: { amount: 0, currency: "USD", display: "Contact for Pricing" }, // 暂无价格，需客户填
-    upgradeKit: null,
-    gallery: ["/media/placeholder-perpetual.jpg"], // TODO: 需客户替换图片
+    description: ["Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point."],
+    // ✅ 统一为 Money | null：没有价格就用 null（不要 amount:0 混淆语义）
+    
+    
+    gallery: ["/media/placeholder-perpetual.jpg"],
     downloads: [],
     specs: [],
     reviews: [],
   },
 
-  // --- 3. Kronos Pro (新增) ---
+  // --- 3. Kronos Pro ---
   {
     id: "kronos-pro",
     slug: "kronos-pro",
     name: "Kronos Pro",
     tagline: "The Original Reference",
-    // 
     description: [
       "The original Kronos reference turntable. The PRO set a new standard in analogue reproduction by combining counter-rotation and overhead suspension.",
     ],
-    msrp: { amount: 0, currency: "USD", display: "Contact for Pricing" },
-    upgradeKit: null,
-    gallery: ["/media/placeholder-pro.jpg"], // TODO: 需客户替换图片
+    
+    
+    gallery: ["/media/placeholder-pro.jpg"],
     downloads: [],
     specs: [],
     reviews: [],
@@ -67,17 +104,13 @@ export const products = [
     slug: "sparta",
     name: "Sparta",
     tagline: "The Soul of a New Machine",
-    // & 原有文案
     description: [
       "Our no-frills platform … an entry to the world of KRONOS.",
       "Unique to behold, the Sparta is essentially two complete turntables—each including a skeletal, metal-framed plinth fabricated of solid aluminum boards.",
     ],
     msrp: { amount: 24000, currency: "USD", display: "24,000 USD" },
-    upgradeKit: null,
-    gallery: [
-      "/media/sparta-image-01-768x768.jpg",
-      "/media/sparta-image-02-768x768.jpg",
-    ],
+    
+    gallery: ["/media/sparta-image-01-768x768.jpg", "/media/sparta-image-02-768x768.jpg"],
     downloads: [
       { label: "Download Assembly Instructions", url: "/media/downloads/sparta-assembly.pdf" },
     ],
@@ -105,77 +138,71 @@ export const products = [
     reviews: [],
   },
 
-  // --- 6. Power Supply (新增类别页) ---
+  // --- 6. Power Supply ---
   {
     id: "power-supply",
     slug: "power-supply",
     name: "Power Supply",
     tagline: "Stability and Silence",
-    // 
     description: [
       "Dedicated external power systems designed to ensure absolute stability.",
       "By isolating and regulating power, they reduce noise and enhance system performance.",
     ],
-    msrp: null,
-    upgradeKit: null,
-    gallery: ["/media/placeholder-power.jpg"], // TODO
+    
+    
+    gallery: ["/media/placeholder-power.jpg"],
     downloads: [],
     specs: [],
     reviews: [],
   },
 
-  // --- 7. Phono (新增类别页) ---
+  // --- 7. Phono ---
   {
     id: "phono",
     slug: "phono",
     name: "Phono Preamplifiers",
     tagline: "Signal Integrity",
-    // 
     description: [
       "Reference phono stages designed to preserve the integrity of the analog signal.",
       "Engineered for low noise, accurate gain, and tonal neutrality.",
     ],
-    msrp: null,
-    upgradeKit: null,
-    gallery: ["/media/placeholder-phono.jpg"], // TODO
+    
+    
+    gallery: ["/media/placeholder-phono.jpg"],
     downloads: [],
     specs: [],
     reviews: [],
   },
 
-  // --- 8. Tonearms (新增类别页) ---
+  // --- 8. Tonearms ---
   {
     id: "tonearms",
     slug: "tonearms",
     name: "Tonearms",
     tagline: "RS Technology",
-    // 
-    description: [
-      "Patented RS technology Tonearm.",
-    ],
-    msrp: null,
-    upgradeKit: null,
-    gallery: ["/media/placeholder-tonearm.jpg"], // TODO
+    description: ["Patented RS technology Tonearm."],
+    
+    
+    gallery: ["/media/placeholder-tonearm.jpg"],
     downloads: [],
     specs: [],
     reviews: [],
   },
 
-  // --- 9. Racks (新增类别页) ---
+  // --- 9. Racks ---
   {
     id: "racks",
     slug: "racks",
     name: "Racks & Supports",
     tagline: "Engineered Foundations",
-    // 
     description: [
-      "Shelves / Racks Engineered foundations that control vibration and preserve mechanical integrity, allowing Kronos systems to perform at their highest level.",
+      "Engineered foundations that control vibration and preserve mechanical integrity, allowing Kronos systems to perform at their highest level.",
     ],
-    msrp: null,
-    upgradeKit: null,
-    gallery: ["/media/placeholder-racks.jpg"], // TODO
+    
+    
+    gallery: ["/media/placeholder-racks.jpg"],
     downloads: [],
     specs: [],
     reviews: [],
   },
-] as const;
+];
