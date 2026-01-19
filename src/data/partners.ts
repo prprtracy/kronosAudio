@@ -1,0 +1,247 @@
+export type PartnerTier = "featured" | "standard";
+
+export type RegionId = "americas" | "europe" | "asia-pacific" | "middle-east-africa";
+
+export type Partner = {
+  id: string;
+  name: string;
+  city: string;
+  country: string;
+  lat: number;
+  lng: number;
+  url?: string;
+  tier?: PartnerTier;
+  region: RegionId;
+};
+
+export const REGIONS: { id: RegionId; label: string }[] = [
+  { id: "americas", label: "Americas" },
+  { id: "europe", label: "Europe" },
+  { id: "asia-pacific", label: "Asia-Pacific" },
+  { id: "middle-east-africa", label: "Middle East & Africa" },
+];
+
+export const partners: Partner[] = [
+  // --- Americas ---
+  {
+    id: "hq",
+    name: "Kronos Audio (HQ)",
+    city: "Montréal",
+    country: "Canada",
+    lat: 45.4817,
+    lng: -73.5772,
+    url: "https://www.kronosaudio.com",
+    tier: "featured",
+    region: "americas",
+  },
+  {
+    id: "usa-gtt",
+    name: "GTT Audio & Video",
+    city: "Long Valley, NJ",
+    country: "USA",
+    lat: 40.7845,
+    lng: -74.7796,
+    url: "https://www.gttaudio.com",
+    tier: "standard",
+    region: "americas",
+  },
+
+  // --- Europe ---
+  {
+    id: "germany-audio-reference",
+    name: "Audio Reference GmbH",
+    city: "Hamburg",
+    country: "Germany",
+    lat: 53.5511,
+    lng: 9.9937,
+    url: "https://www.audio-reference.de",
+    tier: "standard",
+    region: "europe",
+  },
+  {
+    id: "uk-decent-audio",
+    name: "Decent Audio",
+    city: "Stockton-on-Tees",
+    country: "United Kingdom",
+    lat: 54.5694,
+    lng: -1.3197,
+    url: "http://www.decentaudio.co.uk",
+    tier: "standard",
+    region: "europe",
+  },
+  {
+    id: "france-ana-mighty",
+    name: "Ana Mighty Sound",
+    city: "Paris",
+    country: "France",
+    lat: 48.8566,
+    lng: 2.3522,
+    url: "https://anamightysound.com",
+    tier: "standard",
+    region: "europe",
+  },
+  {
+    id: "italy-il-tempio",
+    name: "Il Tempio Esoterico",
+    city: "Catania",
+    country: "Italy",
+    lat: 37.5079,
+    lng: 15.0830,
+    url: "https://www.iltempioesoterico.it",
+    tier: "standard",
+    region: "europe",
+  },
+  {
+    id: "spain-ars-antiqua",
+    name: "Ars Antiqua Audio",
+    city: "Madrid",
+    country: "Spain",
+    lat: 40.4168,
+    lng: -3.7038,
+    url: "https://arsantiquaudio.com",
+    tier: "standard",
+    region: "europe",
+  },
+  {
+    id: "benelux-hifi-corner",
+    name: "Hifi Corner Trading",
+    city: "Schoten",
+    country: "Belgium",
+    lat: 51.2505,
+    lng: 4.4965,
+    url: "https://hificorner.be",
+    tier: "standard",
+    region: "europe",
+  },
+  {
+    id: "poland-audio-system",
+    name: "Audio System",
+    city: "Warsaw",
+    country: "Poland",
+    lat: 52.2297,
+    lng: 21.0122,
+    url: "https://audiosystem.com.pl",
+    tier: "standard",
+    region: "europe",
+  },
+  {
+    id: "russia-t-art",
+    name: "T-Art",
+    city: "Moscow",
+    country: "Russia",
+    lat: 55.7558,
+    lng: 37.6173,
+    url: "http://www.t-art.ru",
+    tier: "standard",
+    region: "europe",
+  },
+  {
+    id: "greece-orpheus",
+    name: "Orpheus Audio",
+    city: "Athens",
+    country: "Greece",
+    lat: 37.9838,
+    lng: 23.7275,
+    url: "https://www.orpheusaudio.gr",
+    tier: "standard",
+    region: "europe",
+  },
+
+  // --- Asia Pacific ---
+  {
+    id: "china-volent",
+    name: "Volent Audio",
+    city: "Kowloon",
+    country: "China / Hong Kong",
+    lat: 22.3193,
+    lng: 114.1694,
+    url: "http://www.volentaudio.com",
+    tier: "standard",
+    region: "asia-pacific",
+  },
+  {
+    id: "japan-stella",
+    name: "Stella Inc.",
+    city: "Tokyo",
+    country: "Japan",
+    lat: 35.6762,
+    lng: 139.6503,
+    url: "https://stella-inc.com",
+    tier: "standard",
+    region: "asia-pacific",
+  },
+  {
+    id: "korea-design-audio",
+    name: "Design & Audio",
+    city: "Seoul",
+    country: "South Korea",
+    lat: 37.5665,
+    lng: 126.9780,
+    tier: "standard",
+    region: "asia-pacific",
+  },
+  {
+    id: "thailand-audio-excellence",
+    name: "Audio Excellence",
+    city: "Bangkok",
+    country: "Thailand",
+    lat: 13.7563,
+    lng: 100.5018,
+    tier: "standard",
+    region: "asia-pacific",
+  },
+  {
+    id: "vietnam-huy-lan-anh",
+    name: "Huy Lan Anh Audio",
+    city: "Hanoi",
+    country: "Vietnam",
+    lat: 21.0285,
+    lng: 105.8542,
+    url: "https://huylananhaudio.vn",
+    tier: "standard",
+    region: "asia-pacific",
+  },
+  {
+    id: "malaysia-perfect-hifi",
+    name: "Perfect Hi-Fi",
+    city: "Kuala Lumpur",
+    country: "Malaysia",
+    lat: 3.1408,
+    lng: 101.6932,
+    url: "http://www.perfecthifi.com.my",
+    tier: "standard",
+    region: "asia-pacific",
+  },
+  {
+    id: "indonesia-sound-gallery",
+    name: "Sound Gallery",
+    city: "Jakarta",
+    country: "Indonesia",
+    lat: -6.2088,
+    lng: 106.8456,
+    tier: "standard",
+    region: "asia-pacific",
+  },
+  {
+    id: "singapore-audio-note",
+    name: "Audio Note Singapore",
+    city: "Singapore",
+    country: "Singapore",
+    lat: 1.3521,
+    lng: 103.8198,
+    tier: "standard",
+    region: "asia-pacific",
+  },
+  {
+    id: "taiwan-joy-audio",
+    name: "Joy Audio",
+    city: "Taipei",
+    country: "Taiwan",
+    lat: 25.0330,
+    lng: 121.5654,
+    tier: "standard",
+    region: "asia-pacific",
+  },
+];
+
+export const featuredPartners = partners.filter((p) => (p.tier ?? "standard") === "featured");
