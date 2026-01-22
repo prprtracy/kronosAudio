@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Distributors",
+    "eyebrow": "Global Partners",
+    "headline": "Listening Rooms Worldwide",
+    "subhead": "A curated network of partners selected for standards in setup, service, and musical integrity."
+  },
+  "regions": [
+    { "id": "all", "label": "All" },
+    { "id": "americas", "label": "Americas" },
+    { "id": "europe", "label": "Europe" },
+    { "id": "apac", "label": "Asia-Pacific" },
+    { "id": "mea", "label": "Middle East & Africa" }
+  ],
+  "partners": [
+    {
+      "id": "demo-montreal",
+      "name": "Demo Partner Montreal",
+      "city": "Montréal",
+      "country": "Canada",
+      "region": "americas",
+      "lat": 45.5017,
+      "lng": -73.5673,
+      "url": "https://example.com",
+      "tier": "featured"
+    },
+    {
+      "id": "demo-paris",
+      "name": "Demo Partner Paris",
+      "city": "Paris",
+      "country": "France",
+      "region": "europe",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "tier": "standard"
+    }
+  ]
+}

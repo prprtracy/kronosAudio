@@ -1,0 +1,71 @@
+{
+  "brand": { "name": "Kronos Audio" },
+
+  "nav": {
+    "items": [
+      { "id": "home", "label": "Home", "behavior": "link", "href": "/" },
+
+      {
+        "id": "products",
+        "label": "Products",
+        "behavior": "link",
+        "href": "/products",
+          "megaMenu": {
+          "title": "Products",
+          "rightEmptyText": "Select a product to explore.",
+          "left": [
+            {
+              "label": "Discovery",
+              "productSlug": "discovery",
+              "description": "Our flagship two tonearm platform featuring a radically new exo-skeleton chassis system designed to minimize resonances and optimize isolation."
+            },
+            {
+              "label": "Perpetual",
+              "productSlug": "perpetual",
+              "description": "Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point."
+            },
+            {
+              "label": "Kronos Pro",
+              "productSlug": "kronos-pro",
+              "description": "The original Kronos reference turntable. The PRO set a new standard in analogue reproduction by combining counter-rotation and overhead suspension."
+            },
+            {
+              "label": "Sparta",
+              "productSlug": "sparta",
+              "description": "Our no-frills platform … an entry to the world of KRONOS."
+            },
+            {
+              "label": "Sparta 0.5",
+              "productSlug": "sparta-0-5",
+              "description": "Attainable proposition with solid frame base and upgrade path."
+            },
+            {
+              "label": "Power Supply",
+              "productSlug": "power-supply",
+              "description": "Dedicated external power systems designed to ensure absolute stability. By isolating and regulating power, they reduce noise and enhance system performance."
+            },
+            {
+              "label": "Phono",
+              "productSlug": "phono",
+              "description": "Reference phono stages designed to preserve the integrity of the analog signal. Engineered for low noise, accurate gain, and tonal neutrality."
+            },
+            {
+              "label": "Tonearms",
+              "productSlug": "tonearms",
+              "description": "Patented RS technology Tonearm."
+            },
+            {
+              "label": "Racks & Supports",
+              "productSlug": "racks",
+              "description": "Engineered foundations that control vibration and preserve mechanical integrity, allowing Kronos systems to perform at their highest level."
+            }
+          ]
+        }
+      },
+
+      { "id": "distributors", "label": "Distributors", "behavior": "link", "href": "/distributors" },
+
+      { "id": "contact", "label": "Contact", "behavior": "link", "href": "/contact" }
+    ]
+  }
+}

@@ -1,8 +1,9 @@
 // app/[locale]/products/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/i18n";
-import { products } from "@/data/products";
+// import { products } from "@/data/products";
 
+import { getProducts } from "@/lib/products";
 import { ProductHero } from "@/components/product/ProductHero";
 import { ProductIntro } from "@/components/product/ProductIntro";
 import { ProductEndorsements } from "@/components/product/ProductEndorsements";
@@ -12,19 +13,20 @@ import { ProductAnchorNav } from "@/components/product/ProductAnchorNav";
 type PageProps = {
   params: Promise<{ locale: Locale; slug: string }>;
 };
+export async function generateStaticParams() {
+  const products = await getProducts("en");
 
-export function generateStaticParams() {
-  // 为每个 locale 生成每个 product slug
   return locales.flatMap((locale) =>
     products.map((p) => ({ locale, slug: p.slug }))
   );
 }
 
+
 export default async function ProductDetailPage({ params }: PageProps) {
   const { locale, slug } = await params;
 
-  if (!locales.includes(locale)) notFound();
-
+  if (!locales.includes(locale as any)) notFound();
+  const products = await getProducts(locale);
   const product = products.find((p) => p.slug === slug);
   if (!product) notFound();
 
@@ -114,11 +116,6 @@ export default async function ProductDetailPage({ params }: PageProps) {
         />
 
       </section>
-
-
-
-
-
       <div className="h-16" />
     </main>
   );

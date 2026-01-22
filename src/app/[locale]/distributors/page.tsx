@@ -1,64 +1,34 @@
-import { DistributorMap } from "@/components/distributors/DistributorMap";
-import { featuredPartners, partners, REGIONS } from "@/data/partners";
+import type { Locale } from "@/i18n";
+import { getDistributors } from "@/lib/distributors";
+import { DistributorMapShell } from "@/components/distributors/DistributorMapShell";
 
-export const revalidate = 3600;
+export default async function DistributorsPage({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  const data = await getDistributors(locale);
 
-export default async function DistributorsPage() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-16">
-      {/* Hero */}
-      <section className="mb-10">
-        <p className="text-sm tracking-widest opacity-70">GLOBAL PARTNERS</p>
-        <h1 className="mt-3 text-4xl font-semibold">Listening Rooms Worldwide</h1>
-        <p className="mt-4 max-w-2xl text-base opacity-80">
-          A curated network of partners selected for standards in setup, service, and musical integrity.
-        </p>
-      </section>
+    <main className="min-h-screen bg-black text-white">
+      <div className="pt-24 pb-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-[11px] tracking-[0.32em] uppercase text-neutral-300/70">
+            {data.meta.eyebrow}
+          </p>
+          <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight">
+            {data.meta.headline}
+          </h1>
+          <p className="mt-5 max-w-2xl text-sm sm:text-base text-neutral-200/90 leading-relaxed">
+            {data.meta.subhead}
+          </p>
 
-      {/* Map (Featured) */}
-      <section className="mb-12">
-        <DistributorMap partners={partners} regions={REGIONS} />
-      </section>
-
-      {/* Selected Partners (像 endorsement) */}
-      <section className="mb-14">
-        <h2 className="text-xl font-medium">Selected Partners</h2>
-        <div className="mt-5 grid gap-4 md:grid-cols-2">
-          {featuredPartners.map((p) => (
-            <div key={p.id} className="rounded-2xl border border-white/10 p-6">
-              <div className="text-xs tracking-widest opacity-70">
-                {p.city}, {p.country}
-              </div>
-              <div className="mt-2 text-lg font-medium">{p.name}</div>
-              {p.url ? (
-                <a className="mt-3 inline-flex text-sm opacity-80 hover:opacity-100" href={p.url} target="_blank" rel="noreferrer">
-                  View partner →
-                </a>
-              ) : null}
-            </div>
-          ))}
+          <div className="mt-10">
+            <DistributorMapShell locale={locale} data={data} />
+          </div>
         </div>
-      </section>
-
-      {/* Full list (SEO & 可用性) */}
-      <section>
-        <h2 className="text-xl font-medium">Directory</h2>
-        <div className="mt-5 grid gap-4 md:grid-cols-2">
-          {partners.map((p) => (
-            <div key={p.id} className="rounded-2xl border border-white/10 p-6">
-              <div className="text-xs tracking-widest opacity-70">
-                {p.city}, {p.country}
-              </div>
-              <div className="mt-2 text-lg font-medium">{p.name}</div>
-              {p.url ? (
-                <a className="mt-3 inline-flex text-sm opacity-80 hover:opacity-100" href={p.url} target="_blank" rel="noreferrer">
-                  View partner →
-                </a>
-              ) : null}
-            </div>
-          ))}
-        </div>
-      </section>
+      </div>
     </main>
   );
 }
