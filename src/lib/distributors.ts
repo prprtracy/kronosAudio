@@ -1,32 +1,31 @@
-// src/lib/distributors.ts
-export type DistributorRegion = {
+import { getContent } from "@/lib/content";
+import type { Locale } from "@/i18n";
+
+export type RegionId = "all" | "americas" | "europe" | "apac" | "mea";
+
+export type DistributorPartner = {
   id: string;
-  label: string;
-  countries: {
-    code: string;
-    name: string;
-    city: string;
-    dealers: number;
-  }[];
+  name: string;
+  city: string;
+  country: string;
+  region: Exclude<RegionId, "all">;
+  lat: number;
+  lng: number;
+  url?: string;
+  tier?: "featured" | "standard";
 };
 
-export const distributorRegions: DistributorRegion[] = [
-  {
-    id: "north-america",
-    label: "North America",
-    countries: [
-      { code: "US", name: "United States", city: "New York / Los Angeles", dealers: 4 },
-      { code: "CA", name: "Canada", city: "Toronto / Montréal", dealers: 2 },
-    ],
-  },
-  {
-    id: "europe",
-    label: "Europe",
-    countries: [
-      { code: "CH", name: "Switzerland", city: "Lausanne", dealers: 1 },
-      { code: "FR", name: "France", city: "Paris / Lyon", dealers: 2 },
-      { code: "DE", name: "Germany", city: "Berlin / Munich", dealers: 3 },
-    ],
-  },
-  // 先写几个 demo，后面再从 GraphQL 拉真数据
-];
+export type DistributorsContent = {
+  meta: {
+    title: string;
+    eyebrow: string;
+    headline: string;
+    subhead: string;
+  };
+  regions: { id: RegionId; label: string }[];
+  partners: DistributorPartner[];
+};
+
+export async function getDistributors(locale: Locale) {
+  return getContent<DistributorsContent>(locale, "distributors.json");
+}
