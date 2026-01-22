@@ -1,5 +1,5 @@
 // src/app/page.tsx
-import { DistributorsMap } from "@/components/DistributorsMap";
+// import { DistributorsMap } from "@/components/DistributorsMap";
 
 export default async function HomePage() {
   return (
@@ -14,7 +14,7 @@ export default async function HomePage() {
         </p>
       </section>
 
-      <DistributorsMap />
+      {/* <DistributorsMap /> */}
     </main>
   );
 }

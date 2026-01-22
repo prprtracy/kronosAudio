@@ -20,7 +20,7 @@ export const homeNarrative: HomeNarrativeSection[] = [
       "The standard by which analogue front ends are measured.",
       "A design that extracts not just sound, but the organic truth of music.",
     ],
-    posterSrc: "/media/home/hero-time.jpg", // 你換成現有 hero 圖也行
+    posterSrc: "/media/home/hero-time.jpg",
     overlayGradient: "from-black/80 via-black/35 to-black/90",
   },
   {
