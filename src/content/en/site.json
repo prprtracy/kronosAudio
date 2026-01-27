@@ -3,7 +3,7 @@
 
   "nav": {
     "items": [
-      { "id": "home", "label": "Home", "behavior": "link", "href": "/" },
+      { "id": "home", "label": "Home", "behavior": "spa" },
 
       {
         "id": "products",

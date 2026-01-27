@@ -12,7 +12,7 @@ export function HomeNarrative({
   locale: string;
 }) {
   return (
-    <main className="pt-16">
+    <main>
       {sections.map((s: HomeNarrativeSection, idx: number) => {
         const isHero = idx === 0;
         const isInvitation = s.id === "invitation";
@@ -36,13 +36,13 @@ export function HomeNarrative({
                 <div
                   className={clsx(
                     "absolute inset-0 bg-gradient-to-br",
-                    s.overlayGradient ?? "from-black/80 via-black/40 to-black/90"
+                    s.overlayGradient ?? "from-black/90 via-black/55 to-black/95"
                   )}
                 />
               </div>
             )}
 
-            <div className="relative z-10 w-full">
+            <div className={clsx("relative z-10 w-full", isHero ? "pt-24" : "pt-0")}>
               <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className={clsx("max-w-2xl", isHero ? "py-16" : "py-24")}>
                   {s.eyebrow && (

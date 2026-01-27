@@ -15,7 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang={defaultLocale}>
-      <body>{children}</body>
+      <body
+      className="
+          bg-black
+          text-neutral-100
+          antialiased
+        "
+      >
+        {children}
+      </body>
     </html>
   );
 }
