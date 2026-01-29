@@ -69,33 +69,14 @@
       ],
       "reviews": []
     },
-
+    
     {
-      "id": "sparta-0-5",
-      "slug": "sparta-0-5",
-      "name": "Sparta 0.5",
-      "tagline": "Attainable proposition",
-      "description": [
-        "The Sparta features a solid frame base with four suspension towers and the motor housing, from which hangs the subchassis and platter."
-      ],
-      "msrp": { "amount": 16500, "currency": "USD", "display": "16,500 USD" },
-      "upgradeKit": { "amount": 8250, "currency": "USD", "display": "8,250 USD" },
-      "gallery": ["/media/products-sparta-0.5.jpg"],
-      "downloads": [],
-      "specs": [],
-      "reviews": []
-    },
-
-    {
-      "id": "power-supply",
-      "slug": "power-supply",
-      "name": "Power Supply",
-      "tagline": "Stability and Silence",
-      "description": [
-        "Dedicated external power systems designed to ensure absolute stability.",
-        "By isolating and regulating power, they reduce noise and enhance system performance."
-      ],
-      "gallery": ["/media/placeholder-power.jpg"],
+      "id": "tonearms",
+      "slug": "tonearms",
+      "name": "Tonearms",
+      "tagline": "RS Technology",
+      "description": ["Patented RS technology Tonearm."],
+      "gallery": ["/media/placeholder-tonearm.jpg"],
       "downloads": [],
       "specs": [],
       "reviews": []
@@ -116,17 +97,6 @@
       "reviews": []
     },
 
-    {
-      "id": "tonearms",
-      "slug": "tonearms",
-      "name": "Tonearms",
-      "tagline": "RS Technology",
-      "description": ["Patented RS technology Tonearm."],
-      "gallery": ["/media/placeholder-tonearm.jpg"],
-      "downloads": [],
-      "specs": [],
-      "reviews": []
-    },
 
     {
       "id": "racks",

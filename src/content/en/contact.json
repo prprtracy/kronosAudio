@@ -1,0 +1,44 @@
+{
+  "eyebrow": "Contact",
+  "headline": "Get in Touch",
+  "intro": [
+    "For general inquiries, distribution, or support,",
+    "please use the appropriate contact below."
+  ],
+
+  "sections": [
+    {
+      "title": "General Inquiries",
+      "items": [
+        {
+          "label": "Email",
+          "value": "info@kronosaudio.com"
+        },
+        {
+          "label": "Location",
+          "value": "Montreal, Canada"
+        }
+      ]
+    },
+    {
+      "title": "Distribution",
+      "items": [
+        {
+          "label": "Worldwide Distribution",
+          "value": "distributors@kronosaudio.com"
+        }
+      ]
+    },
+    {
+      "title": "Support",
+      "items": [
+        {
+          "label": "Technical Support",
+          "value": "support@kronosaudio.com"
+        }
+      ]
+    }
+  ],
+
+  "closing": "We look forward to hearing from you."
+}

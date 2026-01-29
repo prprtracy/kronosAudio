@@ -17,6 +17,7 @@ export type NavGroupItem = {
   href?: string;
   productSlug?: string;
   description?: string;
+  previewImage?: string;
   children?: NavChild[];
 };
 

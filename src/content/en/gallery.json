@@ -1,0 +1,71 @@
+{
+  "eyebrow": "Media",
+  "headline": "Kronos Around the World",
+  "intro": [
+    "A curated glimpse into how KRONOS exists in the real world —",
+    "across systems, spaces, and moments in time."
+  ],
+  "caption": "Systems • Spaces • Presence",
+  "items": [
+    {
+      "src": "/media/gallery/01.jpg",
+      "alt": "Kronos system in Paris"
+    },
+    {
+      "src": "/media/gallery/02.jpg",
+      "alt": "High End Munich Show"
+    },
+    {
+      "src": "/media/gallery/03.jpg",
+      "alt": "Distributor showroom in Tokyo"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/04.jpg",
+      "alt": "Kronos system in New York"
+    },
+    {
+      "src": "/media/gallery/05.jpg",
+      "alt": "Kronos system detail"
+    }
+  ]
+}

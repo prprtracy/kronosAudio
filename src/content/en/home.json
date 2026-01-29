@@ -38,7 +38,16 @@
         "In an audiophile world constantly bombarded with never-ending marketing plows and so-called innovations, Kronos has been a steady presence. ",
         "Our registry shows that 90% of KRONOS owners still own a KRONOS today.  We have constantly worked at improving our products and most of these improvements are retrofittable over time… a 15 years old KRONOS PRO can easily be brought up to current spec. ",
         "We do not believe in mk1, mk2, mk3 planned obsolescence. A Kronos turntable is an investment in the future."
-      ]
+      ],
+      "view": "grid4",
+      "grid4Variant": "cinematic",
+      "images": [
+        "/media/home/legacy/legacy-1.jpg",
+        "/media/home/legacy/legacy-2.jpg",
+        "/media/home/legacy/legacy-3.jpg",
+        "/media/home/legacy/legacy-4.jpg"
+      ],
+      "imagesCaption": "Evolution over time"
     },
     {
       "id": "recognition",
@@ -50,7 +59,33 @@
         "We invite you to take the time to look deeper in the world of KRONOS"
       ],
       "posterSrc": "/media/home/awards.jpg",
-      "overlayGradient": "from-black/85 via-black/45 to-black/90"
+      "overlayGradient": "from-black/85 via-black/45 to-black/90",
+
+      "view": "slideshow",
+      "slideshowVariant": "awards",
+      "slideshowAutoplayMs": 1500,
+      "slides": [
+        {
+          "type": "award",
+          "title": "Best Sound of Show",
+          "source": "HiFi+",
+          "year": "2019",
+          "quote": "A reference-level analogue front end with astonishing stability.",
+          "href": "https://example.com"
+        },
+        {
+          "type": "award",
+          "title": "Product of the Year",
+          "source": "The Absolute Sound",
+          "year": "2021",
+          "quote": "A turntable that consistently reveals deeper musical truth."
+        },
+        {
+          "type": "image",
+          "src": "/media/home/awards-slide-01.jpg",
+          "alt": "Kronos at a show"
+        }
+      ]
     },
     {
       "id": "invitation",
