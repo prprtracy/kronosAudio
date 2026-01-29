@@ -2,6 +2,7 @@
 import type { Locale } from "@/i18n";
 import fs from "fs/promises";
 import path from "path";
+import { getContent } from "./content";
 
 /* =========================
    Types – 100% 对齐 JSON
@@ -46,13 +47,5 @@ export type DistributorsContent = {
 export async function getDistributors(
   locale: Locale
 ): Promise<DistributorsContent> {
-  const filePath = path.join(
-    process.cwd(),
-    "content",
-    locale,
-    "distributors.json"
-  );
-
-  const raw = await fs.readFile(filePath, "utf-8");
-  return JSON.parse(raw) as DistributorsContent;
+  return getContent<DistributorsContent>(locale, "distributors.json");
 }
