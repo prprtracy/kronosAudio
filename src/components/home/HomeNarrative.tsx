@@ -3,7 +3,8 @@
 import Image from "next/image";
 import clsx from "clsx";
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { HomeNarrativeSection, HomeSlide } from "@/types/home";
+import type { HomeNarrativeSection } from "@/types/home";
+import type { HomeSlide } from "@/types/home";
 
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
