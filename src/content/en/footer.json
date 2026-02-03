@@ -1,0 +1,45 @@
+{
+  "brand": {
+    "logo": "/media/logo-retina.png",
+    "tagline": ""
+  },
+
+  "contact": {
+    "name": "Kronos Audio",
+    "address": [
+      "4035, rue Saint-Ambroise",
+      "Suite 414, Montréal (Québec) H4C 2E1",
+      "Canada"
+    ],
+    "phone": "+1-514-939-5770"
+  },
+
+  "links": {
+    "title": "Quick links",
+    "items": [
+      { "label": "About Kronos", "href": "/about" },
+      { "label": "Products", "href": "/products" },
+      { "label": "Distributors", "href": "/distributors" }
+    ]
+  },
+
+  "mission": {
+    "title": "Our mission",
+    "text": "To put it simply, we aim at building turntables that are truly musical and faithful to the recorded material. To this we add the best performance/price ratio in the marketplace.",
+    "link": {
+      "label": "Read more",
+      "href": "/about"
+    }
+  },
+
+  "social": [
+    { "id": "facebook", "href": "https://facebook.com" },
+    { "id": "twitter", "href": "https://twitter.com" },
+    { "id": "instagram", "href": "https://instagram.com" }
+  ],
+
+  "legal": {
+    "copyright": "Kronos Audio",
+    "year": 2026
+  }
+}

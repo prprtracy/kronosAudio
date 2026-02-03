@@ -4,18 +4,25 @@
       "id": "philosophy",
       "eyebrow": "ULTIMATE ANALOGUE SOURCES",
       "headline": "Time Suspended",
+      "copy": [],
+      "posterSrc": "/media/home/hero-time.jpg",
+      "overlayGradient": "from-black/80 via-black/35 to-black/90"
+    },
+     {
+      "id": "philosophy",
+      "eyebrow": "The Legacy",
+      "headline": "Timeless Design",
       "copy": [
-        "Introduced 15 years ago, Kronos Audio's turntables are the standard by which every analogue front end is measured.", 
+        "Introduced 15 years ago, Kronos Audio's turntables are the standard by which every analogue front end is measured.",
         "Kronos are known for their counter-rotating dual platter suspended turntable design, which provides unparalleled stability and extracts more musical information from vinyl records.",
         "This patented unique design minimizes torque forces induced vibrations, resulting in a more organic and clear sound.",
-
         "A design that extracts not just sound", "but the organic truth of music.",
         " ",
         "Our goal has always been singular:",   
         "to achieve a non-compromise analogue playback quality in all our products. From the SPARTA entry level turntable to our flagship DISCOVERY, ",
         "from our power Super Capacitor Power Supplies, to our patented technology RS tonearms and from our racks, every design choice has constantly pointed in this direction. "
       ],
-      "posterSrc": "/media/home/hero-time.jpg",
+      "posterSrc": "",
       "overlayGradient": "from-black/80 via-black/35 to-black/90"
     },
     {
