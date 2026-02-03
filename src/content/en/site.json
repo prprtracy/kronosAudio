@@ -3,7 +3,7 @@
 
   "nav": {
     "items": [
-      { "id": "home", "label": "Home", "behavior": "spa" },
+      { "id": "home", "label": "HOME", "behavior": "link", "href": "/" },
 
       {
         "id": "products",
@@ -18,43 +18,43 @@
               "label": "Discovery",
               "productSlug": "discovery",
               "description": "Our flagship two tonearm platform featuring a radically new exo-skeleton chassis system designed to minimize resonances and optimize isolation.",
-              "previewImage": "/media/placeholder-discovery.jpg"
+              "previewImage": "/media/products/Discovery/discovery1.jpg"
             },
             {
               "label": "Perpetual",
               "productSlug": "perpetual",
               "description": "Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point.",
-              "previewImage": "/media/placeholder-perpetual.jpg"
+              "previewImage": "/media/products/Perpetual/perpetual1.jpg"
             },
             {
               "label": "Kronos Pro",
               "productSlug": "kronos-pro",
               "description": "The original Kronos reference turntable.",
-              "previewImage": "/media/placeholder-pro.jpg"
+              "previewImage": "/media/products/Kronos Pro/pro1.jpg"
             },
             {
               "label": "Sparta",
               "productSlug": "sparta",
               "description": "An entry to the world of KRONOS.",
-              "previewImage": "/media/products/sparta/hero.jpg"
+              "previewImage": "/media/products/Sparta/sparta1.jpg"
             },
             {
               "label": "Tonearms",
               "productSlug": "tonearms",
               "description": "Patented RS technology Tonearm.",
-              "previewImage": "/media/products/tonearms/hero.jpg"
+              "previewImage": "/media/products/tonearm/tonearm1.jpg"
             },
             {
               "label": "Phono",
               "productSlug": "phono",
               "description": "Reference phono stages preserving signal integrity.",
-              "previewImage": "/media/products/phono/hero.jpg"
+              "previewImage": "/media/products/Phono/phono1.jpg"
             },
             {
               "label": "Racks & Supports",
               "productSlug": "racks",
               "description": "Engineered foundations controlling vibration.",
-              "previewImage": "/media/products/racks/hero.jpg"
+              "previewImage": "/media/products/tonearm/RS1.jpg"
             }
           ]
         }

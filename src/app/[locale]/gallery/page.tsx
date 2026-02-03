@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Locale } from "@/i18n";
 import { normalizeLocale } from "@/lib/content";
 import { getGallery } from "@/lib/gallery";
+import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 
 export default async function GalleryPage({
   params,
@@ -43,33 +44,17 @@ export default async function GalleryPage({
         </div>
 
         {/* Media slice */}
+
         <div className="mt-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {content.items.map((item, i) => (
-            <div
-                key={`${item.src}-${i}`}
-                className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-white/10"
-            >
-                <Image
-                src={item.src}
-                alt={item.alt ?? ""}
-                fill
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                className="object-cover transition-opacity duration-300 hover:opacity-95"
-                />
+          <GalleryGrid sections={content.sections} />
 
-                {/* subtle vignette */}
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/5 via-transparent to-black/40" />
+          {content.caption && (
+            <div className="mt-12 text-[10px] tracking-[0.28em] uppercase text-neutral-300/60">
+              {content.caption}
             </div>
-            ))}
+          )}
         </div>
 
-        {content.caption && (
-            <div className="mt-8 text-[10px] tracking-[0.28em] uppercase text-neutral-300/60">
-            {content.caption}
-            </div>
-        )}
-        </div>
 
       </div>
     </main>

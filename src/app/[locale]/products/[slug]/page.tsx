@@ -9,6 +9,8 @@ import { ProductIntro } from "@/components/product/ProductIntro";
 import { ProductEndorsements } from "@/components/product/ProductEndorsements";
 import { ProductSpecs } from "@/components/product/ProductSpecs";
 import { ProductAnchorNav } from "@/components/product/ProductAnchorNav";
+// import { ProductOverviewGallery } from "@/components/product/ProductOverviewGallery";
+import { ProductDownloads } from "@/components/product/ProductDownloads";
 
 type PageProps = {
   params: Promise<{ locale: Locale; slug: string }>;
@@ -60,6 +62,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
       src: product.gallery?.[0] ?? "/media/products/placeholder.jpg",
       alt: `${product.name} product hero`,
       priority: product.slug === "discovery",
+      gallery: (product.gallery ?? []).map((src) => ({ src })), // ✅ 关键
     },
   } as const;
 
@@ -76,8 +79,6 @@ export default async function ProductDetailPage({ params }: PageProps) {
       <section id ="overview">
 
         <ProductIntro
-          // 如果你 ProductIntro 的 props 不同，直接把这一段改成你现有签名即可
-          // 我这里按“常规”写：title + paragraphs
           title="Overview"
           paragraphs={(product.description ?? []).slice(0, 3)}
         />
@@ -91,17 +92,16 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
       <section id="reviews">
         <ProductEndorsements
-          // 同理：按你现有组件签名微调
           title="Press & Endorsements"
-          items={(product.reviews ?? [])
-            .filter((r) => typeof r.sourceUrl === "string" && r.sourceUrl.length > 0)
-            .map((r, idx) => ({
-              id: `${product.slug}-${idx}`,
-              source: r.sourceName ?? r.authorName ?? "Press",
-              quote: r.quote,
-              url: r.sourceUrl ?? "#",       // ✅ 永远是 string
-              logo: r.imageUrl,
-            }))}
+          items={(product.reviews ?? []).map((r, idx) => ({
+            id: `${product.slug}-${idx}`,
+            source: r.sourceName ?? r.authorName ?? "Press",
+            quote: r.quote,
+            url: r.sourceUrl && r.sourceUrl.length > 0 ? r.sourceUrl : "#",
+            logoSrc: r.imageUrl,
+            subtitle: r.subtitle,
+          }))}
+
         />
 
       </section>
@@ -114,6 +114,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
             value: s.value,
           }))}
         />
+      <ProductDownloads items={product.downloads ?? []} />
 
       </section>
       <div className="h-16" />

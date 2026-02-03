@@ -10,13 +10,60 @@
         "Kronos developed a wholly new way to attach the chassis to the suspension system, using completely different soft clamping methods."
       ],
       "msrp": { "amount": 120000, "currency": "USD", "display": "120,000 USD" },
-      "gallery": ["/media/placeholder-discovery.jpg"],
+      "gallery": [  
+        "/media/products/Discovery/discovery6.jpg",
+        "/media/products/Discovery/discovery13.jpeg",
+        "/media/products/Discovery/discovery7.jpg",
+        "/media/products/Discovery/discovery10.jpg",
+        "/media/products/Discovery/discovery11.jpg",
+        "/media/products/Discovery/discovery12.jpg"
+      ],
       "downloads": [
-        { "label": "Download Assembly Instructions", "url": "/media/downloads/discovery-assembly.pdf" }
+        { "label": "Download Assembly Instructions", 
+          "url": "/media/downloads/KronosPro assembly instructions 2014.pdf" }
       ],
       "specs": [
         { "key": "Rotational speed", "value": "33.3 rpm & 45 rpm" },
-        { "key": "Tonearm length", "value": "9 to 12 inches" }
+        { "key": "Tonearm length", "value": "9 to 12 inches" },
+        { "key": "Dimensions", "value": "20 in (W) x 14 in (D) x 11 in (H) / 51 cm (W) x 36 cm (D) x 28 cm (H)" },
+        { "key": "Weight", "value": "70 lbs / 32 kg" },
+        { "key": "Crate dimensions", "value": "24 in (W) x 32 in (D) x 16 in (H) / 61 cm (W) x 81 cm (D) x 41 cm (H)" },
+        { "key": "Shipping weight", "value": "95 lbs / 43 kg" },
+        { "key": "Power supply", "value": "Dual channel pure class A linear DC" },
+        { "key": "AC voltage input", "value": "110V or 220V factory set" },
+        { "key": "DC voltage output", "value": "0 to 5 volt, CPU controlled, factory calibrated" },
+        { "key": "DC transmission", "value": "Pico 3 pin cable" },
+        { "key": "Transmission", "value": "Pico 4 pin cable" },
+        { "key": "Motors", "value": "2432 precious metal brushes DC motors (qty 2)" },
+        { "key": "Motor mounts", "value": "Delrin capped aluminum tubes" },
+        { "key": "Speed guidance system", "value": "Continuous open loop feedback, user speed adjustable" },
+        { "key": "Sensors type", "value": "Optical diode I/O top motor tachymeter" },
+        { "key": "Correction cycle", 
+          "value": "60 times /rotation. 0.15% max., 0.05% min." },
+        { "key": "Strobe", 
+          "value": "CPU generated 120 Hz with LED output" },
+        { "key": "Tonearm length", 
+          "value": "9 inches to 10.5 inches (229 mm to 267 mm)" },
+        { "key": "Platters type", 
+          "value": "Composite compressed phenolic/aluminum, balanced" },
+        { "key": "Platter weight", 
+          "value": "27 lbs (12kg) / platter" },
+        { "key": "Drive", 
+          "value": "1 silicone/viton 2.3 string belt / platter" },
+        { "key": "Main bearings", 
+          "value": "Dual hydraulic isolated inverted sleeve and ball" },
+        { "key": "Shaft type", 
+          "value": "Grounded heat hardened tool steel" },
+        { "key": "Ball type", 
+          "value": "Precision steel" },
+        { "key": "Lubricant", 
+          "value": "8 ml. variable viscosity synthetic oil" },
+        { "key": "Service interval", 
+          "value": "5 years (clean and re-oil)" },
+        { "key": "Suspension", 
+          "value": "Full floating top suspended" },
+        { "key": "Elastomers",
+          "value": "317 o-rings , viton/silicone proprietary mix" }
       ],
       "reviews": []
     },
@@ -29,7 +76,11 @@
       "description": [
         "Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point."
       ],
-      "gallery": ["/media/placeholder-perpetual.jpg"],
+      "gallery": ["/media/products/Perpetual/perpetual1.jpg",
+        "/media/products/Perpetual/perpetual2.jpg",
+        "/media/products/Perpetual/perpetual10.jpg",
+        "/media/products/Perpetual/perpetual4.jpg"
+      ],
       "downloads": [],
       "specs": [],
       "reviews": []
@@ -43,9 +94,65 @@
       "description": [
         "The original Kronos reference turntable. The PRO set a new standard in analogue reproduction by combining counter-rotation and overhead suspension."
       ],
-      "gallery": ["/media/placeholder-pro.jpg"],
-      "downloads": [],
-      "specs": [],
+      "gallery": ["/media/products/Kronos Pro/pro1.jpg",
+        "/media/products/Kronos Pro/pro8.jpg"
+      ],
+      "downloads": [
+        { "label": "Download Assembly Instructions", 
+          "url": "/media/downloads/KronosPro assembly instructions 2014.pdf" }
+      ],
+      "specs": [
+        { "key": "Dimensions", "value": "22 in (W) x 14 in (D) x 11 in (H) 56 cm (W) x 36 cm (D) x 28 cm (H)" },
+        { "key": "Weight", "value": "90 lbs / 41 kg" },
+        { "key": "Crate dimensions", "value": "25 in (W) x 17 in (D) x 15 in (H) 64 cm (W) x 43 cm (D) x 38 cm (H)" },
+        { "key": "Shipping weight", "value": "120 lbs / 55 kg" },
+        { "key": "Rotational speed", "value": "33.3 rpm & 45 rpm" },
+        { "key": "Power supply", "value": "Dual channel pure class A linear DC" },
+        { "key": "AC voltage input", "value": "110V or 220V factory set" },
+        { "key": "DC voltage output", "value": "0 to 5 volt, dual CPU controlled, factory calibrated" },
+        { "key": "DC transmission", "value": "Pico 3 pin cable" },
+        { "key": "Transmission", "value": "Pico 4 pin cable" },
+        { "key": "Motors", "value": "2432 precious metal brushes DC motors (qty 2)" },
+        { "key": "Motor mounts", "value": "Delrin enclosure, height adjustable" },
+        { "key": "Speed guidance system", 
+          "value": "2 continuous open feedback loops" },
+        { "key": "Sensors type", 
+          "value": "2 optical diode I/O and 2 motor tachymeter" },
+        { "key": "Correction cycle", 
+          "value": "60 times /rotations. 0.1% max. 0.05% min." },
+        { "key": "Monitoring", 
+          "value": "Twin real time speed LED display" },
+        { "key": "Command input type", 
+          "value": "1 capacitance sensor on/off (left) 1 capacitance sensor 33/45 (right)" },
+        { "key": "Tonearm lenght", 
+          "value": "9 inches to 12 inches (229mm to 310mm)" },
+        { "key": "Platters type", 
+          "value": "Composite layers and encapsulated, balanced" },
+        { "key": "Platter weight", 
+          "value": "28 lbs (13kg) / platter" },
+        { "key": "Drive", 
+          "value": "2 silicone/viton 1.8 string belts / platter" },
+        { "key": "Compensation pulley", 
+          "value": "Teflon and chrome steel bearing" },
+        { "key": "Lubricant", 
+          "value": "Petroleum grease" },
+        { "key": "Sevice interval", 
+          "value": "3 months (clean and re-grease)" },
+        { "key": "Main bearings", 
+          "value": "Dual hydraulic isolated inverted sleeve and ball" },
+        { "key": "Shaft type", 
+          "value": "Grounded heat hardened tool steel" },
+        { "key": "Ball type", 
+          "value": "Ceramic top platter, precision steel lower platter" },
+        { "key": "Lubricant", 
+          "value": "8 ml. variable viscosity synthetic oil" },
+        { "key": "Service interval", 
+          "value": "5 years (clean and re-oil)" },
+        { "key": "Suspension", 
+          "value": "Full floating top suspended" },
+        { "key": "Elastomers",
+          "value": "317 o-rings , viton/silicone proprietary mix" }
+      ],
       "reviews": []
     },
 
@@ -59,24 +166,92 @@
         "Unique to behold, the Sparta is essentially two complete turntables—each including a skeletal, metal-framed plinth fabricated of solid aluminum boards."
       ],
       "msrp": { "amount": 24000, "currency": "USD", "display": "24,000 USD" },
-      "gallery": ["/media/sparta-image-01-768x768.jpg", "/media/sparta-image-02-768x768.jpg"],
+      "gallery": ["/media/products/Sparta/sparta1.jpg",
+        "/media/products/Sparta/sparta11.jpg",
+        "/media/products/Sparta/sparta13.jpg",
+        "/media/products/Sparta/sparta14.jpg"
+      ],
       "downloads": [
-        { "label": "Download Assembly Instructions", "url": "/media/downloads/sparta-assembly.pdf" }
+        { "label": "Download Assembly Instructions", "url": "/media/downloads/Sparta assembly instructions 2026.pdf" }
       ],
       "specs": [
-        { "key": "Rotational speed", "value": "33.3 rpm and 45 rpm" },
-        { "key": "Net weight", "value": "70 lbs / 32 kg" }
+        { "key": "Rotational speed", "value": "33.3 rpm & 45 rpm" },
+        { "key": "Tonearm length", "value": "9 to 12 inches" },
+        { "key": "Dimensions", "value": "20 in (W) x 14 in (D) x 11 in (H) / 51 cm (W) x 36 cm (D) x 28 cm (H)" },
+        { "key": "Weight", "value": "70 lbs / 32 kg" },
+        { "key": "Crate dimensions", "value": "24 in (W) x 32 in (D) x 16 in (H) / 61 cm (W) x 81 cm (D) x 41 cm (H)" },
+        { "key": "Shipping weight", "value": "95 lbs / 43 kg" },
+        { "key": "Power supply", "value": "Dual channel pure class A linear DC" },
+        { "key": "AC voltage input", "value": "110V or 220V factory set" },
+        { "key": "DC voltage output", "value": "0 to 5 volt, CPU controlled, factory calibrated" },
+        { "key": "DC transmission", "value": "Pico 3 pin cable" },
+        { "key": "Transmission", "value": "Pico 4 pin cable" },
+        { "key": "Motors", "value": "2432 precious metal brushes DC motors (qty 2)" },
+        { "key": "Motor mounts", "value": "Delrin capped aluminum tubes" },
+        { "key": "Speed guidance system", "value": "Continuous open loop feedback, user speed adjustable" },
+        { "key": "Sensors type", "value": "Optical diode I/O top motor tachymeter" },
+        { "key": "Correction cycle", 
+          "value": "60 times /rotation. 0.15% max., 0.05% min." },
+        { "key": "Strobe", 
+          "value": "CPU generated 120 Hz with LED output" },
+        { "key": "Tonearm length", 
+          "value": "9 inches to 10.5 inches (229 mm to 267 mm)" },
+        { "key": "Platters type", 
+          "value": "Composite compressed phenolic/aluminum, balanced" },
+        { "key": "Platter weight", 
+          "value": "27 lbs (12kg) / platter" },
+        { "key": "Drive", 
+          "value": "1 silicone/viton 2.3 string belt / platter" },
+        { "key": "Main bearings", 
+          "value": "Dual hydraulic isolated inverted sleeve and ball" },
+        { "key": "Shaft type", 
+          "value": "Grounded heat hardened tool steel" },
+        { "key": "Ball type", 
+          "value": "Precision steel" },
+        { "key": "Lubricant", 
+          "value": "8 ml. variable viscosity synthetic oil" },
+        { "key": "Service interval", 
+          "value": "5 years (clean and re-oil)" },
+        { "key": "Suspension", 
+          "value": "Full floating top suspended" },
+        { "key": "Elastomers",
+          "value": "317 o-rings , viton/silicone proprietary mix" }
       ],
-      "reviews": []
+      "reviews": [
+        {
+          "sourceName": "The Absolute Sound",
+          "quote": "I’ve never before been treated to vinyl playback from any system I’ve owned that is as clearly and profoundly moving as what I am now hearing...",
+          "imageUrl": "", 
+          "sourceUrl": ""
+        },
+        {
+          "sourceName": "Enjoythemusic.com",
+          "quote": "I’ve never before been treated to vinyl playback from any system I’ve owned that is as clearly and profoundly moving as what I am now hearing...",
+          "imageUrl": "",
+          "sourceUrl": ""
+        },
+        {
+          "sourceName": "Positive Feedback",
+          "quote": "A cloudless day has dawned over the vinyl landscape, one where you feel you can see forever and your view is only limited by your acuity. There are no environmental impediments in the way",
+          "imageUrl": "",
+          "sourceUrl": ""
+        },
+        {
+          "sourceName": "AV Showrooms",
+          "quote": "The Kronos Sparta turntable takes the counter rotational technology of the flagship Kronos turntable and incorporates it into a more affordable and tidy package.",
+          "imageUrl": "",
+          "sourceUrl": ""
+        }
+      ]
     },
-    
+
     {
       "id": "tonearms",
       "slug": "tonearms",
       "name": "Tonearms",
       "tagline": "RS Technology",
       "description": ["Patented RS technology Tonearm."],
-      "gallery": ["/media/placeholder-tonearm.jpg"],
+      "gallery": ["/media/products/tonearm/tonearm1.jpg"],
       "downloads": [],
       "specs": [],
       "reviews": []
@@ -91,12 +266,15 @@
         "Reference phono stages designed to preserve the integrity of the analog signal.",
         "Engineered for low noise, accurate gain, and tonal neutrality."
       ],
-      "gallery": ["/media/placeholder-phono.jpg"],
+      "gallery": ["/media/products/Phono/phono6.jpg",
+        "/media/products/Phono/phono7.jpg",
+        "/media/products/Phono/phono8.jpg",
+        "/media/products/Phono/phono9.jpg"
+  ],
       "downloads": [],
       "specs": [],
       "reviews": []
     },
-
 
     {
       "id": "racks",
@@ -106,7 +284,7 @@
       "description": [
         "Engineered foundations that control vibration and preserve mechanical integrity, allowing Kronos systems to perform at their highest level."
       ],
-      "gallery": ["/media/placeholder-racks.jpg"],
+      "gallery": ["/media/products/tonearm/RS1.jpg"],
       "downloads": [],
       "specs": [],
       "reviews": []

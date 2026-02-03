@@ -21,6 +21,7 @@ export type ReviewItem = {
   sourceUrl?: string;
   quote: string;
   imageUrl?: string;
+  subtitle?: string;
 };
 
 export type Product = {

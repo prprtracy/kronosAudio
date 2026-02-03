@@ -1,71 +1,366 @@
 {
-  "eyebrow": "Media",
-  "headline": "Kronos Around the World",
+  "eyebrow": "Gallery",
+  "headline": "Systems & Presence",
   "intro": [
-    "A curated glimpse into how KRONOS exists in the real world —",
-    "across systems, spaces, and moments in time."
+    "A visual archive of Kronos systems, components, and craftsmanship."
   ],
-  "caption": "Systems • Spaces • Presence",
-  "items": [
+  "sections": [
     {
-      "src": "/media/gallery/01.jpg",
-      "alt": "Kronos system in Paris"
+      "id": "discovery",
+      "label": "Discovery",
+      "items": [
+        {
+          "src": "/media/products/Discovery/discovery1.jpg",
+          "alt": "Discovery system"
+        },
+        {
+          "src": "/media/products/Discovery/discovery2.jpg",
+          "alt": "Discovery detail"
+        },
+        {
+          "src": "/media/products/Discovery/discovery3.jpg",
+          "alt": "Discovery turntable"
+        },
+        {
+          "src": "/media/products/Discovery/discovery4.jpg",
+          "alt": "Discovery amplifier"
+        },
+        {
+          "src": "/media/products/Discovery/discovery5.jpg",
+          "alt": "Discovery system in room"
+        },
+        {
+          "src": "/media/products/Discovery/discovery6.jpg",
+          "alt": "Discovery close-up"
+        },
+        {
+          "src": "/media/products/Discovery/discovery7.jpg",
+          "alt": "Discovery system side view"
+        },
+        {
+          "src": "/media/products/Discovery/discovery8.jpg",
+          "alt": "Discovery amplifier detail"
+        },
+        {
+          "src": "/media/products/Discovery/discovery9.jpg",
+          "alt": "Discovery system front view"
+        },
+        {
+          "src": "/media/products/Discovery/discovery10.jpg",
+          "alt": "Discovery turntable close-up"
+        },
+        {
+          "src": "/media/products/Discovery/discovery11.jpg",
+          "alt": "Discovery system ambient"
+        },
+        {
+          "src": "/media/products/Discovery/discovery12.jpg",
+          "alt": "Discovery amplifier side view"
+        },
+        {
+          "src": "/media/products/Discovery/discovery13.jpeg",
+          "alt": "Discovery system top view"
+        },
+        {
+          "src": "/media/products/Discovery/discovery14.jpeg",
+          "alt": "Discovery turntable detail"
+        }
+      ]
     },
     {
-      "src": "/media/gallery/02.jpg",
-      "alt": "High End Munich Show"
+      "id": "pro",
+      "label": "Kronos Pro",
+      "items": [
+        {
+          "src": "/media/products/Kronos Pro/pro1.jpg",
+          "alt": "Kronos Pro system"
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro2.jpg",
+          "alt": "Kronos Pro detail"
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro3.jpg",
+          "alt": "Kronos Pro turntable"
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro4.jpg",
+          "alt": "Kronos Pro amplifier"
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro5.jpg",
+          "alt": "Kronos Pro system in room"
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro6.jpg",
+          "alt": "Kronos Pro close-up"
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro7.jpg",
+          "alt": "Kronos Pro system side view"
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro8.jpg",
+          "alt": "Kronos Pro amplifier detail"
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro9.jpg",
+          "alt": "Kronos Pro system front view"
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro10.jpg",
+          "alt": "Kronos Pro turntable close-up"
+        }
+      ]
     },
     {
-      "src": "/media/gallery/03.jpg",
-      "alt": "Distributor showroom in Tokyo"
+      "id": "sparta",
+      "label": "Sparta",
+      "items": [
+        {
+          "src": "/media/products/Sparta/sparta1.jpg",
+          "alt": "Sparta turntable"
+        },
+        {
+          "src": "/media/products/Sparta/sparta2.jpg",
+          "alt": "Sparta system"
+        },
+        {
+          "src": "/media/products/Sparta/sparta3.jpg",
+          "alt": "Sparta amplifier"
+        },
+        {
+          "src": "/media/products/Sparta/sparta4.jpg",
+          "alt": "Sparta detail"
+        },
+        {
+          "src": "/media/products/Sparta/sparta5.jpg",
+          "alt": "Sparta system in room"
+        },
+        {
+          "src": "/media/products/Sparta/sparta6.jpg",
+          "alt": "Sparta close-up"
+        },
+        {
+          "src": "/media/products/Sparta/sparta7.jpg",
+          "alt": "Sparta system side view"
+        },
+        {
+          "src": "/media/products/Sparta/sparta8.jpg",
+          "alt": "Sparta amplifier detail"
+        },
+        {
+          "src": "/media/products/Sparta/sparta9.jpg",
+          "alt": "Sparta system front view"
+        },
+        {
+          "src": "/media/products/Sparta/sparta10.jpg",
+          "alt": "Sparta turntable close-up"
+        },
+        {
+          "src": "/media/products/Sparta/sparta11.jpg",
+          "alt": "Sparta system ambient"
+        },
+        {
+          "src": "/media/products/Sparta/sparta12.jpg",
+          "alt": "Sparta amplifier side view"
+        },
+        {
+          "src": "/media/products/Sparta/sparta13.jpg",
+          "alt": "Sparta system top view"
+        },
+        {
+          "src": "/media/products/Sparta/sparta14.jpg",
+          "alt": "Sparta turntable detail"
+        },
+        {
+          "src": "/media/products/Sparta/sparta15.jpg",
+          "alt": "Sparta system rear view"
+        },
+        {
+          "src": "/media/products/Sparta/sparta16.jpeg",
+          "alt": "Sparta amplifier rear view"
+        }
+      ]
     },
     {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
+      "id": "perpetual",
+      "label": "Perpetual",
+      "items": [
+        {
+          "src": "/media/products/Perpetual/perpetual1.jpg",
+          "alt": "Perpetual turntable"
+        },
+        {
+          "src": "/media/products/Perpetual/perpetual2.jpg",
+          "alt": "Perpetual system"
+        },
+        {
+          "src": "/media/products/Perpetual/perpetual3.jpg",
+          "alt": "Perpetual amplifier"
+        },
+        {
+          "src": "/media/products/Perpetual/perpetual4.jpg",
+          "alt": "Perpetual detail"
+        },
+        {
+          "src": "/media/products/Perpetual/perpetual5.jpg",
+          "alt": "Perpetual system in room"
+        },
+        {
+          "src": "/media/products/Perpetual/perpetual6.jpg",
+          "alt": "Perpetual close-up"
+        },
+        {
+          "src": "/media/products/Perpetual/perpetual7.jpg",
+          "alt": "Perpetual system side view"
+        },
+        {
+          "src": "/media/products/Perpetual/perpetual8.jpg",
+          "alt": "Perpetual amplifier detail"
+        },
+        {
+          "src": "/media/products/Perpetual/perpetual9.jpg",
+          "alt": "Perpetual system front view"
+        },
+        {
+          "src": "/media/products/Perpetual/perpetual10.jpg",
+          "alt": "Perpetual turntable close-up"
+        },
+        {
+          "src": "/media/products/Perpetual/perpetual11.jpg",
+          "alt": "Perpetual system ambient"
+        }
+      ]
     },
     {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
+      "id": "phono",
+      "label": "Phono",
+      "items": [ 
+        {
+          "src": "/media/products/Phono/phono1.jpg",
+          "alt": "Phono turntable"
+        },
+        {
+          "src": "/media/products/Phono/phono2.jpg",
+          "alt": "Phono system"
+        },
+        {
+          "src": "/media/products/Phono/phono3.jpg",
+          "alt": "Phono amplifier"
+        },
+        {
+          "src": "/media/products/Phono/phono4.jpg",
+          "alt": "Phono detail"
+        },
+        {
+          "src": "/media/products/Phono/phono5.jpg",
+          "alt": "Phono system in room"
+        },
+        {
+          "src": "/media/products/Phono/phono6.jpg",
+          "alt": "Phono close-up"
+        },
+        {
+          "src": "/media/products/Phono/phono7.jpg",
+          "alt": "Phono system side view"
+        },
+        {
+          "src": "/media/products/Phono/phono8.jpg",
+          "alt": "Phono amplifier detail"
+        },
+        {
+          "src": "/media/products/Phono/phono9.jpg",
+          "alt": "Phono system front view"
+        },
+        {
+          "src": "/media/products/Phono/phono10.jpg",
+          "alt": "Phono turntable close-up"
+        },
+        {
+          "src": "/media/products/Phono/phono11.jpg",
+          "alt": "Phono system ambient"
+        },
+        {
+          "src": "/media/products/Phono/phono12.jpg",
+          "alt": "Phono amplifier side view"
+        },
+        {
+          "src": "/media/products/Phono/phono13.jpg",
+          "alt": "Phono system top view"
+        }
+      ]
     },
     {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
+      "id": "tonearm",
+      "label": "Tonearm",
+      "items": [
+        {
+          "src": "/media/products/tonearm/tonearm1.jpg",
+          "alt": "Tonearm turntable"
+        },
+        {
+          "src": "/media/products/tonearm/tonearm2.jpg",
+          "alt": "Tonearm system"
+        },
+        {
+          "src": "/media/products/tonearm/tonearm3.jpeg",
+          "alt": "Tonearm amplifier"
+        },
+        {
+          "src": "/media/products/tonearm/tonearm4.jpeg",
+          "alt": "Tonearm detail"
+        }
+      ]
     },
     {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
+      "id": "racks",
+      "label": "Racks & Supports",
+      "items": [
+        {
+          "src": "/media/products/tonearm/RS1.jpg",
+          "alt": "Racks & Supports turntable"
+        },
+        {
+          "src": "/media/products/tonearm/RS2.jpg",
+          "alt": "Racks & Supports system"
+        },
+        {
+          "src": "/media/products/tonearm/RS3.jpg",
+          "alt": "Racks & Supports amplifier"
+        },
+        {
+          "src": "/media/products/tonearm/RS4.jpg",
+          "alt": "Racks & Supports detail"
+        },
+        {
+          "src": "/media/products/tonearm/RS5.jpg",
+          "alt": "Racks & Supports system in room"
+        },
+        {
+          "src": "/media/products/tonearm/RS6.jpg",
+          "alt": "Racks & Supports close-up"
+        }
+      ]
     },
     {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
-    },
-    {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
-    },
-    {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
-    },
-    {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
-    },
-    {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
-    },
-    {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
-    },
-    {
-      "src": "/media/gallery/04.jpg",
-      "alt": "Kronos system in New York"
-    },
-    {
-      "src": "/media/gallery/05.jpg",
-      "alt": "Kronos system detail"
+      "id": "whole",
+      "label": "Whole System",
+      "items": [
+        {
+          "src": "/media/whole/whole1.jpg",
+          "alt": "Whole system turntable"
+        },
+        {
+          "src": "/media/whole/whole2.jpg",
+          "alt": "Whole system system"
+        },
+        {
+          "src": "/media/whole/whole3.jpeg",
+          "alt": "Whole system amplifier"
+        }
+      ]
     }
-  ]
+  ],
+  "caption": "Images shown may include optional configurations."
 }
