@@ -99,9 +99,9 @@ export function HeaderHeroShell({ locale, navItems }: Props) {
             )}
           </nav>
 
-          <div className="text-xs text-neutral-300 border border-neutral-700 rounded-full px-4 py-1">
+          {/* <div className="text-xs text-neutral-300 border border-neutral-700 rounded-full px-4 py-1">
             LANG {locale.toUpperCase()}
-          </div>
+          </div> */}
         </div>
       </div>
 

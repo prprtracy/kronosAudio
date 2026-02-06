@@ -75,15 +75,21 @@ export default async function ProductDetailPage({ params }: PageProps) {
       <ProductHero data={hero} />
 
 
-      {/* 你已有的 Intro / Endorsements / Specs 组件，直接串起来 */}
-      <section id ="overview">
-
+      <section
+        id="design"
+        style={{
+          ["--background" as any]: "#ffffff",
+          ["--foreground" as any]: "#000000"
+          
+          }}>
         <ProductIntro
           title="Overview"
-          paragraphs={(product.description ?? []).slice(0, 3)}
+          paragraphs={(product.introParagraphs ?? []).slice(0, 3)}
+          note={(product as any).introNote}
+          variant="light"
         />
-
       </section>
+
 
       <section id="design">
 

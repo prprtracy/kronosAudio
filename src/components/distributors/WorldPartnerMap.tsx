@@ -42,7 +42,7 @@ export function WorldPartnerMap({ partners, activeId, onActivate }: Props) {
 
   const graticule = useMemo(() => geoGraticule10(), []);
 
-  // 轻量 jitter：避免同城市/近点重叠（克制但有效）
+  // subtle jitter to avoid overlap
   const points = useMemo(() => {
     const jitter = (i: number) => (i % 2 === 0 ? 1 : -1) * (2 + (i % 5));
     return partners
@@ -66,17 +66,30 @@ export function WorldPartnerMap({ partners, activeId, onActivate }: Props) {
   return (
     <div className="relative">
       <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-auto">
-        {/* Background */}
+        {/* Transparent background (card controls the white) */}
         <rect x="0" y="0" width={width} height={height} fill="transparent" />
 
-        {/* Sphere subtle */}
-        <path d={path({ type: "Sphere" } as any) ?? ""} fill="rgba(255,255,255,0.02)" />
+        {/* Sphere (very subtle) */}
+        <path
+          d={path({ type: "Sphere" } as any) ?? ""}
+          fill="#F7F7F7"
+        />
 
         {/* Graticule */}
-        <path d={path(graticule as any) ?? ""} fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
+        <path
+          d={path(graticule as any) ?? ""}
+          fill="none"
+          stroke="#D0D0D0"
+          strokeWidth={0.6}
+        />
 
         {/* Land */}
-        <path d={path(land) ?? ""} fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.10)" strokeWidth="1" />
+        <path
+          d={path(land) ?? ""}
+          fill="#E4E4E4"
+          stroke="#FFFFFF"
+          strokeWidth={0.8}
+        />
 
         {/* Points */}
         {points.map((p) => {
@@ -88,24 +101,28 @@ export function WorldPartnerMap({ partners, activeId, onActivate }: Props) {
 
           return (
             <g key={p.id}>
-              {/* outer glow ring */}
+              {/* outer glow */}
               <circle
                 cx={p.x}
                 cy={p.y}
                 r={isActive || isHover ? r + 7 : r + 5}
-                fill="rgba(245,158,11,0.08)"
+                fill="rgba(245,158,11,0.10)"
               />
               <circle
                 cx={p.x}
                 cy={p.y}
                 r={isActive || isHover ? r + 3 : r + 2}
-                fill="rgba(245,158,11,0.12)"
+                fill="rgba(245,158,11,0.18)"
               />
               <circle
                 cx={p.x}
                 cy={p.y}
                 r={r}
-                fill={isActive || isHover ? "rgba(245,158,11,0.95)" : "rgba(245,158,11,0.72)"}
+                fill={
+                  isActive || isHover
+                    ? "rgba(245,158,11,0.95)"
+                    : "rgba(245,158,11,0.75)"
+                }
                 className="cursor-pointer"
                 onMouseEnter={() => setHoverId(p.id)}
                 onMouseLeave={() => setHoverId(null)}
@@ -121,8 +138,8 @@ export function WorldPartnerMap({ partners, activeId, onActivate }: Props) {
         <div
           className={clsx(
             "absolute pointer-events-none",
-            "rounded-2xl border border-neutral-700 bg-black/70 backdrop-blur-md",
-            "px-4 py-3"
+            "rounded-2xl border border-neutral-300 bg-white/95 backdrop-blur-md",
+            "px-4 py-3 shadow-lg"
           )}
           style={{
             left: `${(tooltip.x / width) * 100}%`,
@@ -130,9 +147,13 @@ export function WorldPartnerMap({ partners, activeId, onActivate }: Props) {
             transform: "translate(14px, -50%)",
           }}
         >
-          <div className="text-[12px] uppercase tracking-[0.22em] text-neutral-300/70">Partner</div>
-          <div className="mt-1 text-sm font-semibold text-white">{tooltip.name}</div>
-          <div className="mt-1 text-xs text-neutral-300/80">
+          <div className="text-[11px] uppercase tracking-[0.22em] text-neutral-500">
+            Partner
+          </div>
+          <div className="mt-1 text-sm font-semibold text-neutral-900">
+            {tooltip.name}
+          </div>
+          <div className="mt-1 text-xs text-neutral-600">
             {tooltip.city}, {tooltip.country}
           </div>
         </div>

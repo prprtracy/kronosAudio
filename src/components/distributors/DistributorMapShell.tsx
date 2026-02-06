@@ -46,18 +46,25 @@ export function DistributorMapShell({ data }: Props) {
       </div>
 
       {/* Map Card */}
-      <div className="rounded-3xl border border-neutral-800 bg-black/40 backdrop-blur-md overflow-hidden">
-        <div className="p-4 sm:p-6">
-          <WorldPartnerMap
-            partners={partners}
-            activeId={activeId}
-            onActivate={(id) => setActiveId(id)}
-          />
-          <div className="mt-3 text-[12px] text-neutral-300/70">
-            A curated view of selected partners. Full directory is listed below.
-          </div>
-        </div>
-      </div>
+{/* Map Section */}
+<section className="mt-12">
+  <div
+    className={clsx(
+      "rounded-3xl overflow-hidden",
+      "bg-white",
+      "ring-1 ring-black/10"
+    )}
+  >
+    <div className="p-4 sm:p-6">
+      <WorldPartnerMap
+        partners={partners}
+        activeId={activeId}
+        onActivate={setActiveId}
+      />
+    </div>
+  </div>
+</section>
+
 
       {/* Mobile tap card / Desktop selected */}
       {active && <ActivePartnerCard partner={active} onClose={() => setActiveId(null)} />}

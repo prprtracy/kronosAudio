@@ -123,101 +123,100 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
           </div>
 
           {/* Image / Hero Gallery */}
-{/* Image / Hero Gallery */}
-<div className="md:col-span-6 lg:col-span-7">
-  <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/10">
-    {/* overlays */}
-    <div className="pointer-events-none absolute inset-0 z-10">
-      <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-black/35" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.10),rgba(0,0,0,0)_55%)]" />
-    </div>
+          <div className="md:col-span-6 lg:col-span-7">
+            <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/10">
+              {/* overlays */}
+              <div className="pointer-events-none absolute inset-0 z-10">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-black/35" />
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.10),rgba(0,0,0,0)_55%)]" />
+              </div>
 
-    {/* Image */}
-    <Image
-      key={gallery[index].src}
-      src={gallery[index].src}
-      alt={gallery[index].alt ?? image.alt}
-      width={1600}
-      height={1100}
-      priority={index === 0 && (image.priority ?? true)}
-      loading={index === 0 ? "eager" : "lazy"}
-      fetchPriority={index === 0 ? "high" : "auto"}
-      sizes="(min-width: 1024px) 58vw, (min-width: 768px) 50vw, 100vw"
-      className="h-[320px] w-full object-cover md:h-[420px] lg:h-[520px]"
-    />
-
-    {/* Controls */}
-    {gallery.length > 1 && (
-      <>
-        {/* Prev / Next */}
-        <button
-          type="button"
-          aria-label="Previous image"
-          onClick={() =>
-            setIndex((i) => (i === 0 ? gallery.length - 1 : i - 1))
-          }
-          className={clsx(
-            "absolute left-4 top-1/2 z-20 -translate-y-1/2",
-            "h-9 w-9 rounded-full",
-            "border border-white/10 bg-black/35 backdrop-blur",
-            "text-white/80 hover:text-white hover:bg-black/45",
-            "transition-colors"
-          )}
-        >
-          ‹
-        </button>
-
-        <button
-          type="button"
-          aria-label="Next image"
-          onClick={() =>
-            setIndex((i) => (i === gallery.length - 1 ? 0 : i + 1))
-          }
-          className={clsx(
-            "absolute right-4 top-1/2 z-20 -translate-y-1/2",
-            "h-9 w-9 rounded-full",
-            "border border-white/10 bg-black/35 backdrop-blur",
-            "text-white/80 hover:text-white hover:bg-black/45",
-            "transition-colors"
-          )}
-        >
-          ›
-        </button>
-
-        {/* Bottom controls */}
-        <div className="absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between">
-          {/* dots */}
-          <div className="flex items-center gap-2">
-            {gallery.map((_, i) => (
-              <button
-                key={`hero-dot-${i}`}
-                type="button"
-                aria-label={`Go to image ${i + 1}`}
-                onClick={() => setIndex(i)}
-                className={clsx(
-                  "h-2 rounded-full transition-all",
-                  i === index
-                    ? "w-6 bg-amber-300/80"
-                    : "w-2 bg-white/25 hover:bg-white/40"
-                )}
+              {/* Image */}
+              <Image
+                key={gallery[index].src}
+                src={gallery[index].src}
+                alt={gallery[index].alt ?? image.alt}
+                width={1600}
+                height={1100}
+                priority={index === 0 && (image.priority ?? true)}
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchPriority={index === 0 ? "high" : "auto"}
+                sizes="(min-width: 1024px) 58vw, (min-width: 768px) 50vw, 100vw"
+                className="h-[320px] w-full object-cover md:h-[420px] lg:h-[520px]"
               />
-            ))}
-          </div>
 
-          {/* index */}
-          <div className="text-[10px] tracking-[0.28em] uppercase text-white/60">
-            {index + 1}/{gallery.length}
-          </div>
-        </div>
-      </>
-    )}
-  </div>
+              {/* Controls */}
+              {gallery.length > 1 && (
+                <>
+                  {/* Prev / Next */}
+                  <button
+                    type="button"
+                    aria-label="Previous image"
+                    onClick={() =>
+                      setIndex((i) => (i === 0 ? gallery.length - 1 : i - 1))
+                    }
+                    className={clsx(
+                      "absolute left-4 top-1/2 z-20 -translate-y-1/2",
+                      "h-9 w-9 rounded-full",
+                      "border border-white/10 bg-black/35 backdrop-blur",
+                      "text-white/80 hover:text-white hover:bg-black/45",
+                      "transition-colors"
+                    )}
+                  >
+                    ‹
+                  </button>
 
-  <p className="mt-3 text-xs tracking-[0.18em] text-white/50">
-    {(keyline ??
-      "COUNTER-ROTATION · SUSPENDED · HAND-FINISHED").toUpperCase()}
-  </p>
-</div>
+                  <button
+                    type="button"
+                    aria-label="Next image"
+                    onClick={() =>
+                      setIndex((i) => (i === gallery.length - 1 ? 0 : i + 1))
+                    }
+                    className={clsx(
+                      "absolute right-4 top-1/2 z-20 -translate-y-1/2",
+                      "h-9 w-9 rounded-full",
+                      "border border-white/10 bg-black/35 backdrop-blur",
+                      "text-white/80 hover:text-white hover:bg-black/45",
+                      "transition-colors"
+                    )}
+                  >
+                    ›
+                  </button>
+
+                  {/* Bottom controls */}
+                  <div className="absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between">
+                    {/* dots */}
+                    <div className="flex items-center gap-2">
+                      {gallery.map((_, i) => (
+                        <button
+                          key={`hero-dot-${i}`}
+                          type="button"
+                          aria-label={`Go to image ${i + 1}`}
+                          onClick={() => setIndex(i)}
+                          className={clsx(
+                            "h-2 rounded-full transition-all",
+                            i === index
+                              ? "w-6 bg-amber-300/80"
+                              : "w-2 bg-white/25 hover:bg-white/40"
+                          )}
+                        />
+                      ))}
+                    </div>
+
+                    {/* index */}
+                    <div className="text-[10px] tracking-[0.28em] uppercase text-white/60">
+                      {index + 1}/{gallery.length}
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
+
+            <p className="mt-3 text-xs tracking-[0.18em] text-white/50">
+              {(keyline ??
+                "COUNTER-ROTATION · SUSPENDED · HAND-FINISHED").toUpperCase()}
+            </p>
+          </div>
 
         </div>
 

@@ -30,7 +30,7 @@ export type Product = {
   name: string;
   tagline?: string;
   description: string[];
-
+  introParagraphs?: string[];
   // ✅ 约定：缺失 = 没价格；不要 null
   msrp?: Money;
   upgradeKit?: Money;

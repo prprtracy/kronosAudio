@@ -165,6 +165,10 @@
         "Our no-frills platform … an entry to the world of KRONOS.",
         "Unique to behold, the Sparta is essentially two complete turntables—each including a skeletal, metal-framed plinth fabricated of solid aluminum boards."
       ],
+      "introParagraphs": [
+        "The Sparta turntable is the embodiment of Kronos Audio’s core design principles, distilled into their purest form. Built to disappear into silence—so the recording remains. Every surface, every interface, every tolerance exists for one purpose: to preserve time.",
+        "At the heart of the Sparta are two counter-rotating platters, each driven by its own motor and suspended from above by a network of elastomers that isolate the mechanism from external vibrations. The result is a level of speed stability and resonance control that belies the Sparta’s modest price point."
+      ],
       "msrp": { "amount": 24000, "currency": "USD", "display": "24,000 USD" },
       "gallery": ["/media/products/Sparta/sparta1.jpg",
         "/media/products/Sparta/sparta11.jpg",
@@ -217,11 +221,19 @@
         { "key": "Elastomers",
           "value": "317 o-rings , viton/silicone proprietary mix" }
       ],
+      "introNote": {
+        "label": "Notes",
+        "copy": [
+          "Built to disappear into silence—so the recording remains.",
+          "Every surface, every interface, every tolerance exists for one purpose: to preserve time."
+        ],
+        "signature": "Hand-finished · Reference platform"
+      },
       "reviews": [
         {
           "sourceName": "The Absolute Sound",
           "quote": "I’ve never before been treated to vinyl playback from any system I’ve owned that is as clearly and profoundly moving as what I am now hearing...",
-          "imageUrl": "", 
+          "imageUrl": "",
           "sourceUrl": ""
         },
         {

@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/layout/SiteHeader";
 import { getFooter } from "@/lib/footer";
 
 import { Footer } from "@/components/layout/Footer";
+import { BackToTop } from "@/components/ui/BackToTop";
 
 type LayoutParams = { locale: string }; // 放宽，符合 Next 生成类型
 
@@ -25,6 +26,8 @@ export default async function LocaleLayout({
       <SiteHeader locale={safeLocale} />
       {children}
       <Footer content={footer} />
+
+      <BackToTop />
     </>
   );
 }
