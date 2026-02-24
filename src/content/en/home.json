@@ -73,16 +73,6 @@
           "target": "_self"
         }
       ]
-
-    },
-    {
-      "id": "invitation",
-      "eyebrow": "The Invitation",
-      "headline": "The Kronos World",
-      "copy": [
-        "Join a curated family of connoisseurs.",
-        "We invite you to look deeper."
-      ]
     }
   ]
 }
