@@ -9,7 +9,7 @@
         "Our flagship two tonearm platform featuring a radically new exo-skeleton chassis system designed to minimize resonances and optimize isolation.",
         "Kronos developed a wholly new way to attach the chassis to the suspension system, using completely different soft clamping methods."
       ],
-      "msrp": { "amount": 120000, "currency": "USD", "display": "120,000 USD" },
+      
       "gallery": [  
         "/media/products/Discovery/discovery6.jpg",
         "/media/products/Discovery/discovery13.jpeg",
@@ -76,10 +76,9 @@
       "description": [
         "Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point."
       ],
-      "gallery": ["/media/products/Perpetual/perpetual1.jpg",
+      "gallery": [
         "/media/products/Perpetual/perpetual2.jpg",
-        "/media/products/Perpetual/perpetual10.jpg",
-        "/media/products/Perpetual/perpetual4.jpg"
+        "/media/products/Perpetual/perpetual5.jpg"
       ],
       "downloads": [],
       "specs": [],
@@ -94,8 +93,9 @@
       "description": [
         "The original Kronos reference turntable. The PRO set a new standard in analogue reproduction by combining counter-rotation and overhead suspension."
       ],
-      "gallery": ["/media/products/Kronos Pro/pro1.jpg",
+      "gallery": ["/media/products/Kronos Pro/pro6.jpg",
         "/media/products/Kronos Pro/pro8.jpg"
+        
       ],
       "downloads": [
         { "label": "Download Assembly Instructions", 
@@ -169,10 +169,8 @@
         "The Sparta turntable is the embodiment of Kronos Audio’s core design principles, distilled into their purest form. Built to disappear into silence—so the recording remains. Every surface, every interface, every tolerance exists for one purpose: to preserve time.",
         "At the heart of the Sparta are two counter-rotating platters, each driven by its own motor and suspended from above by a network of elastomers that isolate the mechanism from external vibrations. The result is a level of speed stability and resonance control that belies the Sparta’s modest price point."
       ],
-      "msrp": { "amount": 24000, "currency": "USD", "display": "24,000 USD" },
-      "gallery": ["/media/products/Sparta/sparta1.jpg",
-        "/media/products/Sparta/sparta11.jpg",
-        "/media/products/Sparta/sparta13.jpg",
+    
+      "gallery": ["/media/products/Sparta/sparta13.jpg",
         "/media/products/Sparta/sparta14.jpg"
       ],
       "downloads": [
@@ -263,7 +261,11 @@
       "name": "Tonearms",
       "tagline": "RS Technology",
       "description": ["Patented RS technology Tonearm."],
-      "gallery": ["/media/products/tonearm/tonearm1.jpg"],
+      "gallery": ["/media/products/tonearm/RS2.jpg",
+                  "/media/products/Sparta/sparta1.jpg",
+                  "/media/products/tonearm/RS1.jpg"
+                  
+                ],
       "downloads": [],
       "specs": [],
       "reviews": []
@@ -278,10 +280,10 @@
         "Reference phono stages designed to preserve the integrity of the analog signal.",
         "Engineered for low noise, accurate gain, and tonal neutrality."
       ],
-      "gallery": ["/media/products/Phono/phono6.jpg",
-        "/media/products/Phono/phono7.jpg",
-        "/media/products/Phono/phono8.jpg",
-        "/media/products/Phono/phono9.jpg"
+      "gallery": ["/media/products/Phono/phono10.jpg",
+        "/media/products/Phono/phono12.jpg",
+        "/media/products/Phono/phono3.jpg",
+        "/media/products/Phono/phono5.jpg"
   ],
       "downloads": [],
       "specs": [],
@@ -291,12 +293,12 @@
     {
       "id": "racks",
       "slug": "racks",
-      "name": "Racks & Supports",
+      "name": "Full Analogue Solution",
       "tagline": "Engineered Foundations",
       "description": [
         "Engineered foundations that control vibration and preserve mechanical integrity, allowing Kronos systems to perform at their highest level."
       ],
-      "gallery": ["/media/products/tonearm/RS1.jpg"],
+      "gallery": ["/media/whole/whole2.jpg"],
       "downloads": [],
       "specs": [],
       "reviews": []

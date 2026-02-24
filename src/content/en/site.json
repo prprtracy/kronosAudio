@@ -4,7 +4,12 @@
   "nav": {
     "items": [
       { "id": "home", "label": "HOME", "behavior": "link", "href": "/" },
-
+      {
+        "id": "award",
+        "label": "AWARDS",
+        "behavior": "link",
+        "href": "/award"
+      },
       {
         "id": "products",
         "label": "Products",

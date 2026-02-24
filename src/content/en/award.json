@@ -1,0 +1,64 @@
+{
+  "eyebrow": "Awards & Recognition",
+  "headline": "KRONOS REWARDS",
+  "intro": [
+    "Kronos is renowned for its ultimate customer service. "
+  ],
+  "sections": [
+    {
+      "id": "whole",
+      "label": "",
+      "items": [
+        {
+          "src": "/media/rewards/reward1.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "src": "/media/rewards/reward2.jpg",
+          "alt": "Kronos award"
+        },
+        {
+          "src": "/media/rewards/reward3.jpg",
+          "alt": "Kronos trophy"
+        },
+        {
+          "src": "/media/rewards/reward4.jpg",
+          "alt": "Kronos recognition"
+        },
+        {
+          "src": "/media/rewards/reward5.jpg",
+          "alt": "Kronos exhibition"
+        },
+        {
+          "src": "/media/rewards/reward6.jpg",
+          "alt": "Kronos presentation"
+        },
+        {
+          "src": "/media/rewards/reward7.jpg",
+          "alt": "Kronos event"
+        },
+        {
+          "src": "/media/rewards/reward8.jpg",
+          "alt": "Kronos celebration"
+        },
+        {
+          "src": "/media/rewards/reward9.jpg",
+          "alt": "Kronos honor"
+        },
+        {
+          "src": "/media/rewards/reward10.jpg",
+          "alt": "Kronos distinction"
+        },
+        {
+          "src": "/media/rewards/reward11.jpg",
+          "alt": "Kronos accolade"
+        },
+        {
+          "src": "/media/rewards/reward12.jpeg",
+          "alt": "Kronos fame"
+        }
+      ]
+    }
+  ],
+  "caption": "Images shown may include optional configurations."
+}

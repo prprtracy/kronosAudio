@@ -6,7 +6,7 @@
       "headline": "Time Suspended",
       "copy": [],
       "posterSrc": "/media/home/hero-time.jpg",
-      "overlayGradient": "from-black/80 via-black/35 to-black/90"
+      "overlayGradient": "from-black/60 via-black/20 to-black/80"
     },
      {
       "id": "philosophy",
@@ -16,11 +16,8 @@
         "Introduced 15 years ago, Kronos Audio's turntables are the standard by which every analogue front end is measured.",
         "Kronos are known for their counter-rotating dual platter suspended turntable design, which provides unparalleled stability and extracts more musical information from vinyl records.",
         "This patented unique design minimizes torque forces induced vibrations, resulting in a more organic and clear sound.",
-        "A design that extracts not just sound", "but the organic truth of music.",
-        " ",
-        "Our goal has always been singular:",   
-        "to achieve a non-compromise analogue playback quality in all our products. From the SPARTA entry level turntable to our flagship DISCOVERY, ",
-        "from our power Super Capacitor Power Supplies, to our patented technology RS tonearms and from our racks, every design choice has constantly pointed in this direction. "
+        "A design that extracts not just sound, but the organic truth of music.",
+        "Our goal has always been singular: to achieve a non-compromise analogue playback quality in all our products. From the SPARTA entry level turntable to our flagship DISCOVERY, from our power Super Capacitor Power Supplies, to our patented technology RS tonearms and from our racks, every design choice has constantly pointed in this direction. "
       ],
       "posterSrc": "",
       "overlayGradient": "from-black/80 via-black/35 to-black/90"
@@ -28,13 +25,12 @@
     {
       "id": "innovation",
       "eyebrow": "Technology",
-      "headline": "Awarded over time",
+      "headline": "Time Honoured",
       "copy": [
-        "Kronos has received over 100 Best Sound of Show awards, glowing reviews from renowned reviewers all over the world,", 
-        "as well as Product of the Year Awards from publications such as HIFI+, Harry Pearson Soundings, Positive Feedback, Enjoy the Music, Absolute Sound, The Audio Analyst and AV Showrooms… to name a few."
+        "Kronos has received over 100 Best Sound of Show awards, glowing reviews from renowned reviewers all over the world, as well as Product of the Year Awards from publications such as HIFI+, Harry Pearson Soundings, Positive Feedback, Enjoy the Music, Absolute Sound, The Audio Analyst and AV Showrooms… to name a few."
       ],
       "posterSrc": "/media/home/innovation.jpg",
-      "overlayGradient": "from-black/80 via-black/35 to-black/90"
+      "overlayGradient": "from-black/30 via-black/10 to-black/40"
     },
     {
       "id": "legacy",
@@ -49,17 +45,17 @@
       "view": "grid4",
       "grid4Variant": "cinematic",
       "images": [
-        "/media/home/LouisWithPerpetual.jpg",
-        "/media/home/office1.jpg",
-        "/media/home/office2.jpeg",
-        "/media/home/office3.jpeg"
+        "/media/home/pro6.jpg",
+        "/media/home/sparta14.jpg",
+        "/media/home/perpetual2.jpg",
+        "/media/home/discovery2.jpg"
       ],
       "imagesCaption": "Evolution over time"
     },
     {
       "id": "recognition",
       "eyebrow": "The Recognition",
-      "headline": "ATime will bring us together",
+      "headline": "Time tested firendships",
       "copy": [
         "Kronos is renowned for its ultimate customer service. ",
         "Countless Kronos owners have become friends in music. Our pledge to keep our family happy over time.",
@@ -70,69 +66,14 @@
 
       "view": "slideshow",
       "slideshowVariant": "awards",
-      "slideshowAutoplayMs": 1500,
-      "slides": [
+      "actions": [
         {
-          "type": "image",
-          "src": "/media/rewards/reward1.jpg",
-          "alt": "Kronos at a show"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward2.jpg",
-          "alt": "Kronos award"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward3.jpg",
-          "alt": "Kronos trophy"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward4.jpg",
-          "alt": "Kronos recognition"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward5.jpg",
-          "alt": "Kronos exhibition"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward6.jpg",
-          "alt": "Kronos presentation"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward7.jpg",
-          "alt": "Kronos event"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward8.jpg",
-          "alt": "Kronos celebration"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward9.jpg",
-          "alt": "Kronos honor"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward10.jpg",
-          "alt": "Kronos distinction"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward11.jpg",
-          "alt": "Kronos accolade"
-        },
-        {
-          "type": "image",
-          "src": "/media/rewards/reward12.jpeg",
-          "alt": "Kronos fame"
+          "label": "See the awards",
+          "href": "/award",
+          "target": "_self"
         }
       ]
+
     },
     {
       "id": "invitation",
