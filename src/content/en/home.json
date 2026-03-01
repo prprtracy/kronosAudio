@@ -2,9 +2,9 @@
   "narrative": [
     {
       "id": "philosophy",
-      "eyebrow": "ULTIMATE ANALOGUE SOURCES",
-      "headline": "Time Suspended",
-      "copy": [],
+      "headline": "ULTIMATE ANALOGUE SOURCES",
+      "copy": ["Introduced 15 years ago, Kronos Audio's turntables are the standard by which every analogue front end is measured.",
+        "Kronos are known for their counter-rotating dual platter suspended turntable design, which provides unparalleled stability and extracts more musical information from vinyl records."],
       "posterSrc": "/media/home/hero-time.jpg",
       "overlayGradient": "from-black/60 via-black/20 to-black/80"
     },
@@ -13,13 +13,19 @@
       "eyebrow": "The Legacy",
       "headline": "Timeless Design",
       "copy": [
-        "Introduced 15 years ago, Kronos Audio's turntables are the standard by which every analogue front end is measured.",
-        "Kronos are known for their counter-rotating dual platter suspended turntable design, which provides unparalleled stability and extracts more musical information from vinyl records.",
+        
         "This patented unique design minimizes torque forces induced vibrations, resulting in a more organic and clear sound.",
         "A design that extracts not just sound, but the organic truth of music.",
         "Our goal has always been singular: to achieve a non-compromise analogue playback quality in all our products. From the SPARTA entry level turntable to our flagship DISCOVERY, from our power Super Capacitor Power Supplies, to our patented technology RS tonearms and from our racks, every design choice has constantly pointed in this direction. "
       ],
-      "posterSrc": "",
+       "view": "grid4",
+      "grid4Variant": "cinematic",
+      "images": [
+        "/media/Disvo.jpg",
+        "/media/Perp.jpg",
+        "/media/pro.jpg",
+        "/media/spartaSpec1.jpeg"
+      ],
       "overlayGradient": "from-black/80 via-black/35 to-black/90"
     },
     {
@@ -30,7 +36,14 @@
         "Kronos has received over 100 Best Sound of Show awards, glowing reviews from renowned reviewers all over the world, as well as Product of the Year Awards from publications such as HIFI+, Harry Pearson Soundings, Positive Feedback, Enjoy the Music, Absolute Sound, The Audio Analyst and AV Showrooms… to name a few."
       ],
       "posterSrc": "/media/home/innovation.jpg",
-      "overlayGradient": "from-black/30 via-black/10 to-black/40"
+      "overlayGradient": "from-black/30 via-black/10 to-black/40",
+      "actions": [
+        {
+          "label": "Discover our Awards",
+          "href": "/award",
+          "target": "_self"
+        }
+      ]
     },
     {
       "id": "legacy",
@@ -50,7 +63,14 @@
         "/media/home/perpetual2.jpg",
         "/media/home/discovery2.jpg"
       ],
-      "imagesCaption": "Evolution over time"
+      "imagesCaption": "Evolution over time",
+      "actions": [
+        {
+          "label": "Explore our products",
+          "href": "/products",
+          "target": "_self"
+        }
+      ]
     },
     {
       "id": "recognition",
@@ -66,13 +86,187 @@
 
       "view": "slideshow",
       "slideshowVariant": "awards",
-      "actions": [
+      "slideshowAutoplayMs": 1500,
+      "slides": [
         {
-          "label": "See the awards",
-          "href": "/award",
-          "target": "_self"
+          "type": "image",
+          "src": "/media/friendShip/friend_15.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_30.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_1.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_211.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_311.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_4.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_5.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_6.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_7.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_8.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_9.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_10.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_11.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_12.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_13.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_14.jpg",
+          "alt": "Kronos at a show"
+        },
+        
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_16.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_17.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_18.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_191.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_20.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_21.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_22.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_23.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_24.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_251.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_26.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_27.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_28.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_291.jpg",
+          "alt": "Kronos at a show"
+        },
+        
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_31.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_32.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_33.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_34.jpg",
+          "alt": "Kronos at a show"
+        },
+        {
+          "type": "image",
+          "src": "/media/friendShip/friend_35.jpg",
+          "alt": "Kronos at a show"
         }
       ]
+      
     }
   ]
 }
