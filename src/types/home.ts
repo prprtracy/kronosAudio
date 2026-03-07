@@ -44,6 +44,8 @@ export type HomeNarrativeSection = {
   slideshowAutoplayMs?: number; // e.g. 4500
   actions?: HomeNarrativeAction[];
   slides?: HomeSlide[];
+  contentSide?: "left" | "right";
+
 };
 
       // saving for later if we want to do a slideshow of awards instead of images

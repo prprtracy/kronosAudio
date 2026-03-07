@@ -304,6 +304,8 @@ export function HomeNarrative({
       {sections.map((s: HomeNarrativeSection, idx: number) => {
         const isHero = idx === 0;
 
+        const contentSide = s.contentSide ?? "left";
+        const isTextRight = contentSide === "right";
         const isGrid4 =
           s.view === "grid4" && Array.isArray(s.images) && s.images.length >= 4;
 
@@ -314,6 +316,8 @@ export function HomeNarrative({
         const isSlideshow = s.view === "slideshow" && slides.length > 0;
         const totalSlides = slides.length;
         const activeIndex = slideIndexById[s.id] ?? 0;
+
+        const hasVisualPanel = isGrid4 || isSlideshow;
 
         // autoplay per section
         // ✅ 注意：这里仍在 map 里，但我们不再使用 useEffect/useMemo（避免 hook 规则问题）
@@ -393,12 +397,13 @@ export function HomeNarrative({
                   )}
                 >
                   {/* LEFT — Text */}
-                  <div
-                    className={clsx(
-                      "max-w-2xl",
-                      isGrid4 || isSlideshow ? "max-w-none" : ""
-                    )}
-                  >
+                    <div
+                      className={clsx(
+                        "max-w-2xl",
+                        hasVisualPanel && "max-w-none",
+                        hasVisualPanel && (isTextRight ? "lg:order-2" : "lg:order-1")
+                      )}
+                    >
                     {s.eyebrow && (
                       <p className="text-[11px] tracking-[0.3em] uppercase text-amber-400/90 mb-4">
                         {s.eyebrow}
@@ -433,7 +438,12 @@ export function HomeNarrative({
 
                   {/* RIGHT — Grid4 view */}
                   {isGrid4 && (
-                    <div className="hidden lg:block">
+                    <div
+                      className={clsx(
+                        "hidden lg:block",
+                        isTextRight ? "lg:order-1" : "lg:order-2"
+                      )}
+                    >
                       <div
                         className={clsx(
                           "grid grid-cols-2 gap-4",
@@ -488,15 +498,17 @@ export function HomeNarrative({
 
                   {/* RIGHT — Slideshow / Slice view */}
                   {isSlideshow && (
-                    <SlideshowPanel
-                      s={s}
-                      slides={slides}
-                      activeIndex={activeIndex}
-                      totalSlides={totalSlides}
-                      onPrev={goPrev}
-                      onNext={goNext}
-                      onGoTo={goTo}
-                    />
+                    <div className={clsx(isTextRight ? "lg:order-1" : "lg:order-2")}>
+                      <SlideshowPanel
+                        s={s}
+                        slides={slides}
+                        activeIndex={activeIndex}
+                        totalSlides={totalSlides}
+                        onPrev={goPrev}
+                        onNext={goNext}
+                        onGoTo={goTo}
+                      />
+                    </div>
                   )}
                 </div>
               </div>

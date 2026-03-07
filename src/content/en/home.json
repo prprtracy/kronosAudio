@@ -18,7 +18,7 @@
         "A design that extracts not just sound, but the organic truth of music.",
         "Our goal has always been singular: to achieve a non-compromise analogue playback quality in all our products. From the SPARTA entry level turntable to our flagship DISCOVERY, from our power Super Capacitor Power Supplies, to our patented technology RS tonearms and from our racks, every design choice has constantly pointed in this direction. "
       ],
-       "view": "grid4",
+      "view": "grid4",
       "grid4Variant": "cinematic",
       "images": [
         "/media/Disvo.jpg",
@@ -26,7 +26,8 @@
         "/media/pro.jpg",
         "/media/spartaSpec1.jpeg"
       ],
-      "overlayGradient": "from-black/80 via-black/35 to-black/90"
+      "overlayGradient": "from-black/80 via-black/35 to-black/90",
+      "contentSide": "right"
     },
     {
       "id": "innovation",
@@ -70,7 +71,8 @@
           "href": "/products",
           "target": "_self"
         }
-      ]
+      ],
+      "contentSide": "right"
     },
     {
       "id": "recognition",
