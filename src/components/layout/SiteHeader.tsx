@@ -5,5 +5,5 @@ import { HeaderHeroShell } from "./HeaderHeroShell";
 
 export async function SiteHeader({ locale }: { locale: Locale }) {
   const navItems = await getNav(locale);
-  return <HeaderHeroShell locale={locale} navItems={navItems} />;
+  return <HeaderHeroShell navItems={navItems} />;
 }

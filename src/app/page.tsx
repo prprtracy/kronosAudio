@@ -1,20 +1,8 @@
-// src/app/page.tsx
-// import { DistributorsMap } from "@/components/DistributorsMap";
+import { getHomeNarrative } from "@/lib/home";
+import { HomeNarrative } from "@/components/home/HomeNarrative";
 
 export default async function HomePage() {
-  return (
-    <main className="min-h-screen bg-black text-white">
-      {/* TODO: Hero, 产品、介绍等区块 */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <h1 className="text-4xl md:text-5xl font-semibold mb-4">
-          Kronos High-End Turntables
-        </h1>
-        <p className="text-lg text-gray-300 mb-8">
-          Where mechanical precision meets musical emotion.
-        </p>
-      </section>
+  const sections = await getHomeNarrative("en"); // 先临时写死
 
-      {/* <DistributorsMap /> */}
-    </main>
-  );
+  return <HomeNarrative sections={sections} locale="en" />;
 }

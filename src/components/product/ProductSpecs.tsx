@@ -26,7 +26,7 @@ export function ProductSpecs({
           "bg-zinc-950 ring-1 ring-white/10"
         )}
       >
-        <details className="group">
+        <details className="group" open>
           <summary
             className={clsx(
               "cursor-pointer select-none list-none",

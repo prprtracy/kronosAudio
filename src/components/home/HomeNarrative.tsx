@@ -23,18 +23,12 @@ function clamp(n: number, min: number, max: number) {
  * - 外链: https://... 原样返回
  * - 内链: 支持 "/products" 或 "products" -> "/{locale}/products"
  */
-function toHref(locale: string, href: string) {
+
+function toHref(_locale: string, href: string) {
   if (!href) return "#";
   if (href.startsWith("http://") || href.startsWith("https://")) return href;
 
-  // normalize
-  const path = href.startsWith("/") ? href : `/${href}`;
-
-  // 已经包含 locale（比如 /en/...）就不重复
-  const maybeLocalePrefix = `/${locale}/`;
-  if (path === `/${locale}` || path.startsWith(maybeLocalePrefix)) return path;
-
-  return `/${locale}${path}`;
+  return href.startsWith("/") ? href : `/${href}`;
 }
 
 function ActionButtons({

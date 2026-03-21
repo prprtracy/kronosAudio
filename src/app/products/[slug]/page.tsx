@@ -1,7 +1,4 @@
-// app/[locale]/products/[slug]/page.tsx
 import { notFound } from "next/navigation";
-import { locales, type Locale } from "@/i18n";
-// import { products } from "@/data/products";
 
 import { getProducts } from "@/lib/products";
 import { ProductHero } from "@/components/product/ProductHero";
@@ -9,30 +6,26 @@ import { ProductIntro } from "@/components/product/ProductIntro";
 import { ProductEndorsements } from "@/components/product/ProductEndorsements";
 import { ProductSpecs } from "@/components/product/ProductSpecs";
 import { ProductAnchorNav } from "@/components/product/ProductAnchorNav";
-// import { ProductOverviewGallery } from "@/components/product/ProductOverviewGallery";
 import { ProductDownloads } from "@/components/product/ProductDownloads";
 
 type PageProps = {
-  params: Promise<{ locale: Locale; slug: string }>;
+  params: Promise<{ slug: string }>;
 };
+
 export async function generateStaticParams() {
   const products = await getProducts("en");
 
-  return locales.flatMap((locale) =>
-    products.map((p) => ({ locale, slug: p.slug }))
-  );
+  return products.map((p) => ({ slug: p.slug }));
 }
 
-
 export default async function ProductDetailPage({ params }: PageProps) {
-  const { locale, slug } = await params;
+  const { slug } = await params;
 
-  if (!locales.includes(locale as any)) notFound();
-  const products = await getProducts(locale);
+  const products = await getProducts("en");
   const product = products.find((p) => p.slug === slug);
+
   if (!product) notFound();
 
-  // 你现有 products.ts 结构映射到 ProductHeroData
   const hero = {
     eyebrow: "Products",
     title: product.name,
@@ -55,33 +48,40 @@ export default async function ProductDetailPage({ params }: PageProps) {
             "REFERENCE PLATFORM",
           ]
         : product.slug === "sparta"
-        ? ["DUAL DECK ARCHITECTURE", "COUNTER-ROTATION", "SOLID ALUMINUM", "SUSPENDED"]
-        : ["MODULAR PLATFORM", "UPGRADE PATH", "COUNTER-ROTATION", "SUSPENDED"],
-    cta: { label: "Find a Distributor", href: `/${locale}/distributors` },
+        ? [
+            "DUAL DECK ARCHITECTURE",
+            "COUNTER-ROTATION",
+            "SOLID ALUMINUM",
+            "SUSPENDED",
+          ]
+        : [
+            "MODULAR PLATFORM",
+            "UPGRADE PATH",
+            "COUNTER-ROTATION",
+            "SUSPENDED",
+          ],
+    cta: { label: "Find a Distributor", href: "/distributors" },
     image: {
       src: product.gallery?.[0] ?? "/media/products/placeholder.jpg",
       alt: `${product.name} product hero`,
       priority: product.slug === "discovery",
-      gallery: (product.gallery ?? []).map((src) => ({ src })), // ✅ 关键
+      gallery: (product.gallery ?? []).map((src) => ({ src })),
     },
   } as const;
 
   return (
     <main className="min-h-screen bg-black text-white">
-            
       <ProductAnchorNav headerOffset={64} />
 
-
       <ProductHero data={hero} />
-
 
       <section
         id="design"
         style={{
           ["--background" as any]: "#ffffff",
-          ["--foreground" as any]: "#000000"
-          
-          }}>
+          ["--foreground" as any]: "#000000",
+        }}
+      >
         <ProductIntro
           title="Overview"
           paragraphs={(product.introParagraphs ?? []).slice(0, 3)}
@@ -90,11 +90,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
         />
       </section>
 
-
-      <section id="design">
-
-
-      </section>
+      <section id="design"></section>
 
       <section id="reviews">
         <ProductEndorsements
@@ -107,9 +103,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
             logoSrc: r.imageUrl,
             subtitle: r.subtitle,
           }))}
-
         />
-
       </section>
 
       <section id="specs">
@@ -120,9 +114,9 @@ export default async function ProductDetailPage({ params }: PageProps) {
             value: s.value,
           }))}
         />
-      <ProductDownloads items={product.downloads ?? []} />
-
+        <ProductDownloads items={product.downloads ?? []} />
       </section>
+
       <div className="h-16" />
     </main>
   );
