@@ -4,13 +4,26 @@
       "id": "discovery",
       "slug": "discovery",
       "name": "Discovery",
+      "category": "Turntables",
       "tagline": "The Flagship Platform",
       "description": [
         "Our flagship two tonearm platform featuring a radically new exo-skeleton chassis system designed to minimize resonances and optimize isolation.",
         "Kronos developed a wholly new way to attach the chassis to the suspension system, using completely different soft clamping methods."
       ],
-      
-      "gallery": [  
+      "image": "/media/products/Discovery/discovery6.jpg",
+      "overview": {
+        "title": "Overview",
+        "paragraphs": [
+          "Discovery represents Kronos Audio's most ambitious expression of counter-rotational analogue playback. Its exo-skeleton chassis and isolated suspension architecture are tuned to lower stored energy, improve timing precision, and preserve low-level musical detail.",
+          "Designed as a reference platform for discerning listeners, Discovery supports a dual-tonearm layout and a highly resolved mechanical grounding strategy. Every interface is intended to keep resonant behavior predictable while maintaining the sense of ease and scale associated with the brand's flagship systems."
+        ],
+        "notes": [
+          "Reference-level chassis architecture with dual-tonearm capability.",
+          "Optimized for isolation, stability, and long-term upgradeability."
+        ],
+        "footerTag": "Flagship platform / Reference analogue system"
+      },
+      "gallery": [
         "/media/products/Discovery/discovery6.jpg",
         "/media/products/Discovery/discovery13.jpeg",
         "/media/products/Discovery/discovery7.jpg",
@@ -19,8 +32,10 @@
         "/media/products/Discovery/discovery12.jpg"
       ],
       "downloads": [
-        { "label": "Download Assembly Instructions", 
-          "url": "/media/downloads/KronosPro assembly instructions 2014.pdf" }
+        {
+          "label": "Download Assembly Instructions",
+          "url": "/media/downloads/KronosPro assembly instructions 2014.pdf"
+        }
       ],
       "specs": [
         { "key": "Rotational speed", "value": "33.3 rpm & 45 rpm" },
@@ -38,68 +53,157 @@
         { "key": "Motor mounts", "value": "Delrin capped aluminum tubes" },
         { "key": "Speed guidance system", "value": "Continuous open loop feedback, user speed adjustable" },
         { "key": "Sensors type", "value": "Optical diode I/O top motor tachymeter" },
-        { "key": "Correction cycle", 
-          "value": "60 times /rotation. 0.15% max., 0.05% min." },
-        { "key": "Strobe", 
-          "value": "CPU generated 120 Hz with LED output" },
-        { "key": "Tonearm length", 
-          "value": "9 inches to 10.5 inches (229 mm to 267 mm)" },
-        { "key": "Platters type", 
-          "value": "Composite compressed phenolic/aluminum, balanced" },
-        { "key": "Platter weight", 
-          "value": "27 lbs (12kg) / platter" },
-        { "key": "Drive", 
-          "value": "1 silicone/viton 2.3 string belt / platter" },
-        { "key": "Main bearings", 
-          "value": "Dual hydraulic isolated inverted sleeve and ball" },
-        { "key": "Shaft type", 
-          "value": "Grounded heat hardened tool steel" },
-        { "key": "Ball type", 
-          "value": "Precision steel" },
-        { "key": "Lubricant", 
-          "value": "8 ml. variable viscosity synthetic oil" },
-        { "key": "Service interval", 
-          "value": "5 years (clean and re-oil)" },
-        { "key": "Suspension", 
-          "value": "Full floating top suspended" },
-        { "key": "Elastomers",
-          "value": "317 o-rings , viton/silicone proprietary mix" }
+        { "key": "Correction cycle", "value": "60 times /rotation. 0.15% max., 0.05% min." },
+        { "key": "Strobe", "value": "CPU generated 120 Hz with LED output" },
+        { "key": "Tonearm length", "value": "9 inches to 10.5 inches (229 mm to 267 mm)" },
+        { "key": "Platters type", "value": "Composite compressed phenolic/aluminum, balanced" },
+        { "key": "Platter weight", "value": "27 lbs (12kg) / platter" },
+        { "key": "Drive", "value": "1 silicone/viton 2.3 string belt / platter" },
+        { "key": "Main bearings", "value": "Dual hydraulic isolated inverted sleeve and ball" },
+        { "key": "Shaft type", "value": "Grounded heat hardened tool steel" },
+        { "key": "Ball type", "value": "Precision steel" },
+        { "key": "Lubricant", "value": "8 ml. variable viscosity synthetic oil" },
+        { "key": "Service interval", "value": "5 years (clean and re-oil)" },
+        { "key": "Suspension", "value": "Full floating top suspended" },
+        { "key": "Elastomers", "value": "317 o-rings , viton/silicone proprietary mix" }
       ],
-      "reviews": []
+      "endorsements": [
+        {
+          "initials": "H+",
+          "source": "Hi-Fi+",
+          "type": "Review / Press",
+          "title": "Kronos Discovery turntable",
+          "quote": "A formal review examining the Discovery as a ground-up design rather than a larger Kronos Pro.",
+          "link": "https://hifiplus.com/articles/kronos-discovery-turntable/"
+        },
+        {
+          "initials": "PF",
+          "source": "Positive Feedback",
+          "type": "Editorial / Press",
+          "title": "The KRONOS Discovery LP Playback System - Sui Generis",
+          "quote": "The KRONOS Discovery turntable defies comparison to all other world-class turntables in my experience, creating a class of its own.",
+          "link": "https://positive-feedback.com/audio-discourse/an-audio-triangulation-part-1the-kronos-discovery-lp-playback-system-sui-generis/"
+        },
+        {
+          "initials": "PF",
+          "source": "Positive Feedback",
+          "type": "Editorial / Press",
+          "title": "Final Thoughts on the KRONOS Discovery LP Playback System",
+          "quote": "The most complete playback of LPs that I had ever heard.",
+          "link": "https://positive-feedback.com/audio-discourse/an-audio-triangulation-part-3-final-thoughts-on-the-kronos-discovery-lp-playback-system/"
+        },
+        {
+          "initials": "SA",
+          "source": "Superior Audio",
+          "type": "Review / Press",
+          "title": "Kronos Discovery Turntable Drive-by reviewing at Long Valley",
+          "quote": "Listening impressions that ranked the Kronos Discovery among the reviewer's best analog experiences.",
+          "link": "https://www.enjoythemusic.com/superioraudio/equipment/1121/Kronos_Discovery_Turntable_Review.htm"
+        },
+        {
+          "initials": "PF",
+          "source": "Positive Feedback",
+          "type": "Editorial / Press",
+          "title": "Kronos Audio",
+          "quote": "The Kronos Discovery Turntable system is the finest TT that I've heard to date.",
+          "link": "https://positive-feedback.com/audio-discourse/kronos-audio/"
+        }
+      ]
     },
-
     {
       "id": "perpetual",
       "slug": "perpetual",
       "name": "Perpetual",
+      "category": "Turntables",
       "tagline": "Advanced Resonance Control",
       "description": [
         "Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point."
       ],
+      "image": "/media/products/Perpetual/perpetual2.jpg",
+      "overview": {
+        "title": "Overview",
+        "paragraphs": [
+          "Perpetual extends the Kronos design language into a more accessible single-tonearm configuration, focusing on resonance control, drive stability, and a direct mechanical path between groove and listener.",
+          "This content is currently a placeholder overview. It is intended to preserve section parity with Sparta while the final Perpetual product story, engineering callouts, and listening notes are being assembled."
+        ],
+        "notes": [
+          "Placeholder overview content pending final approved copy.",
+          "Section intentionally matches Sparta's editorial layout."
+        ],
+        "footerTag": "Advanced resonance control / Placeholder content"
+      },
       "gallery": [
         "/media/products/Perpetual/perpetual2.jpg",
         "/media/products/Perpetual/perpetual5.jpg"
       ],
       "downloads": [],
       "specs": [],
-      "reviews": []
+      "endorsements": [
+        {
+          "initials": "MS",
+          "source": "Mono & Stereo",
+          "type": "News / Press",
+          "title": "Kronos Perpetual Turntable",
+          "quote": "A new benchmark in performance and value.",
+          "link": "https://www.monoandstereo.com/kronos-perpetual-turntable/"
+        },
+        {
+          "initials": "MS",
+          "source": "Mono & Stereo",
+          "type": "Editorial / Press",
+          "title": "Kronos Perpetual - Discovery Reference",
+          "quote": "Editorial coverage of the Kronos Perpetual installed with the Discovery Reference phono preamplifier.",
+          "link": "https://www.monoandstereo.com/kronos-perpetual-discovery-reference/"
+        },
+        {
+          "initials": "PF",
+          "source": "Positive Feedback",
+          "type": "Show Report / Press",
+          "title": "AXPONA 2026",
+          "quote": "Show coverage featuring the Kronos Perpetual dual-platter counter-rotating turntable with super-capacitor power supply.",
+          "link": "https://positive-feedback.com/axpona-2026/"
+        },
+        {
+          "initials": "PF",
+          "source": "Positive Feedback",
+          "type": "Experience / Press",
+          "title": "E211: The KRONOS Perpetual Experience",
+          "quote": "An experience-focused editorial entry centered on an extended listen to the production release of the KRONOS Perpetual Turntable.",
+          "link": "https://positive-feedback.com/e211-the-kronos-perpetual-experience/"
+        }
+      ]
     },
-
     {
       "id": "kronos-pro",
       "slug": "kronos-pro",
       "name": "Kronos Pro",
+      "category": "Turntables",
       "tagline": "The Original Reference",
       "description": [
         "The original Kronos reference turntable. The PRO set a new standard in analogue reproduction by combining counter-rotation and overhead suspension."
       ],
-      "gallery": ["/media/products/Kronos Pro/pro6.jpg",
+      "image": "/media/products/Kronos Pro/pro6.jpg",
+      "overview": {
+        "title": "Overview",
+        "paragraphs": [
+          "Kronos Pro is the foundational reference deck that introduced many listeners to the brand's counter-rotational architecture and suspended dual-platter philosophy. It remains a defining statement of Kronos Audio's approach to timing, stillness, and mechanical balance.",
+          "Its role in the product family is both historical and practical: a mature reference platform whose engineering continues to inform later Kronos models. This overview consolidates the section structure so the page now matches Sparta's presentation."
+        ],
+        "notes": [
+          "Original reference platform from the Kronos catalogue.",
+          "Structured to support consistent editorial storytelling across products."
+        ],
+        "footerTag": "Original reference / Counter-rotational legacy"
+      },
+      "gallery": [
+        "/media/products/Kronos Pro/pro6.jpg",
         "/media/products/Kronos Pro/pro8.jpg"
-        
       ],
       "downloads": [
-        { "label": "Download Assembly Instructions", 
-          "url": "/media/downloads/KronosPro assembly instructions 2014.pdf" }
+        {
+          "label": "Download Assembly Instructions",
+          "url": "/media/downloads/KronosPro assembly instructions 2014.pdf"
+        }
       ],
       "specs": [
         { "key": "Dimensions", "value": "22 in (W) x 14 in (D) x 11 in (H) 56 cm (W) x 36 cm (D) x 28 cm (H)" },
@@ -114,67 +218,93 @@
         { "key": "Transmission", "value": "Pico 4 pin cable" },
         { "key": "Motors", "value": "2432 precious metal brushes DC motors (qty 2)" },
         { "key": "Motor mounts", "value": "Delrin enclosure, height adjustable" },
-        { "key": "Speed guidance system", 
-          "value": "2 continuous open feedback loops" },
-        { "key": "Sensors type", 
-          "value": "2 optical diode I/O and 2 motor tachymeter" },
-        { "key": "Correction cycle", 
-          "value": "60 times /rotations. 0.1% max. 0.05% min." },
-        { "key": "Monitoring", 
-          "value": "Twin real time speed LED display" },
-        { "key": "Command input type", 
-          "value": "1 capacitance sensor on/off (left) 1 capacitance sensor 33/45 (right)" },
-        { "key": "Tonearm lenght", 
-          "value": "9 inches to 12 inches (229mm to 310mm)" },
-        { "key": "Platters type", 
-          "value": "Composite layers and encapsulated, balanced" },
-        { "key": "Platter weight", 
-          "value": "28 lbs (13kg) / platter" },
-        { "key": "Drive", 
-          "value": "2 silicone/viton 1.8 string belts / platter" },
-        { "key": "Compensation pulley", 
-          "value": "Teflon and chrome steel bearing" },
-        { "key": "Lubricant", 
-          "value": "Petroleum grease" },
-        { "key": "Sevice interval", 
-          "value": "3 months (clean and re-grease)" },
-        { "key": "Main bearings", 
-          "value": "Dual hydraulic isolated inverted sleeve and ball" },
-        { "key": "Shaft type", 
-          "value": "Grounded heat hardened tool steel" },
-        { "key": "Ball type", 
-          "value": "Ceramic top platter, precision steel lower platter" },
-        { "key": "Lubricant", 
-          "value": "8 ml. variable viscosity synthetic oil" },
-        { "key": "Service interval", 
-          "value": "5 years (clean and re-oil)" },
-        { "key": "Suspension", 
-          "value": "Full floating top suspended" },
-        { "key": "Elastomers",
-          "value": "317 o-rings , viton/silicone proprietary mix" }
+        { "key": "Speed guidance system", "value": "2 continuous open feedback loops" },
+        { "key": "Sensors type", "value": "2 optical diode I/O and 2 motor tachymeter" },
+        { "key": "Correction cycle", "value": "60 times /rotations. 0.1% max. 0.05% min." },
+        { "key": "Monitoring", "value": "Twin real time speed LED display" },
+        { "key": "Command input type", "value": "1 capacitance sensor on/off (left) 1 capacitance sensor 33/45 (right)" },
+        { "key": "Tonearm lenght", "value": "9 inches to 12 inches (229mm to 310mm)" },
+        { "key": "Platters type", "value": "Composite layers and encapsulated, balanced" },
+        { "key": "Platter weight", "value": "28 lbs (13kg) / platter" },
+        { "key": "Drive", "value": "2 silicone/viton 1.8 string belts / platter" },
+        { "key": "Compensation pulley", "value": "Teflon and chrome steel bearing" },
+        { "key": "Lubricant", "value": "Petroleum grease" },
+        { "key": "Sevice interval", "value": "3 months (clean and re-grease)" },
+        { "key": "Main bearings", "value": "Dual hydraulic isolated inverted sleeve and ball" },
+        { "key": "Shaft type", "value": "Grounded heat hardened tool steel" },
+        { "key": "Ball type", "value": "Ceramic top platter, precision steel lower platter" },
+        { "key": "Lubricant", "value": "8 ml. variable viscosity synthetic oil" },
+        { "key": "Service interval", "value": "5 years (clean and re-oil)" },
+        { "key": "Suspension", "value": "Full floating top suspended" },
+        { "key": "Elastomers", "value": "317 o-rings , viton/silicone proprietary mix" }
       ],
-      "reviews": []
+      "endorsements": [
+        {
+          "initials": "PF",
+          "source": "Positive Feedback",
+          "type": "Review / Press",
+          "title": "KRONOS Pro LE Turntable",
+          "quote": "Definitely in the top of the very best turntables I've ever heard.",
+          "link": "https://positive-feedback.com/audio-discourse/impressions-kronos-pro-le-turntable/"
+        },
+        {
+          "initials": "MS",
+          "source": "Mono & Stereo",
+          "type": "Review / Press",
+          "title": "Kronos Pro turntable with SCPS-1 review",
+          "quote": "The very best turntable I had heard until then.",
+          "link": "https://www.monoandstereo.com/kronos-pro-turntable-with-scps-1-review/"
+        },
+        {
+          "initials": "AF",
+          "source": "Analogue Fellowship",
+          "type": "Review / Press",
+          "title": "KRONOS PRO LTD Turntable - The Review",
+          "quote": "The Kronos turntable is the first which employ two platters rotating at counter direction to achieve a 'balance'.",
+          "link": "https://analoguefellowship.com/2017/06/21/kronos-pro-limited-production-turntable-the-review/"
+        },
+        {
+          "initials": "MS",
+          "source": "Mono & Stereo",
+          "type": "Review / Press",
+          "title": "Kronos Audio PRO Turntable - Kronoscope RS Tonearm Review",
+          "quote": "Both the Kronos PRO turntable and the Kronos RS tonearm pack a hell of a lot of power and are easy to use.",
+          "link": "https://www.monoandstereo.com/kronos-audio-pro-turntable-kronoscope-rs-tonearm-review/"
+        }
+      ]
     },
-
     {
       "id": "sparta",
       "slug": "sparta",
       "name": "Sparta",
+      "category": "Turntables",
       "tagline": "The Soul of a New Machine",
       "description": [
-        "Our no-frills platform … an entry to the world of KRONOS.",
-        "Unique to behold, the Sparta is essentially two complete turntables—each including a skeletal, metal-framed plinth fabricated of solid aluminum boards."
+        "Our no-frills platform - an entry to the world of KRONOS.",
+        "Unique to behold, the Sparta is essentially two complete turntables-each including a skeletal, metal-framed plinth fabricated of solid aluminum boards."
       ],
-      "introParagraphs": [
-        "The Sparta turntable is the embodiment of Kronos Audio’s core design principles, distilled into their purest form. Built to disappear into silence—so the recording remains. Every surface, every interface, every tolerance exists for one purpose: to preserve time.",
-        "At the heart of the Sparta are two counter-rotating platters, each driven by its own motor and suspended from above by a network of elastomers that isolate the mechanism from external vibrations. The result is a level of speed stability and resonance control that belies the Sparta’s modest price point."
-      ],
-    
-      "gallery": ["/media/products/Sparta/sparta13.jpg",
+      "image": "/media/products/Sparta/sparta13.jpg",
+      "overview": {
+        "title": "Overview",
+        "paragraphs": [
+          "The Sparta turntable is the embodiment of Kronos Audio's core design principles, distilled into their purest form. Built to disappear into silence-so the recording remains. Every surface, every interface, every tolerance exists for one purpose: to preserve time.",
+          "At the heart of the Sparta are two counter-rotating platters, each driven by its own motor and suspended from above by a network of elastomers that isolate the mechanism from external vibrations. The result is a level of speed stability and resonance control that belies the Sparta's modest price point."
+        ],
+        "notes": [
+          "Built to disappear into silence-so the recording remains.",
+          "Every surface, every interface, every tolerance exists for one purpose: to preserve time."
+        ],
+        "footerTag": "Hand-finished / Reference platform"
+      },
+      "gallery": [
+        "/media/products/Sparta/sparta13.jpg",
         "/media/products/Sparta/sparta14.jpg"
       ],
       "downloads": [
-        { "label": "Download Assembly Instructions", "url": "/media/downloads/Sparta assembly instructions 2026.pdf" }
+        {
+          "label": "Download Assembly Instructions",
+          "url": "/media/downloads/Sparta assembly instructions 2026.pdf"
+        }
       ],
       "specs": [
         { "key": "Rotational speed", "value": "33.3 rpm & 45 rpm" },
@@ -192,116 +322,220 @@
         { "key": "Motor mounts", "value": "Delrin capped aluminum tubes" },
         { "key": "Speed guidance system", "value": "Continuous open loop feedback, user speed adjustable" },
         { "key": "Sensors type", "value": "Optical diode I/O top motor tachymeter" },
-        { "key": "Correction cycle", 
-          "value": "60 times /rotation. 0.15% max., 0.05% min." },
-        { "key": "Strobe", 
-          "value": "CPU generated 120 Hz with LED output" },
-        { "key": "Tonearm length", 
-          "value": "9 inches to 10.5 inches (229 mm to 267 mm)" },
-        { "key": "Platters type", 
-          "value": "Composite compressed phenolic/aluminum, balanced" },
-        { "key": "Platter weight", 
-          "value": "27 lbs (12kg) / platter" },
-        { "key": "Drive", 
-          "value": "1 silicone/viton 2.3 string belt / platter" },
-        { "key": "Main bearings", 
-          "value": "Dual hydraulic isolated inverted sleeve and ball" },
-        { "key": "Shaft type", 
-          "value": "Grounded heat hardened tool steel" },
-        { "key": "Ball type", 
-          "value": "Precision steel" },
-        { "key": "Lubricant", 
-          "value": "8 ml. variable viscosity synthetic oil" },
-        { "key": "Service interval", 
-          "value": "5 years (clean and re-oil)" },
-        { "key": "Suspension", 
-          "value": "Full floating top suspended" },
-        { "key": "Elastomers",
-          "value": "317 o-rings , viton/silicone proprietary mix" }
+        { "key": "Correction cycle", "value": "60 times /rotation. 0.15% max., 0.05% min." },
+        { "key": "Strobe", "value": "CPU generated 120 Hz with LED output" },
+        { "key": "Tonearm length", "value": "9 inches to 10.5 inches (229 mm to 267 mm)" },
+        { "key": "Platters type", "value": "Composite compressed phenolic/aluminum, balanced" },
+        { "key": "Platter weight", "value": "27 lbs (12kg) / platter" },
+        { "key": "Drive", "value": "1 silicone/viton 2.3 string belt / platter" },
+        { "key": "Main bearings", "value": "Dual hydraulic isolated inverted sleeve and ball" },
+        { "key": "Shaft type", "value": "Grounded heat hardened tool steel" },
+        { "key": "Ball type", "value": "Precision steel" },
+        { "key": "Lubricant", "value": "8 ml. variable viscosity synthetic oil" },
+        { "key": "Service interval", "value": "5 years (clean and re-oil)" },
+        { "key": "Suspension", "value": "Full floating top suspended" },
+        { "key": "Elastomers", "value": "317 o-rings , viton/silicone proprietary mix" }
       ],
-      "introNote": {
-        "label": "Notes",
-        "copy": [
-          "Built to disappear into silence—so the recording remains.",
-          "Every surface, every interface, every tolerance exists for one purpose: to preserve time."
-        ],
-        "signature": "Hand-finished · Reference platform"
-      },
-      "reviews": [
+      "endorsements": [
         {
-          "sourceName": "The Absolute Sound",
-          "quote": "I’ve never before been treated to vinyl playback from any system I’ve owned that is as clearly and profoundly moving as what I am now hearing...",
-          "imageUrl": "",
-          "sourceUrl": ""
+          "quote": "I've never before been treated to vinyl playback from any system I've owned that is as clearly and profoundly moving as what I am now hearing...",
+          "source": "The Absolute Sound",
+          "type": "Press",
+          "link": "#"
         },
         {
-          "sourceName": "Enjoythemusic.com",
-          "quote": "I’ve never before been treated to vinyl playback from any system I’ve owned that is as clearly and profoundly moving as what I am now hearing...",
-          "imageUrl": "",
-          "sourceUrl": ""
+          "quote": "I've never before been treated to vinyl playback from any system I've owned that is as clearly and profoundly moving as what I am now hearing...",
+          "source": "Enjoythemusic.com",
+          "type": "Press",
+          "link": "#"
         },
         {
-          "sourceName": "Positive Feedback",
-          "quote": "A cloudless day has dawned over the vinyl landscape, one where you feel you can see forever and your view is only limited by your acuity. There are no environmental impediments in the way",
-          "imageUrl": "",
-          "sourceUrl": ""
+          "quote": "A cloudless day has dawned over the vinyl landscape, one where you feel you can see forever and your view is only limited by your acuity. There are no environmental impediments in the way.",
+          "source": "Positive Feedback",
+          "type": "Press",
+          "link": "#"
         },
         {
-          "sourceName": "AV Showrooms",
           "quote": "The Kronos Sparta turntable takes the counter rotational technology of the flagship Kronos turntable and incorporates it into a more affordable and tidy package.",
-          "imageUrl": "",
-          "sourceUrl": ""
+          "source": "AV Showrooms",
+          "type": "Press",
+          "link": "#"
         }
       ]
     },
-
     {
       "id": "tonearms",
       "slug": "tonearms",
       "name": "Tonearms",
+      "category": "Tonearms",
       "tagline": "RS Technology",
-      "description": ["Patented RS technology Tonearm."],
-      "gallery": ["/media/products/tonearm/RS2.jpg",
-                  "/media/products/Sparta/sparta1.jpg",
-                  "/media/products/tonearm/RS1.jpg"
-                  
-                ],
+      "description": [
+        "Patented RS technology Tonearm."
+      ],
+      "image": "/media/products/tonearm/RS.jpg",
+      "overview": {
+        "title": "Overview",
+        "paragraphs": [
+          "The Kronos tonearm program extends the brand's approach to resonance control beyond the deck itself, using RS technology to manage energy evacuation, tracking stability, and musical flow.",
+          "This overview currently combines available product language with placeholder editorial structure so Tonearms can present the same complete storytelling modules as Sparta."
+        ],
+        "notes": [
+          "RS technology overview is active.",
+          "Additional model-specific copy can be added without component changes."
+        ],
+        "footerTag": "RS technology / Tonearm platform"
+      },
+      "gallery": [
+        "/media/products/tonearm/RS.jpg",
+        "/media/products/Sparta/sparta1.jpg",
+        "/media/products/tonearm/RS1.jpg"
+      ],
       "downloads": [],
       "specs": [],
-      "reviews": []
+      "endorsements": [
+        {
+          "initials": "PF",
+          "source": "Positive Feedback",
+          "type": "Review / Press",
+          "title": "Kronoscope RS Tonearm",
+          "quote": "The Kronoscope RS tonearm joins the rest of the Kronos stable as a reference caliber product.",
+          "link": "https://positive-feedback.com/reviews/hardware-reviews/kronos-audio-kronoscope-rs-tonear/"
+        },
+        {
+          "initials": "PF",
+          "source": "Positive Feedback",
+          "type": "Editorial / Press",
+          "title": "KRONOS Discovery Resonance Suppression Tonearm",
+          "quote": "This new KRONOS Discovery RS tonearm presents a more uncolored, articulate, concise view into my recordings than any other tonearm in my experience, at any price!",
+          "link": "https://positive-feedback.com/audio-discourse/kronos-discovery-resonance-suppression-tonearm/"
+        },
+        {
+          "initials": "MS",
+          "source": "Mono & Stereo",
+          "type": "Review / Press",
+          "title": "Kronos Discovery RS Tonearm Review",
+          "quote": "Discovery RS takes its engaging character a step further, never letting the music fall apart or feel spastic, and ready at any time to assist and contribute as an elemental link of ultimate analog playback.",
+          "link": "https://www.monoandstereo.com/kronos-discovery-rs-tonearm/"
+        },
+        {
+          "initials": "MS",
+          "source": "Mono & Stereo",
+          "type": "Review / Press",
+          "title": "Kronos PRO Turntable - Kronoscope RS Tonearm Review",
+          "quote": "Both the Kronos PRO turntable and the Kronos RS Kronoscope RS tonearm pack a hell of a lot of power and are easy to use.",
+          "link": "https://www.monoandstereo.com/kronos-audio-pro-turntable-kronoscope-rs-tonearm-review/"
+        },
+        {
+          "initials": "H+",
+          "source": "Hi-Fi+",
+          "type": "Review / Press",
+          "title": "Kronos Sparta Turntable and Helena Tonearm",
+          "quote": "A formal evaluation of the Helena tonearm as part of a complete Kronos analog front-end.",
+          "link": "https://hifiplus.com/articles/kronos-sparta-turntable-and-helena-tonearm/"
+        }
+      ]
     },
-
     {
       "id": "phono",
       "slug": "phono",
       "name": "Phono Preamplifiers",
+      "category": "Phono",
       "tagline": "Signal Integrity",
       "description": [
         "Reference phono stages designed to preserve the integrity of the analog signal.",
         "Engineered for low noise, accurate gain, and tonal neutrality."
       ],
-      "gallery": ["/media/products/Phono/phono10.jpg",
+      "image": "/media/products/Phono/phono10.jpg",
+      "overview": {
+        "title": "Overview",
+        "paragraphs": [
+          "Kronos phono preamplifiers are positioned as supporting electronics for listeners who want the same restraint, resolution, and tonal honesty found in the turntable line.",
+          "The current copy is partially placeholder content added to keep the page structurally complete. It gives the product family a proper overview block until final technical and listening-language is approved."
+        ],
+        "notes": [
+          "Structured for future replacement with finalized product copy.",
+          "Maintains section parity with the Sparta detail page."
+        ],
+        "footerTag": "Signal integrity / Placeholder editorial copy"
+      },
+      "gallery": [
+        "/media/products/Phono/phono10.jpg",
         "/media/products/Phono/phono12.jpg",
         "/media/products/Phono/phono3.jpg",
         "/media/products/Phono/phono5.jpg"
-  ],
+      ],
       "downloads": [],
       "specs": [],
-      "reviews": []
+      "endorsements": [
+        {
+          "initials": "MS",
+          "source": "Mono & Stereo",
+          "type": "News / Press",
+          "title": "Kronos Discovery Phono",
+          "quote": "Launch coverage introducing the new Kronos Discovery Phono ahead of High End Munich 2024.",
+          "link": "https://www.monoandstereo.com/kronos-discovery-phono/"
+        },
+        {
+          "initials": "MS",
+          "source": "Mono & Stereo",
+          "type": "Editorial / Press",
+          "title": "Kronos Discovery Phono Preamplifier",
+          "quote": "Editorial coverage of the Kronos Audio Discovery flagship reference tube phono preamplifier featuring a proprietary patented suspension system.",
+          "link": "https://www.monoandstereo.com/kronos-discovery-phono-preamplifier-2/"
+        },
+        {
+          "initials": "AP",
+          "source": "Analog Planet",
+          "type": "Show Report / Press",
+          "title": "High End Munich 2024 Postscript, Part 1",
+          "quote": "Show coverage featuring the Kronos Discovery phono preamp as a fully suspended design with dual power supplies.",
+          "link": "https://www.analogplanet.com/content/high-end-munich-2024-postscript-part-1-new-gear-wilson-benesch-rui-borges-kronos-audio-dual"
+        },
+        {
+          "initials": "ST",
+          "source": "Stereophile",
+          "type": "Show Report / Press",
+          "title": "High End Munich 2024 coverage",
+          "quote": "Show coverage documenting the Kronos Discovery phono stage in a flagship analog playback system.",
+          "link": "https://www.stereophile.com/content/gobels-divin-comtesse-loudspeakers-and-sovereign-subs-wadax-studio-playerpilium"
+        }
+      ]
     },
-
     {
       "id": "racks",
       "slug": "racks",
       "name": "Full Analogue Solution",
+      "category": "Racks & Supports",
       "tagline": "Engineered Foundations",
       "description": [
         "Engineered foundations that control vibration and preserve mechanical integrity, allowing Kronos systems to perform at their highest level."
       ],
-      "gallery": ["/media/whole/whole2.jpg"],
+      "image": "/media/whole/whole2.jpg",
+      "overview": {
+        "title": "Overview",
+        "paragraphs": [
+          "The racks and support solutions complete the Kronos playback environment by addressing the physical foundation beneath the system. Their role is to reduce environmental interference and give the analogue chain a more stable platform from floor to chassis.",
+          "This section includes placeholder editorial copy where source material is still pending, but it now matches the same overview treatment used by Sparta so the page is fully populated and visually consistent."
+        ],
+        "notes": [
+          "Placeholder support-system copy pending final product messaging.",
+          "Designed to preserve the current product detail layout."
+        ],
+        "footerTag": "Racks & supports / Full analogue solution"
+      },
+      "gallery": [
+        "/media/whole/whole2.jpg"
+      ],
       "downloads": [],
       "specs": [],
-      "reviews": []
+      "endorsements": [
+        {
+          "quote": "Racks & Supports placeholder endorsement. This can later become a press quote, integrator note, or owner testimonial.",
+          "source": "Integrator Placeholder",
+          "type": "Placeholder / Feedback",
+          "link": "#"
+        }
+      ]
     }
   ]
 }

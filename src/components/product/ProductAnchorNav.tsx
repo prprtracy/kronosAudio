@@ -7,21 +7,20 @@ type AnchorItem = { id: string; label: string };
 
 const ITEMS: AnchorItem[] = [
   { id: "overview", label: "Overview" },
-  { id: "design", label: "Design" },
-  { id: "system", label: "System" },
-  { id: "reviews", label: "Reviews" },
+  { id: "reviews", label: "Press" },
   { id: "specs", label: "Specifications" },
 ];
 
 export function ProductAnchorNav({
   className,
-  headerOffset = 64, // 你的 header 高度（h-16 = 64px）
+  headerOffset = 64,
 }: {
   className?: string;
   headerOffset?: number;
 }) {
   const onClick = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
+
     const el = document.getElementById(id);
     if (!el) return;
 
@@ -31,13 +30,9 @@ export function ProductAnchorNav({
 
   return (
     <div
-      className={clsx(
-        "sticky z-[20]", // 比 header 低一点也行，但这里先稳
-        className
-      )}
+      className={clsx("sticky z-[20]", className)}
       style={{ top: headerOffset }}
     >
-      {/* 顶部留一条空气感，让它不“贴死”header */}
       <div className="pt-3">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
@@ -60,7 +55,7 @@ export function ProductAnchorNav({
                 >
                   {it.label}
                   {idx !== ITEMS.length - 1 && (
-                    <span className="ml-6 text-white/15">•</span>
+                    <span className="ml-6 text-white/15">/</span>
                   )}
                 </a>
               ))}

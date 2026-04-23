@@ -10,9 +10,25 @@ export type DownloadItem = {
   url: string;
 };
 
+export type ProductOverview = {
+  title?: string;
+  paragraphs: string[];
+  notes?: string[];
+  footerTag?: string;
+};
+
 export type SpecItem = {
   key: string;
   value: string;
+};
+
+export type EndorsementItem = {
+  initials?: string;
+  title?: string;
+  quote: string;
+  source: string;
+  type?: string;
+  link?: string;
 };
 
 export type ReviewItem = {
@@ -28,15 +44,16 @@ export type Product = {
   id: string;
   slug: string;
   name: string;
+  category?: string;
   tagline?: string;
   description: string[];
-  introParagraphs?: string[];
-  // ✅ 约定：缺失 = 没价格；不要 null
+  image?: string;
+  overview?: ProductOverview;
+  endorsements?: EndorsementItem[];
   msrp?: Money;
   upgradeKit?: Money;
-
   gallery: string[];
   downloads: DownloadItem[];
   specs: SpecItem[];
-  reviews: ReviewItem[];
+  reviews?: ReviewItem[];
 };

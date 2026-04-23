@@ -26,8 +26,11 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
   if (!product) notFound();
 
+  const overview = product.overview;
+  const endorsements = product.endorsements ?? [];
+
   const hero = {
-    eyebrow: "Products",
+    eyebrow: product.category ?? "Products",
     title: product.name,
     price: product.msrp?.display
       ? { label: "MSRP", value: product.msrp.display }
@@ -35,10 +38,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
     dek: product.description?.slice(0, 2) ?? [],
     keyline:
       product.slug === "discovery"
-        ? "33⅓ / 45 RPM · COUNTER-ROTATION · SUSPENDED ARCHITECTURE"
+        ? "33 1/3 / 45 RPM / COUNTER-ROTATION / SUSPENDED ARCHITECTURE"
         : product.slug === "sparta"
-        ? "33⅓ / 45 RPM · DUAL DECK · COUNTER-ROTATION"
-        : "33⅓ / 45 RPM · MODULAR PLATFORM · UPGRADEABLE",
+          ? "33 1/3 / 45 RPM / DUAL DECK / COUNTER-ROTATION"
+          : "33 1/3 / 45 RPM / MODULAR PLATFORM / UPGRADEABLE",
     highlights:
       product.slug === "discovery"
         ? [
@@ -48,21 +51,21 @@ export default async function ProductDetailPage({ params }: PageProps) {
             "REFERENCE PLATFORM",
           ]
         : product.slug === "sparta"
-        ? [
-            "DUAL DECK ARCHITECTURE",
-            "COUNTER-ROTATION",
-            "SOLID ALUMINUM",
-            "SUSPENDED",
-          ]
-        : [
-            "MODULAR PLATFORM",
-            "UPGRADE PATH",
-            "COUNTER-ROTATION",
-            "SUSPENDED",
-          ],
+          ? [
+              "DUAL DECK ARCHITECTURE",
+              "COUNTER-ROTATION",
+              "SOLID ALUMINUM",
+              "SUSPENDED",
+            ]
+          : [
+              "MODULAR PLATFORM",
+              "UPGRADE PATH",
+              "COUNTER-ROTATION",
+              "SUSPENDED",
+            ],
     cta: { label: "Find a Distributor", href: "/distributors" },
     image: {
-      src: product.gallery?.[0] ?? "/media/products/placeholder.jpg",
+      src: product.image ?? product.gallery?.[0] ?? "/media/products/placeholder.jpg",
       alt: `${product.name} product hero`,
       priority: product.slug === "discovery",
       gallery: (product.gallery ?? []).map((src) => ({ src })),
@@ -76,32 +79,39 @@ export default async function ProductDetailPage({ params }: PageProps) {
       <ProductHero data={hero} />
 
       <section
-        id="design"
+        id="overview"
         style={{
-          ["--background" as any]: "#ffffff",
-          ["--foreground" as any]: "#000000",
+          ["--background" as string]: "#ffffff",
+          ["--foreground" as string]: "#000000",
         }}
       >
         <ProductIntro
-          title="Overview"
-          paragraphs={(product.introParagraphs ?? []).slice(0, 3)}
-          note={(product as any).introNote}
+          title={overview?.title ?? "Overview"}
+          paragraphs={(overview?.paragraphs ?? []).slice(0, 3)}
+          note={
+            overview?.notes?.length || overview?.footerTag
+              ? {
+                  label: "Notes",
+                  copy: overview?.notes ?? [],
+                  signature: overview?.footerTag,
+                }
+              : undefined
+          }
           variant="light"
         />
       </section>
 
-      <section id="design"></section>
-
       <section id="reviews">
         <ProductEndorsements
           title="Press & Endorsements"
-          items={(product.reviews ?? []).map((r, idx) => ({
+          items={endorsements.map((item, idx) => ({
             id: `${product.slug}-${idx}`,
-            source: r.sourceName ?? r.authorName ?? "Press",
-            quote: r.quote,
-            url: r.sourceUrl && r.sourceUrl.length > 0 ? r.sourceUrl : "#",
-            logoSrc: r.imageUrl,
-            subtitle: r.subtitle,
+            initials: item.initials,
+            title: item.title,
+            source: item.source,
+            quote: item.quote,
+            url: item.link && item.link.length > 0 ? item.link : "#",
+            subtitle: item.type,
           }))}
         />
       </section>
