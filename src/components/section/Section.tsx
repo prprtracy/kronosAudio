@@ -14,7 +14,6 @@ export function Section({
     <section
       id={id}
       className={clsx(
-        // Section Gap（大节奏）
         "py-16 md:py-24 lg:py-28",
         className
       )}

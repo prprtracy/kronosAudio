@@ -17,7 +17,7 @@ export default async function RootLayout({
 }: {
   children: ReactNode;
 }) {
-  const footer = await getFooter("en"); // 先临时写死，后面再彻底去语言化
+  const footer = await getFooter("en");
 
   return (
     <html lang="en">

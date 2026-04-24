@@ -9,10 +9,9 @@ export type SystemFamily = {
   copy: string[]; // 详情页 intro（2-3句）
   heroImage: string;
 
-  // System Modules：把 SCPS “扶正”为系统的一部分
   modules: {
     turntable: { name: string; note?: string };
-    powerSupply: { name: string; note?: string }; // SCPS-*
+    powerSupply: { name: string; note?: string };
   };
 };
 

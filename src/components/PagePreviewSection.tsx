@@ -18,7 +18,6 @@ export function PagePreviewSection() {
               index % 2 === 1 && "md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:flex-row-reverse"
             )}
           >
-            {/* 文案 */}
             <div>
               <p className="text-[11px] tracking-[0.3em] uppercase text-amber-400 mb-3">
                 {page.label}
@@ -37,7 +36,6 @@ export function PagePreviewSection() {
               </a>
             </div>
 
-            {/* 预览图 */}
             <div className="relative h-[260px] sm:h-[320px]">
               <div className="absolute inset-0 rounded-3xl overflow-hidden border border-neutral-800/80 bg-neutral-900/60 shadow-[0_0_60px_rgba(0,0,0,0.7)]">
                 <Image

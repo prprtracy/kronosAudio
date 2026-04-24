@@ -5,9 +5,9 @@ import { Section } from "@/components/section/Section";
 type Variant = "dark" | "light";
 
 export type ProductIntroNote = {
-  label?: string;          // e.g. "Notes"
-  copy?: string[];         // 多段文字
-  signature?: string;      // e.g. "Hand-finished · Reference platform"
+  label?: string;
+  copy?: string[];
+  signature?: string;
 };
 
 export function ProductIntro({
@@ -15,7 +15,7 @@ export function ProductIntro({
   paragraphs = [],
   eyebrow = "Design",
   variant = "dark",
-  note, // ✅ JSON 驱动的右侧 note（可选）
+  note
 }: {
   title?: string;
   eyebrow?: string;

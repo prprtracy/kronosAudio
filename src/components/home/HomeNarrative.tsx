@@ -10,7 +10,7 @@ type ActionVariant = "primary" | "secondary" | "ghost";
 
 type NarrativeAction = {
   label: string;
-  href: string; // "/products", "/products/sparta", "https://..."
+  href: string;
   variant?: ActionVariant;
   target?: "_blank" | "_self";
 };
@@ -19,10 +19,7 @@ function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
 }
 
-/** 将 JSON 的 href 规范化为最终链接：
- * - 外链: https://... 原样返回
- * - 内链: 支持 "/products" 或 "products" -> "/{locale}/products"
- */
+
 
 function toHref(_locale: string, href: string) {
   if (!href) return "#";
@@ -99,10 +96,8 @@ function SlideshowPanel({
   return (
     <div className="hidden lg:block">
       <div className="relative rounded-3xl border border-white/10 bg-black/25 overflow-hidden">
-        {/* subtle top highlight */}
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-white/10" />
 
-        {/* slide stage */}
         <div className="relative p-6">
           {(() => {
             const slide = slides[activeIndex];
@@ -137,7 +132,6 @@ function SlideshowPanel({
               );
             }
 
-            // award card
             return (
               <div className="rounded-2xl border border-white/10 bg-black/30 p-6">
                 <div className="flex items-start justify-between gap-6">
@@ -184,7 +178,6 @@ function SlideshowPanel({
           })()}
         </div>
 
-        {/* controls */}
         {totalSlides > 1 && (
           <>
             <button
@@ -218,7 +211,6 @@ function SlideshowPanel({
           </>
         )}
 
-        {/* dots */}
         {totalSlides > 1 && (
           <div className="px-6 pb-5">
             <div className="flex items-center justify-between">
@@ -261,12 +253,10 @@ export function HomeNarrative({
   sections: HomeNarrativeSection[];
   locale: string;
 }) {
-  // slideshow state keyed by section id
   const [slideIndexById, setSlideIndexById] = useState<Record<string, number>>(
     {}
   );
 
-  // timers per section
   const timers = useRef<Record<string, number | null>>({});
 
   const setSlideIndex = (id: string, next: number, total: number) => {
@@ -313,12 +303,7 @@ export function HomeNarrative({
 
         const hasVisualPanel = isGrid4 || isSlideshow;
 
-        // autoplay per section
-        // ✅ 注意：这里仍在 map 里，但我们不再使用 useEffect/useMemo（避免 hook 规则问题）
-        // 方案：只对 slideshow 启动一次 timer：用 key = `${id}-${totalSlides}-${ms}` 触发
-        // 这里用一个小技巧：在渲染时注册 effect（允许），但 React 规则严格来说不推荐。
-        // 如果你 lint 报错，我可以再拆更细的子组件。
-        // ——为了你现在“快速推进”，保持最小改动。
+     
         useEffect(() => {
           if (!isSlideshow) return;
           const ms = clamp(s.slideshowAutoplayMs ?? 4500, 2000, 12000);

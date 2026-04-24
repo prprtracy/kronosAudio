@@ -18,15 +18,13 @@ export type Partner = {
   country: string;
   city?: string;
 
-  // 显示用
   tagline?: string;
-  contactPerson?: string; // 新增：保留联系人字段，很有用
+  contactPerson?: string;
   addressLines?: string[];
   phone?: string;
   email?: string;
   website?: string;
 
-  // 品牌控制
   isFeatured?: boolean;
 };
 
@@ -300,16 +298,5 @@ export const PARTNERS: Partner[] = [
     addressLines: ["8, Solomou Str.", "106 83 Athens"],
     phone: "+30 210 522 55 75",
     website: "https://www.orpheusaudio.gr",
-  },
-
-  // --- Latin America ---
-  // (如果需要可以加，暂无明确数据则留空或填入已知代理)
-  // {
-  //   id: "mexico-audio-mundi",
-  //   name: "Audio Mundi",
-  //   role: "Distributor",
-  //   region: "latin-america",
-  //   country: "Mexico",
-  //   // ...
-  // }
+  }
 ];
