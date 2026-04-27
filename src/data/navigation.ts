@@ -1,7 +1,7 @@
 export type NavItem = {
-  label: string;          // 显示名（后续可 i18n）
-  productSlug?: string;   // 关联产品 slug
-  href?: string;          // 非产品页（比如 /distributors）
+  label: string;          
+  productSlug?: string;   
+  href?: string;          
   children?: NavItem[];
 };
 
