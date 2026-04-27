@@ -207,12 +207,13 @@ export function HeaderHeroShell({ navItems }: Props) {
                         </p>
 
                         {activeLeft.previewImage && (
-                          <div className="relative h-40 w-full overflow-hidden rounded-lg border border-white/10">
+                          <div className="relative h-[190px] w-full overflow-hidden rounded-lg border border-white/10 bg-black">
                             <Image
                               src={activeLeft.previewImage}
                               alt={activeLeft.label}
                               fill
-                              className="object-cover"
+                              className="rounded-lg object-cover"
+                              style={{ objectPosition: "center 55%" }}
                             />
                           </div>
                         )}

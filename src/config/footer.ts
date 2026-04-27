@@ -7,7 +7,9 @@ export type FooterContent = {
   contact: {
     name: string;
     address: string[];
-    phone?: string;
+    mobile?: string;
+    studio?: string;
+    email?: string;
   };
 
   links: {

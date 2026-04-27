@@ -39,9 +39,21 @@ export function Footer({ content }: { content: FooterContent }) {
               ))}
             </p>
 
-            {contact.phone && (
-              <p className="mt-4 text-sm text-neutral-400">
-                {contact.phone}
+            {(contact.mobile || contact.studio) && (
+              <div className="mt-4 space-y-1 text-sm text-neutral-400">
+                {contact.mobile && <p>Mobile: {contact.mobile}</p>}
+                {contact.studio && <p>Studio: {contact.studio}</p>}
+              </div>
+            )}
+
+            {contact.email && (
+              <p className="mt-2 text-sm text-neutral-400">
+                <a
+                  href={`mailto:${contact.email}`}
+                  className="hover:text-amber-400 transition-colors"
+                >
+                  {contact.email}
+                </a>
               </p>
             )}
           </div>

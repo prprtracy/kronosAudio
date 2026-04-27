@@ -2,8 +2,7 @@
   "eyebrow": "Contact",
   "headline": "Get in Touch",
   "intro": [
-    "For general inquiries, distribution, or support,",
-    "please use the appropriate contact below."
+    "For all inquiries regarding Kronos Audio products, distribution, and demonstrations, please use the contact information below or connect with your local distributor."
   ],
 
   "sections": [
@@ -11,34 +10,24 @@
       "title": "General Inquiries",
       "items": [
         {
-          "label": "Email",
-          "value": "info@kronosaudio.com"
-        },
-        {
-          "label": "Location",
-          "value": "Montreal, Canada"
+          "label": "Kronos Audio",
+          "value": "4035, rue Saint-Ambroise\nSuite 414\nMontréal (Québec) H4C 2E1\nCanada\n\nT +1-514-865-6746 (Mobile)\nT +1-514-939-5770 (Studio)\n\nE kronosaudio@gmail.com"
         }
       ]
     },
     {
       "title": "Distribution",
-      "items": [
-        {
-          "label": "Worldwide Distribution",
-          "value": "distributors@kronosaudio.com"
-        }
-      ]
-    },
-    {
-      "title": "Support",
-      "items": [
-        {
-          "label": "Technical Support",
-          "value": "support@kronosaudio.com"
-        }
-      ]
+      "body": [
+        "For product availability, regional pricing, and demonstrations, please contact your local Kronos Audio distributor.",
+        "Our global network of authorized partners ensures dedicated support and personalized service in your region."
+      ],
+      "items": [],
+      "cta": {
+        "label": "Find Your Local Distributor",
+        "href": "/distributors"
+      }
     }
   ],
 
-  "closing": "We look forward to hearing from you."
+  "closing": "Kronos Audio — Time for Music."
 }

@@ -28,6 +28,50 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
   const overview = product.overview;
   const endorsements = product.endorsements ?? [];
+  const highlightsBySlug: Record<string, string[]> = {
+    discovery: [
+      "NEW SUSPENSION COUPLING",
+      "ISOLATED DRIVE",
+      "HAND-FINISHED",
+      "REFERENCE PLATFORM",
+    ],
+    sparta: [
+      "DUAL DECK ARCHITECTURE",
+      "COUNTER-ROTATION",
+      "SOLID ALUMINUM",
+      "SUSPENDED",
+    ],
+    "kronos-pro": [
+      "ORIGINAL REFERENCE",
+      "COUNTER-ROTATIONAL LEGACY",
+      "LIMITED PRODUCTION",
+      "REFERENCE PLATFORM",
+    ],
+    perpetual: [
+      "SINGLE-TONEARM PLATFORM",
+      "UPGRADEABLE ARCHITECTURE",
+      "RESONANCE CONTROL",
+      "REFINED VALUE",
+    ],
+    tonearms: [
+      "PRECISION TONEARM SYSTEM",
+      "RS TECHNOLOGY",
+      "RESONANCE SUPPRESSION",
+      "SIGNAL INTEGRITY",
+    ],
+    phono: [
+      "REFERENCE PHONO STAGE",
+      "SIGNAL INTEGRITY",
+      "FULL-TUBE ARCHITECTURE",
+      "ADJUSTABLE EQ",
+    ],
+    racks: [
+      "ENGINEERED FOUNDATIONS",
+      "SYSTEM INTEGRATION",
+      "VIBRATION CONTROL",
+      "ANALOGUE SOLUTION",
+    ],
+  };
 
   const hero = {
     eyebrow: product.category ?? "Products",
@@ -36,33 +80,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
       ? { label: "MSRP", value: product.msrp.display }
       : undefined,
     dek: product.description?.slice(0, 2) ?? [],
-    keyline:
-      product.slug === "discovery"
-        ? "33 1/3 / 45 RPM / COUNTER-ROTATION / SUSPENDED ARCHITECTURE"
-        : product.slug === "sparta"
-          ? "33 1/3 / 45 RPM / DUAL DECK / COUNTER-ROTATION"
-          : "33 1/3 / 45 RPM / MODULAR PLATFORM / UPGRADEABLE",
-    highlights:
-      product.slug === "discovery"
-        ? [
-            "NEW SUSPENSION COUPLING",
-            "ISOLATED DRIVE",
-            "HAND-FINISHED",
-            "REFERENCE PLATFORM",
-          ]
-        : product.slug === "sparta"
-          ? [
-              "DUAL DECK ARCHITECTURE",
-              "COUNTER-ROTATION",
-              "SOLID ALUMINUM",
-              "SUSPENDED",
-            ]
-          : [
-              "MODULAR PLATFORM",
-              "UPGRADE PATH",
-              "COUNTER-ROTATION",
-              "SUSPENDED",
-            ],
+    highlights: highlightsBySlug[product.slug] ?? [],
     cta: { label: "Find a Distributor", href: "/distributors" },
     image: {
       src: product.image ?? product.gallery?.[0] ?? "/media/products/placeholder.jpg",
@@ -94,6 +112,15 @@ export default async function ProductDetailPage({ params }: PageProps) {
                   label: "Notes",
                   copy: overview?.notes ?? [],
                   signature: overview?.footerTag,
+                }
+              : undefined
+          }
+          award={
+            product.slug === "discovery"
+              ? {
+                  src: "/media/rewards/hifi.png",
+                  alt: "HiFi+ Innovation of the Year Award 2021",
+                  lines: ["WON HIFI+", "INNOVATION OF THE YEAR", "AWARD"],
                 }
               : undefined
           }

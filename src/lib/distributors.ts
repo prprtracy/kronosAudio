@@ -20,6 +20,11 @@ export type DistributorPartner = {
   name: string;
   city: string;
   country: string;
+  contactPerson?: string;
+  address?: string;
+  phone?: string;
+  email?: string;
+  website?: string;
   region: RegionId;
   lat: number;
   lng: number;

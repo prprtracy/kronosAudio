@@ -5,7 +5,12 @@ export type ContactItem = {
 
 export type ContactSection = {
   title: string;
+  body?: string | string[];
   items: ContactItem[];
+  cta?: {
+    label: string;
+    href: string;
+  };
 };
 
 export type ContactContent = {

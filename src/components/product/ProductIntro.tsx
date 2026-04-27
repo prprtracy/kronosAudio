@@ -10,18 +10,26 @@ export type ProductIntroNote = {
   signature?: string;
 };
 
+export type ProductIntroAward = {
+  src: string;
+  alt: string;
+  lines: [string, string, string];
+};
+
 export function ProductIntro({
   title = "Overview",
   paragraphs = [],
   eyebrow = "Design",
   variant = "dark",
-  note
+  award,
+  note,
 }: {
   title?: string;
   eyebrow?: string;
   paragraphs?: string[];
   variant?: Variant;
   note?: ProductIntroNote;
+  award?: ProductIntroAward;
 }) {
   if (!paragraphs || paragraphs.length === 0) return null;
 
@@ -99,6 +107,28 @@ export function ProductIntro({
                   <p key={idx}>{p}</p>
                 ))}
               </div>
+
+              {award ? (
+                <div className="mt-10 flex items-center gap-4">
+                  <img
+                    src={award.src}
+                    alt={award.alt}
+                    className="h-20 w-20 object-contain"
+                  />
+
+                  <div className="flex flex-col">
+                    <span className="text-xs tracking-widest text-neutral-400 uppercase">
+                      {award.lines[0]}
+                    </span>
+                    <span className="text-sm font-semibold tracking-widest text-neutral-900 uppercase">
+                      {award.lines[1]}
+                    </span>
+                    <span className="text-xs tracking-widest text-neutral-500 uppercase">
+                      {award.lines[2]}
+                    </span>
+                  </div>
+                </div>
+              ) : null}
             </div>
 
             {/* right: editorial note (JSON-driven, optional) */}

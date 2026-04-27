@@ -15,6 +15,16 @@ type Product = {
   gallery?: readonly string[];
 };
 
+const productMicroFacts: Record<string, string> = {
+  discovery: "NEW SUSPENSION COUPLING · ISOLATED DRIVE",
+  sparta: "DUAL DECK ARCHITECTURE · COUNTER-ROTATION",
+  "kronos-pro": "ORIGINAL REFERENCE · COUNTER-ROTATIONAL LEGACY",
+  perpetual: "SINGLE-TONEARM PLATFORM · UPGRADEABLE ARCHITECTURE",
+  tonearms: "PRECISION TONEARM SYSTEM · RS TECHNOLOGY",
+  phono: "REFERENCE PHONO STAGE · SIGNAL INTEGRITY",
+  racks: "ENGINEERED FOUNDATIONS · SYSTEM INTEGRATION",
+};
+
 export function ProductZigZagRow({
   product,
   index,
@@ -108,11 +118,7 @@ export function ProductZigZagRow({
 
           {/* micro facts（保持你之前的“画册式一句话”） */}
           <p className="mt-5 text-[11px] uppercase tracking-[0.28em] text-neutral-400">
-            {product.slug === "sparta"
-              ? "DUAL DECK ARCHITECTURE · COUNTER-ROTATION"
-              : product.slug === "discovery"
-              ? "NEW SUSPENSION COUPLING · ISOLATED DRIVE"
-              : "MODULAR PLATFORM · UPGRADEABLE TO FULL SPARTA"}
+            {productMicroFacts[product.slug] ?? "REFERENCE PLATFORM · KRONOS AUDIO"}
           </p>
 
           {/* subtle CTA line（逼格，不像按钮） */}

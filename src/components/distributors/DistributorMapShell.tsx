@@ -20,10 +20,10 @@ export function DistributorMapShell({ data }: Props) {
   }, [data.partners, region]);
 
   const active = useMemo(() => partners.find((p) => p.id === activeId) ?? null, [partners, activeId]);
+  const hasPartners = partners.length > 0;
 
   return (
     <div className="space-y-6">
-      {/* Filters */}
       <div className="flex flex-wrap gap-2">
         {data.regions.map((r) => (
           <button
@@ -45,52 +45,45 @@ export function DistributorMapShell({ data }: Props) {
         ))}
       </div>
 
-      {/* Map Card */}
-{/* Map Section */}
-<section className="mt-12">
-  <div
-    className={clsx(
-      "rounded-3xl overflow-hidden",
-      "bg-white",
-      "ring-1 ring-black/10"
-    )}
-  >
-    <div className="p-4 sm:p-6">
-      <WorldPartnerMap
-        partners={partners}
-        activeId={activeId}
-        onActivate={setActiveId}
-      />
-    </div>
-  </div>
-</section>
+      <section className="mt-12">
+        <div className="rounded-3xl overflow-hidden bg-white ring-1 ring-black/10">
+          <div className="p-4 sm:p-6">
+            <WorldPartnerMap
+              partners={partners}
+              activeId={activeId}
+              onActivate={setActiveId}
+            />
+          </div>
+        </div>
+      </section>
 
-
-      {/* Mobile tap card / Desktop selected */}
       {active && <ActivePartnerCard partner={active} onClose={() => setActiveId(null)} />}
 
-      {/* Fallback list (SEO + 可用性) */}
       <div className="rounded-3xl border border-neutral-800 bg-black/30">
         <div className="p-6">
           <p className="text-xs uppercase tracking-[0.22em] text-neutral-400">Directory</p>
-          <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {partners.map((p) => (
-              <button
-                key={p.id}
-                type="button"
-                onClick={() => setActiveId(p.id)}
-                className={clsx(
-                  "text-left rounded-2xl border px-4 py-4 transition-colors",
-                  "border-neutral-800 bg-black/20 hover:bg-black/30 hover:border-neutral-600"
-                )}
-              >
-                <div className="text-sm font-medium text-white">{p.name}</div>
-                <div className="mt-1 text-xs text-neutral-400">
-                  {p.city}, {p.country}
-                </div>
-              </button>
-            ))}
-          </div>
+
+          {hasPartners ? (
+            <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {partners.map((p) => (
+                <button
+                  key={p.id}
+                  type="button"
+                  onClick={() => setActiveId(p.id)}
+                  className={clsx(
+                    "text-left rounded-2xl border px-4 py-4 transition-colors",
+                    "border-neutral-800 bg-black/20 hover:bg-black/30 hover:border-neutral-600"
+                  )}
+                >
+                  <PartnerDetails partner={p} compact />
+                </button>
+              ))}
+            </div>
+          ) : (
+            <div className="mt-4 rounded-2xl border border-neutral-800 bg-black/20 px-4 py-8 text-sm text-neutral-400">
+              No distributors are currently listed for this region.
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -107,31 +100,64 @@ function ActivePartnerCard({
   return (
     <div className="rounded-3xl border border-neutral-800 bg-black/40 backdrop-blur-md">
       <div className="p-5 flex items-start justify-between gap-4">
-        <div>
-          <div className="text-sm font-semibold">{partner.name}</div>
-          <div className="mt-1 text-xs text-neutral-400">
-            {partner.city}, {partner.country}
-          </div>
-          {partner.url && (
-            <a
-              href={partner.url}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-3 inline-flex text-[11px] uppercase tracking-[0.22em] text-amber-300 hover:text-amber-200"
-            >
-              Visit partner →
-            </a>
-          )}
-        </div>
+        <PartnerDetails partner={partner} />
 
         <button
           type="button"
           onClick={onClose}
-          className="text-neutral-400 hover:text-neutral-200 text-sm"
+          className="text-sm text-neutral-400 hover:text-neutral-200"
           aria-label="Close"
         >
-          ✕
+          Close
         </button>
+      </div>
+    </div>
+  );
+}
+
+function PartnerDetails({
+  partner,
+  compact = false,
+}: {
+  partner: DistributorPartner;
+  compact?: boolean;
+}) {
+  const websiteHref = partner.website
+    ? partner.website.startsWith("http")
+      ? partner.website
+      : `https://${partner.website}`
+    : "";
+
+  return (
+    <div>
+      <div className="text-sm font-medium text-white">{partner.name}</div>
+      <div className="mt-1 text-xs text-neutral-400">
+        {[partner.city, partner.country].filter(Boolean).join(", ")}
+      </div>
+
+      <div className={clsx("mt-3 space-y-1 text-xs leading-relaxed text-neutral-400", compact && "text-[11px]")}>
+        {partner.contactPerson && <p>Contact: {partner.contactPerson}</p>}
+        {partner.address && <p>{partner.address}</p>}
+        {partner.phone && <p>{partner.phone}</p>}
+        {partner.email && (
+          <p>
+            <a href={`mailto:${partner.email}`} className="hover:text-amber-300">
+              {partner.email}
+            </a>
+          </p>
+        )}
+        {partner.website && (
+          <p>
+            <a
+              href={websiteHref}
+              target="_blank"
+              rel="noreferrer"
+              className="text-amber-300 hover:text-amber-200"
+            >
+              {partner.website}
+            </a>
+          </p>
+        )}
       </div>
     </div>
   );

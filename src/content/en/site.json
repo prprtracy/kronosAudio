@@ -23,43 +23,43 @@
               "label": "Discovery",
               "productSlug": "discovery",
               "description": "Our flagship two tonearm platform featuring a radically new exo-skeleton chassis system designed to minimize resonances and optimize isolation.",
-              "previewImage": "/media/products/Discovery/discovery1.jpg"
+              "previewImage": "/media/discovery_001.jpg"
             },
             {
               "label": "Perpetual",
               "productSlug": "perpetual",
               "description": "Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point.",
-              "previewImage": "/media/products/Perpetual/perpetual1.jpg"
+              "previewImage": "/media/perpetual_000.jpg"
             },
             {
               "label": "Kronos Pro",
               "productSlug": "kronos-pro",
               "description": "The original Kronos reference turntable.",
-              "previewImage": "/media/products/Kronos Pro/pro1.jpg"
+              "previewImage": "/media/pro_000.jpg"
             },
             {
               "label": "Sparta",
               "productSlug": "sparta",
               "description": "An entry to the world of KRONOS.",
-              "previewImage": "/media/products/Sparta/sparta1.jpg"
+              "previewImage": "/media/sparta_000.jpg"
             },
             {
               "label": "Tonearms",
               "productSlug": "tonearms",
               "description": "Patented RS technology Tonearm.",
-              "previewImage": "/media/products/tonearm/tonearm1.jpg"
+              "previewImage": "/media/tonearm_000.jpg"
             },
             {
               "label": "Phono",
               "productSlug": "phono",
               "description": "Reference phono stages preserving signal integrity.",
-              "previewImage": "/media/products/Phono/phono1.jpg"
+              "previewImage": "/media/phono_000.jpg"
             },
             {
               "label": "Racks & Supports",
               "productSlug": "racks",
               "description": "Engineered foundations controlling vibration.",
-              "previewImage": "/media/products/tonearm/RS1.jpg"
+              "previewImage": "/media/whole/whole2.jpg"
             }
           ]
         }

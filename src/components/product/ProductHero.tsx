@@ -212,10 +212,11 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
               )}
             </div>
 
-            <p className="mt-3 text-xs tracking-[0.18em] text-white/50">
-              {(keyline ??
-                "COUNTER-ROTATION · SUSPENDED · HAND-FINISHED").toUpperCase()}
-            </p>
+            {keyline ? (
+              <p className="mt-3 text-xs tracking-[0.18em] text-white/50">
+                {keyline.toUpperCase()}
+              </p>
+            ) : null}
           </div>
 
         </div>
