@@ -3,13 +3,119 @@ import { notFound } from "next/navigation";
 import { getProducts } from "@/lib/products";
 import { ProductHero } from "@/components/product/ProductHero";
 import { ProductIntro } from "@/components/product/ProductIntro";
-import { ProductEndorsements } from "@/components/product/ProductEndorsements";
+import {
+  ProductEndorsements,
+  type VideoReview,
+} from "@/components/product/ProductEndorsements";
 import { ProductSpecs } from "@/components/product/ProductSpecs";
 import { ProductAnchorNav } from "@/components/product/ProductAnchorNav";
 import { ProductDownloads } from "@/components/product/ProductDownloads";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
+};
+
+const videoReviewsByProduct: Record<string, VideoReview[]> = {
+  discovery: [
+    {
+      id: "discovery-audio-analyst-launch",
+      title: "E56: The KRONOS Discovery turntable launch",
+      channel: "the audio analyst",
+      youtubeId: "QvKQwTwkils",
+      type: "Product Launch / Turntable",
+    },
+    {
+      id: "discovery-avshowreports-premiere",
+      title: "Kronos Discovery Turntable, AVShowrooms World Premier",
+      channel: "AVshowreports",
+      youtubeId: "eQFGYSrowx4",
+      type: "World Premiere / Listening Session",
+    },
+  ],
+  perpetual: [
+    {
+      id: "perpetual-audio-analyst",
+      title:
+        "E170: Introducing the KRONOS Audio Perpetual Turntable & Discovery Phono Stage",
+      channel: "the audio analyst",
+      youtubeId: "10VE8DSspko",
+      type: "Product Introduction",
+    },
+    {
+      id: "perpetual-hificlub",
+      title:
+        "KRONOS PERPETUAL turntable was designed everyone can experience KRONOS sound",
+      channel: "HIFICLUB",
+      youtubeId: "3bKXyn68k_E",
+      type: "High End Munich 2024 Demo",
+    },
+  ],
+  "kronos-pro": [
+    {
+      id: "kronos-pro-audio-analyst",
+      title: "E65: The KRONOS Pro Limited Edition turntable",
+      channel: "the audio analyst",
+      youtubeId: "DyaT7kcgYCI",
+      type: "Editorial Discussion",
+    },
+    {
+      id: "kronos-pro-suncoast",
+      title: "My Kronos Pro Turntable",
+      channel: "Suncoast Audio",
+      youtubeId: "8AqHVQZqncA",
+      type: "Owner / Dealer Showcase",
+    },
+  ],
+  sparta: [
+    {
+      id: "sparta-sound-sommelier",
+      title: "KRONOS SPARTA Hi-end Turntable! UNBOXING - SETUP - LISTENING",
+      channel: "SOUND SOMMELIER",
+      youtubeId: "Mcm-xav0d_c",
+      type: "Unboxing / Setup / Listening",
+    },
+    {
+      id: "sparta-av-equipment-reviews",
+      title: "Kronos Sparta Turntable, Review pt. 1, intro and set up",
+      channel: "AVequipmentReviews",
+      youtubeId: "nRCTDsI9nTU",
+      type: "Review / Setup",
+    },
+  ],
+  phono: [
+    {
+      id: "phono-audio-analyst",
+      title:
+        "E170: Introducing the KRONOS Audio Perpetual Turntable & Discovery Phono Stage",
+      channel: "the audio analyst",
+      youtubeId: "10VE8DSspko",
+      type: "Discovery Phono Stage",
+    },
+    {
+      id: "phono-gtt-audio",
+      title: "GTT AUDIO - Episode 95 - Kronos New Turntable and Phono",
+      channel: "GTT Audio",
+      youtubeId: "DpIhuQz9p2A",
+      type: "Phono / Turntable Discussion",
+    },
+  ],
+  tonearms: [
+    {
+      id: "tonearms-audio-analyst",
+      title: "E69: The KRONOS Resonance Suppression Tonearms",
+      channel: "the audio analyst",
+      youtubeId: "sbBdjHBG0j8",
+      type: "Tonearm Technology",
+    },
+    {
+      id: "tonearms-gtt-setup",
+      title:
+        "E16: The KRONOS Sparta Turntable, Helena Tonearm, and Cartridge Setup",
+      channel: "GTT Audio",
+      youtubeId: "Q6JKULtbHqc",
+      type: "Helena / Setup",
+    },
+  ],
 };
 
 export async function generateStaticParams() {
@@ -28,6 +134,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
   const overview = product.overview;
   const endorsements = product.endorsements ?? [];
+  const videoReviews = videoReviewsByProduct[product.slug];
   const highlightsBySlug: Record<string, string[]> = {
     discovery: [
       "NEW SUSPENSION COUPLING",
@@ -131,6 +238,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
       <section id="reviews">
         <ProductEndorsements
           title="Press & Endorsements"
+          videoReviews={videoReviews}
           items={endorsements.map((item, idx) => ({
             id: `${product.slug}-${idx}`,
             initials: item.initials,

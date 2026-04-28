@@ -1,0 +1,52 @@
+
+> kronosaudio@0.1.0 dev
+> next dev -p 3000
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   ▲ Next.js 16.0.8 (Turbopack)
+   - Local:         http://localhost:3000
+   - Network:       http://192.168.2.10:3000
+
+ ✓ Starting...
+Creating turbopack project { dir: 'D:\\Kronos_Audio\\kronosaudio', testMode: true }
+ ✓ Ready in 495ms
+ GET / 200 in 1154ms (compile: 962ms, render: 193ms)
+ GET / 200 in 66ms (compile: 3ms, render: 63ms)
+ GET /products 200 in 253ms (compile: 211ms, render: 42ms)
+ GET /products/racks 200 in 452ms (compile: 428ms, render: 24ms)
+ GET /products 200 in 60ms (compile: 1829µs, render: 58ms)
+ GET /products/racks 200 in 19ms (compile: 5ms, render: 14ms)
+ GET /products 200 in 16ms (compile: 1594µs, render: 14ms)
+ GET /products 200 in 20ms (compile: 3ms, render: 17ms)
+ ✓ Compiled in 58ms
+ GET /products 200 in 29ms (compile: 3ms, render: 26ms)
+ ✓ Compiled in 31ms
+ GET /products/perpetual 200 in 192ms (compile: 44ms, render: 148ms)
+ GET /products/discovery 200 in 87ms (compile: 3ms, render: 84ms)
+ GET /products/perpetual 200 in 62ms (compile: 6ms, render: 57ms)
+ GET /products 200 in 24ms (compile: 1715µs, render: 23ms)
+ ✓ Compiled in 28ms
+ GET /products/perpetual 200 in 184ms (compile: 45ms, render: 139ms)
+ GET /products/kronos-pro 200 in 190ms (compile: 75ms, render: 115ms)
+ GET /products/perpetual 200 in 27ms (compile: 6ms, render: 21ms)
+ GET /products/perpetual 200 in 91ms (compile: 47ms, render: 44ms)
+ GET /products/perpetual 200 in 87ms (compile: 42ms, render: 45ms)
+ GET /products/phono 200 in 111ms (compile: 6ms, render: 105ms)
+ GET /products/perpetual 200 in 54ms (compile: 6ms, render: 48ms)
+ GET /products/kronos-pro 200 in 55ms (compile: 1728µs, render: 54ms)
+ GET /products/sparta 200 in 62ms (compile: 6ms, render: 57ms)
+ GET /products/tonearms 200 in 48ms (compile: 1430µs, render: 46ms)
+ GET /products/discovery 200 in 58ms (compile: 5ms, render: 54ms)
+ GET /products/racks 200 in 38ms (compile: 2ms, render: 36ms)
+ GET /products/perpetual 200 in 63ms (compile: 5ms, render: 58ms)
+ GET /products/discovery 200 in 32ms (compile: 5ms, render: 27ms)
+ GET /products/tonearms 200 in 29ms (compile: 6ms, render: 23ms)
+ GET /products/kronos-pro 200 in 25ms (compile: 5ms, render: 20ms)
+ GET /products/phono 200 in 26ms (compile: 5ms, render: 21ms)
+ GET /products/phono 200 in 105ms (compile: 53ms, render: 52ms)
+ GET /products/discovery 200 in 102ms (compile: 5ms, render: 97ms)
+ GET /products/perpetual 200 in 70ms (compile: 2ms, render: 68ms)
+ GET /products/discovery 200 in 29ms (compile: 7ms, render: 22ms)
+ GET /products/discovery 200 in 94ms (compile: 45ms, render: 50ms)
+ GET /products/discovery 200 in 100ms (compile: 5ms, render: 95ms)
+ GET /products/tonearms 200 in 59ms (compile: 2ms, render: 57ms)

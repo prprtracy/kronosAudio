@@ -13,16 +13,93 @@ export type Endorsement = {
   subtitle?: string;
 };
 
+export type VideoReview = {
+  id: string;
+  title: string;
+  channel: string;
+  youtubeId: string;
+  type: string;
+};
+
+function VideoReviewCard({ video }: { video: VideoReview }) {
+  const videoUrl = `https://www.youtube.com/watch?v=${video.youtubeId}`;
+
+  return (
+    <Link
+      href={videoUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={clsx(
+        "group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.035]",
+        "shadow-[0_22px_70px_rgba(0,0,0,0.24)] transition duration-300",
+        "hover:-translate-y-1 hover:border-amber-200/25 hover:bg-white/[0.055]"
+      )}
+    >
+      <div className="relative aspect-video overflow-hidden bg-neutral-950">
+        <img
+          src={`https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
+          alt={`${video.title} thumbnail`}
+          className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02] group-hover:brightness-75"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
+      </div>
+
+      <div className="p-6 sm:p-7">
+        <div className="inline-flex rounded-full border border-amber-200/20 bg-black/30 px-3 py-1 text-[10px] uppercase tracking-[0.22em] text-amber-200/80">
+          {video.type}
+        </div>
+
+        <h4 className="mt-5 text-lg font-semibold leading-snug text-neutral-50">
+          {video.title}
+        </h4>
+
+        <p className="mt-3 text-sm text-neutral-400">{video.channel}</p>
+
+        <span
+          className={clsx(
+            "mt-6 inline-flex items-center justify-center rounded-full border border-amber-200/20 bg-black/20 px-4 py-2",
+            "text-[11px] uppercase tracking-[0.28em] text-amber-200/80 transition-colors",
+            "group-hover:border-amber-200/35 group-hover:bg-black/30 group-hover:text-amber-200"
+          )}
+        >
+          Watch Video <span className="ml-2">-&gt;</span>
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+function VideoReviewsSection({ videos }: { videos: VideoReview[] }) {
+  return (
+    <div className="mb-14">
+      <h3 className="text-sm font-semibold uppercase tracking-[0.28em] text-neutral-200">
+        Video Reviews
+      </h3>
+
+      <div className="mt-6 grid gap-5 md:grid-cols-2">
+        {videos.map((video) => (
+          <VideoReviewCard key={video.id} video={video} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function ProductEndorsements({
   title = "Press & Endorsements",
   kicker = "Selected citations and editorial mentions.",
+  videoReviews,
   items,
 }: {
   title?: string;
   kicker?: string;
+  videoReviews?: VideoReview[];
   items: Endorsement[];
 }) {
   if (!items?.length) return null;
+
+  const hasVideoReviews = Boolean(videoReviews?.length);
 
   return (
     <section className="relative py-14 sm:py-16">
@@ -42,6 +119,16 @@ export function ProductEndorsements({
             </p>
           </div>
         </div>
+
+        {hasVideoReviews ? (
+          <VideoReviewsSection videos={videoReviews ?? []} />
+        ) : null}
+
+        {hasVideoReviews ? (
+          <h3 className="mb-6 text-sm font-semibold uppercase tracking-[0.28em] text-neutral-200">
+            Written Reviews
+          </h3>
+        ) : null}
 
         <div className="space-y-6">
           {items.map((it) => (

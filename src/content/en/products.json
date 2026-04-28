@@ -287,7 +287,7 @@
         "Our no-frills platform - an entry to the world of KRONOS.",
         "Unique to behold, the Sparta is essentially two complete turntables-each including a skeletal, metal-framed plinth fabricated of solid aluminum boards."
       ],
-      "image": "/media/sparta_000.jpg",
+      "image": "/media/sparta_001.jpg",
       "overview": {
         "title": "Overview",
         "paragraphs": [
@@ -301,6 +301,7 @@
         "footerTag": "HAND-FINISHED · REFERENCE PLATFORM"
       },
       "gallery": [
+        "/media/sparta_001.jpg",
         "/media/sparta_000.jpg",
         "/media/products/Sparta/sparta13.jpg",
         "/media/products/Sparta/sparta14.jpg"
@@ -518,7 +519,7 @@
       "description": [
         "Engineered foundations that control vibration and preserve mechanical integrity, allowing Kronos systems to perform at their highest level."
       ],
-      "image": "/media/whole/whole2.jpg",
+      "image": "/media/fullAn_000.jpg",
       "overview": {
         "title": "Overview",
         "paragraphs": [
@@ -532,6 +533,7 @@
         "footerTag": "ENGINEERED FOUNDATIONS · SYSTEM INTEGRATION"
       },
       "gallery": [
+        "/media/fullAn_000.jpg",
         "/media/whole/whole2.jpg"
       ],
       "downloads": [],
