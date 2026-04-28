@@ -122,7 +122,6 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
             ) : null}
           </div>
 
-          {/* Image / Hero Gallery */}
           <div className="md:col-span-6 lg:col-span-7">
             <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/10">
               {/* overlays */}
