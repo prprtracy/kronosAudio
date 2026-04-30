@@ -72,7 +72,6 @@ export const products: Product[] = [
     name: "Perpetual",
     tagline: "Advanced Resonance Control",
     description: ["Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point."],
-    // ✅ 统一为 Money | null：没有价格就用 null（不要 amount:0 混淆语义）
     
     
     gallery: ["/media/placeholder-perpetual.jpg"],
