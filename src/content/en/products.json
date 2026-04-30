@@ -468,10 +468,14 @@
       },
       "gallery": [
         "/media/phono_000.jpg",
+        "/media/products/Phono/phono_0.jpg",
+        "/media/products/Phono/phono_1.jpg",
+        "/media/products/Phono/phono_2.jpg",
+        "/media/products/Phono/phono_3.jpg",
         "/media/products/Phono/phono10.jpg",
-        "/media/products/Phono/phono12.jpg",
-        "/media/products/Phono/phono3.jpg",
-        "/media/products/Phono/phono5.jpg"
+        "/media/products/Phono/phono11.jpg",
+        "/media/products/Phono/phono12.jpg"
+        
       ],
       "downloads": [],
       "specs": [],
