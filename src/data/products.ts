@@ -72,8 +72,6 @@ export const products: Product[] = [
     name: "Perpetual",
     tagline: "Advanced Resonance Control",
     description: ["Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point."],
-    
-    
     gallery: ["/media/placeholder-perpetual.jpg"],
     downloads: [],
     specs: [],
