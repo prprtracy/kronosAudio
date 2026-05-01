@@ -55,7 +55,6 @@ export function ProductDetailGallery({
                   }
                   className="object-cover opacity-90 group-hover:opacity-100 transition-opacity"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-black/25" />
               </div>
             </div>
           );

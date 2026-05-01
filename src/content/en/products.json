@@ -34,16 +34,18 @@
       "downloads": [
         {
           "label": "Download Assembly Instructions",
-          "url": "/media/downloads/KronosPro assembly instructions 2014.pdf"
+          "url": "/media/downloads/DISCOVERY assembly instruction 2026.pdf"
         }
       ],
       "specs": [
         { "key": "Rotational speed", "value": "33.3 rpm & 45 rpm" },
         { "key": "Tonearm length", "value": "9 to 12 inches" },
-        { "key": "Dimensions", "value": "20 in (W) x 14 in (D) x 11 in (H) / 51 cm (W) x 36 cm (D) x 28 cm (H)" },
+        { "key": "Dimensions(inches)", "value": "28 in (W) x 14.5 in (D) x 11.5 in (H)" },
+        { "key": "Dimensions(cm)", "value": "71 cm (W) x 37 cm (D) x 29 cm (H)" },
         { "key": "Weight", "value": "70 lbs / 32 kg" },
-        { "key": "Crate dimensions", "value": "24 in (W) x 32 in (D) x 16 in (H) / 61 cm (W) x 81 cm (D) x 41 cm (H)" },
-        { "key": "Shipping weight", "value": "95 lbs / 43 kg" },
+        { "key": "Crate dimensions(inches)", "value": "37 in (W) x 17.5 in (D) x 13 in (H) / Crate" },
+        { "key": "Crate dimensions(cm)", "value": "94 cm (W) x 44.5 cm (D) x 33 cm (H) / Crate" },
+        { "key": "Shipping weight", "value": "250 lbs / 113 kg" },
         { "key": "Power supply", "value": "Dual channel pure class A linear DC" },
         { "key": "AC voltage input", "value": "110V or 220V factory set" },
         { "key": "DC voltage output", "value": "0 to 5 volt, CPU controlled, factory calibrated" },
@@ -57,11 +59,11 @@
         { "key": "Strobe", "value": "CPU generated 120 Hz with LED output" },
         { "key": "Tonearm length", "value": "9 inches to 10.5 inches (229 mm to 267 mm)" },
         { "key": "Platters type", "value": "Composite compressed phenolic/aluminum, balanced" },
-        { "key": "Platter weight", "value": "27 lbs (12kg) / platter" },
+        { "key": "Platter weight", "value": "17 lbs (7.7 kg) / platter" },
         { "key": "Drive", "value": "1 silicone/viton 2.3 string belt / platter" },
         { "key": "Main bearings", "value": "Dual hydraulic isolated inverted sleeve and ball" },
         { "key": "Shaft type", "value": "Grounded heat hardened tool steel" },
-        { "key": "Ball type", "value": "Precision steel" },
+        { "key": "Ball type", "value": "High-precision ceramic" },
         { "key": "Lubricant", "value": "8 ml. variable viscosity synthetic oil" },
         { "key": "Service interval", "value": "5 years (clean and re-oil)" },
         { "key": "Suspension", "value": "Full floating top suspended" },
@@ -140,7 +142,38 @@
         "/media/products/Perpetual/perpetual5.jpg"
       ],
       "downloads": [],
-      "specs": [],
+      "specs": [
+        { "key": "Rotational speed", "value": "33.3 rpm & 45 rpm" },
+        { "key": "Tonearm length", "value": "9 to 12 inches" },
+        { "key": "Dimensions(inches)", "value": "24.5 in (W) x 14.5 in (D) x 10.5 in (H) / 62 cm (W) x 37 cm (D) x 27 cm (H)" },
+        { "key": "Dimensions(cm)", "value": "62 cm (W) x 37 cm (D) x 27 cm (H)" },
+        { "key": "Weight", "value": "115 lbs / 52 kg" },
+        { "key": "Crate dimensions(inches)", "value": "24.5 in (W) x 17 in (D) x 10.5 in (H) / 27.5 in (W) x 17.5 in (D) x 15.5 in (H)" },
+        { "key": "Crate dimensions(cm)", "value": "61 cm (W) x 81 cm (D) x 41 cm (H) / 70 cm (W) x 44.5 cm (D) x 40 cm (H)" },
+        { "key": "Shipping weight", "value": "180 lbs / 82 kg" },
+        { "key": "Power supply", "value": "Dual channel pure class A linear DC" },
+        { "key": "AC voltage input", "value": "110V or 220V factory set" },
+        { "key": "DC voltage output", "value": "0 to 5 volt, CPU controlled, factory calibrated" },
+        { "key": "DC transmission", "value": "Pico 3 pin cable" },
+        { "key": "Transmission", "value": "Pico 4 pin cable" },
+        { "key": "Motors", "value": "2432 precious metal brushes DC motors (qty 2)" },
+        { "key": "Motor mounts", "value": "Delrin capped aluminum tubes" },
+        { "key": "Speed guidance system", "value": "Continuous open loop feedback, user speed adjustable" },
+        { "key": "Sensors type", "value": "Optical diode I/O top motor tachymeter" },
+        { "key": "Correction cycle", "value": "60 times /rotation. 0.15% max., 0.05% min." },
+        { "key": "Strobe", "value": "CPU generated 120 Hz with LED output" },
+        { "key": "Tonearm length", "value": "9 inches to 10.5 inches (229 mm to 267 mm)" },
+        { "key": "Platters type", "value": "Composite compressed phenolic/aluminum, balanced" },
+        { "key": "Platter weight", "value": "17 lbs (7.7 kg) / platter" },
+        { "key": "Drive", "value": "1 silicone/viton 2.3 string belt / platter" },
+        { "key": "Main bearings", "value": "Dual hydraulic isolated inverted sleeve and ball" },
+        { "key": "Shaft type", "value": "Grounded heat hardened tool steel" },
+        { "key": "Ball type", "value": "High-precision ceramic" },
+        { "key": "Lubricant", "value": "8 ml. variable viscosity synthetic oil" },
+        { "key": "Service interval", "value": "5 years (clean and re-oil)" },
+        { "key": "Suspension", "value": "Full floating top suspended" },
+        { "key": "Elastomers", "value": "317 o-rings , viton/silicone proprietary mix" }
+      ],
       "endorsements": [
         {
           "initials": "MS",
@@ -387,7 +420,7 @@
         ],
         "notes": [
           "RS tonearms developed for Discovery and Kronoscope platforms.",
-"Incorporating patented Resonance Suppression Technology to maximize analogue signal integrity."
+          "Incorporating patented Resonance Suppression Technology to maximize analogue signal integrity."
         ],
         "footerTag": "PRECISION TONEARM SYSTEM · RS TECHNOLOGY"
       },
@@ -397,8 +430,44 @@
         "/media/products/Sparta/sparta1.jpg",
         "/media/products/tonearm/RS1.jpg"
       ],
-      "downloads": [],
-      "specs": [],
+      "downloads": [
+        {
+          "label": "Download Assembly Instructions",
+          "url": "/media/downloads/RS assembly instructions 2026.pdf"
+        }
+      ],
+      "specs": [
+        {
+          "key": "Effective Length",
+          "value": "306 mm",
+          "comparisonValue": "306 mm"
+        },
+        {
+          "key": "Pivot to Spindle",
+          "value": "292 mm",
+          "comparisonValue": "292 mm"
+        },
+        {
+          "key": "Effective Mass",
+          "value": "Medium–High",
+          "comparisonValue": "Medium"
+        },
+        {
+          "key": "Overhang",
+          "value": "13.2 mm",
+          "comparisonValue": "13.2 mm"
+        },
+        {
+          "key": "Resonant Frequency",
+          "value": "6.5 Hz",
+          "comparisonValue": "7.5 Hz"
+        },
+        {
+          "key": "Shipping Weight",
+          "value": "10 kg",
+          "comparisonValue": "5 kg"
+        }
+      ],
       "endorsements": [
         {
           "initials": "PF",

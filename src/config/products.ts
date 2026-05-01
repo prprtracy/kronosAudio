@@ -20,6 +20,7 @@ export type ProductOverview = {
 export type SpecItem = {
   key: string;
   value: string;
+  comparisonValue?: string;
 };
 
 export type EndorsementItem = {

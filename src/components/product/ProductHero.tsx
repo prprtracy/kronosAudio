@@ -124,12 +124,6 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
 
           <div className="md:col-span-6 lg:col-span-7">
             <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/10">
-              {/* overlays */}
-              <div className="pointer-events-none absolute inset-0 z-10">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-black/35" />
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.10),rgba(0,0,0,0)_55%)]" />
-              </div>
-
               {/* Image */}
               <Image
                 key={gallery[index].src}

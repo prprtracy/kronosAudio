@@ -31,7 +31,7 @@ function VideoReviewCard({ video }: { video: VideoReview }) {
       rel="noopener noreferrer"
       className={clsx(
         "group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.035]",
-        "shadow-[0_22px_70px_rgba(0,0,0,0.24)] transition duration-300",
+        "transition duration-300",
         "hover:-translate-y-1 hover:border-amber-200/25 hover:bg-white/[0.055]"
       )}
     >
@@ -39,10 +39,9 @@ function VideoReviewCard({ video }: { video: VideoReview }) {
         <img
           src={`https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
           alt={`${video.title} thumbnail`}
-          className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02] group-hover:brightness-75"
+          className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
       </div>
 
       <div className="p-6 sm:p-7">

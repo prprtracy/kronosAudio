@@ -43,8 +43,7 @@ export function ProductZigZagRow({
       className={clsx(
         "group block rounded-2xl overflow-hidden",
         "border border-neutral-800 bg-white/5",
-        "hover:border-amber-400/40 transition-colors",
-        "shadow-[0_18px_60px_rgba(0,0,0,0.55)]"
+        "hover:border-amber-400/40 transition-colors"
       )}
     >
       <div
@@ -64,13 +63,11 @@ export function ProductZigZagRow({
             priority={product.slug === "discovery"}
           />
 
-          {/* Overlay (压图不压字) */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/10 to-black/70" />
           <div className="absolute inset-0 ring-1 ring-white/5" />
 
           {/* Top label + MSRP（永远可读） */}
           <div className="absolute inset-x-0 top-0 z-10 p-5 flex items-start justify-between gap-4">
-            <p className="text-[11px] uppercase tracking-[0.3em] text-neutral-200/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.75)]">
+            <p className="text-[11px] uppercase tracking-[0.3em] text-neutral-200/90">
               {product.tagline ?? "REFERENCE TURNTABLE"}
             </p>
 

@@ -108,12 +108,11 @@ const videoReviewsByProduct: Record<string, VideoReview[]> = {
       type: "Tonearm Technology",
     },
     {
-      id: "tonearms-gtt-setup",
-      title:
-        "E16: The KRONOS Sparta Turntable, Helena Tonearm, and Cartridge Setup",
+      id: "tonearms-discovery-rs-reviewers-view",
+      title: "Reviewers View, The Kronos Discovery RS Tonearm",
       channel: "GTT Audio",
-      youtubeId: "Q6JKULtbHqc",
-      type: "Helena / Setup",
+      youtubeId: "osj3tbmy_ow",
+      type: "Discovery RS Tonearm / Reviewer Discussion",
     },
   ],
 };
@@ -254,9 +253,16 @@ export default async function ProductDetailPage({ params }: PageProps) {
       <section id="specs">
         <ProductSpecs
           title="Technical Specifications"
+          subtitle={product.slug === "tonearms" ? "RS Tonearm Comparison" : undefined}
+          comparisonLabels={
+            product.slug === "tonearms"
+              ? ["Discovery RS Tonearm", "Kronoscope RS Tonearm"]
+              : undefined
+          }
           items={(product.specs ?? []).map((s) => ({
             key: s.key,
             value: s.value,
+            comparisonValue: s.comparisonValue,
           }))}
         />
         <ProductDownloads items={product.downloads ?? []} />
