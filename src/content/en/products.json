@@ -377,28 +377,36 @@
       ],
       "endorsements": [
         {
+          "initials": "TAS",
+          "title": "Kronos Sparta Turntable",
           "quote": "I've never before been treated to vinyl playback from any system I've owned that is as clearly and profoundly moving as what I am now hearing...",
           "source": "The Absolute Sound",
-          "type": "Press",
-          "link": "#"
+          "type": "Review / Press",
+          "link": "https://www.theabsolutesound.com/articles/kronos-sparta-turntable/"
         },
         {
+          "initials": "ETM",
+          "title": "Kronos Sparta 0.5 Turntable And Upgrade To Full Sparta Review",
           "quote": "I've never before been treated to vinyl playback from any system I've owned that is as clearly and profoundly moving as what I am now hearing...",
           "source": "Enjoythemusic.com",
-          "type": "Press",
-          "link": "#"
+          "type": "Review / Press",
+          "link": "https://www.enjoythemusic.com/superioraudio/equipment/0116/Kronos_Sparta_5_Turntable_Upgrade_Review.htm"
         },
         {
+          "initials": "PF",
+          "title": "Kronos Audio Products Sparta Turntable",
           "quote": "A cloudless day has dawned over the vinyl landscape, one where you feel you can see forever and your view is only limited by your acuity. There are no environmental impediments in the way.",
           "source": "Positive Feedback",
-          "type": "Press",
-          "link": "#"
+          "type": "Review / Press",
+          "link": "https://positive-feedback.com/reviews/hardware-reviews/kronos-audio-products-sparta-turntable/"
         },
         {
+          "initials": "AV",
+          "title": "Kronos Sparta Turntable",
           "quote": "The Kronos Sparta turntable takes the counter rotational technology of the flagship Kronos turntable and incorporates it into a more affordable and tidy package.",
           "source": "AV Showrooms",
-          "type": "Press",
-          "link": "#"
+          "type": "Video Review / Press",
+          "link": "https://www.kronosaudio.com/sparta/#reviews"
         }
       ]
     },
