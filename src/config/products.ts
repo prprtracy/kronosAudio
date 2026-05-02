@@ -49,6 +49,7 @@ export type Product = {
   tagline?: string;
   description: string[];
   image?: string;
+  note?: string;
   overview?: ProductOverview;
   endorsements?: EndorsementItem[];
   msrp?: Money;

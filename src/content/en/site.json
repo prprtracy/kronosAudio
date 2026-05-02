@@ -35,7 +35,7 @@
               "label": "Kronos Pro",
               "productSlug": "kronos-pro",
               "description": "The original Kronos reference turntable.",
-              "previewImage": "/media/pro_000.jpg"
+              "previewImage": "/media/pro_0.jpg"
             },
             {
               "label": "Sparta",
@@ -47,7 +47,7 @@
               "label": "Tonearms",
               "productSlug": "tonearms",
               "description": "Patented RS technology Tonearm.",
-              "previewImage": "/media/tonearm_000.jpg"
+              "previewImage": "/media/tonearm_0.jpg"
             },
             {
               "label": "Phono",
@@ -59,7 +59,7 @@
               "label": "Racks & Supports",
               "productSlug": "racks",
               "description": "Engineered foundations controlling vibration.",
-              "previewImage": "/media/whole/whole2.jpg"
+              "previewImage": "/media/fullAn_000.jpg"
             }
           ]
         }

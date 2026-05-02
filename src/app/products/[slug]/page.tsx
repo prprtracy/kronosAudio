@@ -2,11 +2,12 @@ import { notFound } from "next/navigation";
 
 import { getProducts } from "@/lib/products";
 import { ProductHero } from "@/components/product/ProductHero";
-import { ProductIntro } from "@/components/product/ProductIntro";
+import { ProductIntro, type ProductIntroAward } from "@/components/product/ProductIntro";
 import {
   ProductEndorsements,
   type VideoReview,
 } from "@/components/product/ProductEndorsements";
+import { ProductFeaturedCoverage } from "@/components/product/ProductFeaturedCoverage";
 import { ProductSpecs } from "@/components/product/ProductSpecs";
 import { ProductAnchorNav } from "@/components/product/ProductAnchorNav";
 import { ProductDownloads } from "@/components/product/ProductDownloads";
@@ -178,6 +179,19 @@ export default async function ProductDetailPage({ params }: PageProps) {
       "ANALOGUE SOLUTION",
     ],
   };
+  const awardBySlug: Record<string, ProductIntroAward> = {
+    discovery: {
+      src: "/media/rewards/hifi.png",
+      alt: "HiFi+ Innovation of the Year Award 2021",
+      lines: ["WON HIFI+", "INNOVATION OF THE YEAR", "AWARD"],
+    },
+    "kronos-pro": {
+      src: "/media/rewards/hifi.jpg",
+      alt: "HiFi+ Editor's Choice Award 2020 for Kronos Pro",
+      lines: ["WON HIFI+", "EDITOR'S CHOICE", "2020"],
+      href: "https://daviddenyerpr.co.uk/2020/05/29/hi-fi-plus-editors-choice-awards-2020-kronos-pro-reference-turntable/",
+    },
+  };
 
   const hero = {
     eyebrow: product.category ?? "Products",
@@ -187,6 +201,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
       : undefined,
     dek: product.description?.slice(0, 2) ?? [],
     highlights: highlightsBySlug[product.slug] ?? [],
+    note: product.note,
     cta: { label: "Find a Distributor", href: "/distributors" },
     image: {
       src: product.image ?? product.gallery?.[0] ?? "/media/products/placeholder.jpg",
@@ -221,15 +236,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                 }
               : undefined
           }
-          award={
-            product.slug === "discovery"
-              ? {
-                  src: "/media/rewards/hifi.png",
-                  alt: "HiFi+ Innovation of the Year Award 2021",
-                  lines: ["WON HIFI+", "INNOVATION OF THE YEAR", "AWARD"],
-                }
-              : undefined
-          }
+          award={awardBySlug[product.slug as keyof typeof awardBySlug]}
           variant="light"
         />
       </section>
@@ -248,6 +255,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
             subtitle: item.type,
           }))}
         />
+        {product.slug === "kronos-pro" ? <ProductFeaturedCoverage /> : null}
       </section>
 
       <section id="specs">

@@ -14,7 +14,22 @@ export type ProductIntroAward = {
   src: string;
   alt: string;
   lines: [string, string, string];
+  href?: string;
 };
+
+function renderStrongText(text: string) {
+  const parts = text.split(/(<strong>.*?<\/strong>)/);
+
+  return parts.map((part, index) => {
+    const match = part.match(/^<strong>(.*?)<\/strong>$/);
+
+    if (match) {
+      return <strong key={index}>{match[1]}</strong>;
+    }
+
+    return part;
+  });
+}
 
 export function ProductIntro({
   title = "Overview",
@@ -40,6 +55,28 @@ export function ProductIntro({
     ((note.copy && note.copy.length > 0) ||
       (typeof note.signature === "string" && note.signature.length > 0) ||
       (typeof note.label === "string" && note.label.length > 0));
+  const awardClassName = "mt-10 flex items-center gap-4";
+  const awardContent = award ? (
+    <>
+      <img
+        src={award.src}
+        alt={award.alt}
+        className="h-20 w-20 object-contain"
+      />
+
+      <div className="flex flex-col">
+        <span className="text-xs tracking-widest text-neutral-400 uppercase">
+          {award.lines[0]}
+        </span>
+        <span className="text-sm font-semibold tracking-widest text-neutral-900 uppercase">
+          {award.lines[1]}
+        </span>
+        <span className="text-xs tracking-widest text-neutral-500 uppercase">
+          {award.lines[2]}
+        </span>
+      </div>
+    </>
+  ) : null;
 
   return (
     <Section className="pt-10 md:pt-14 lg:pt-16">
@@ -104,30 +141,26 @@ export function ProductIntro({
                 )}
               >
                 {paragraphs.slice(0, 3).map((p, idx) => (
-                  <p key={idx}>{p}</p>
+                  <p key={idx}>{renderStrongText(p)}</p>
                 ))}
               </div>
 
               {award ? (
-                <div className="mt-10 flex items-center gap-4">
-                  <img
-                    src={award.src}
-                    alt={award.alt}
-                    className="h-20 w-20 object-contain"
-                  />
-
-                  <div className="flex flex-col">
-                    <span className="text-xs tracking-widest text-neutral-400 uppercase">
-                      {award.lines[0]}
-                    </span>
-                    <span className="text-sm font-semibold tracking-widest text-neutral-900 uppercase">
-                      {award.lines[1]}
-                    </span>
-                    <span className="text-xs tracking-widest text-neutral-500 uppercase">
-                      {award.lines[2]}
-                    </span>
-                  </div>
-                </div>
+                award.href ? (
+                  <a
+                    href={award.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={clsx(
+                      awardClassName,
+                      "transition-opacity hover:opacity-80"
+                    )}
+                  >
+                    {awardContent}
+                  </a>
+                ) : (
+                  <div className={awardClassName}>{awardContent}</div>
+                )
               ) : null}
             </div>
 

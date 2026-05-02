@@ -10,12 +10,13 @@
         "Our flagship two tonearm platform featuring a radically new exo-skeleton chassis system designed to minimize resonances and optimize isolation.",
         "Kronos developed a wholly new way to attach the chassis to the suspension system, using completely different soft clamping methods."
       ],
+      "note": "* photos shown with optional SCPS-D",
       "image": "/media/discovery_001.jpg",
       "overview": {
         "title": "Overview",
         "paragraphs": [
           "Discovery represents Kronos Audio's most ambitious expression of counter-rotational analogue playback. Its exo-skeleton chassis and isolated suspension architecture are tuned to lower stored energy, improve timing precision, and preserve low-level musical detail.",
-          "Designed as a reference platform for discerning listeners, Discovery supports a dual-tonearm layout and a highly resolved mechanical grounding strategy. Every interface is intended to keep resonant behavior predictable while maintaining the sense of ease and scale associated with the brand's flagship systems."
+          "Designed as a reference platform for discerning listeners, Discovery supports a dual-tonearm layout and a highly resolved mechanical grounding strategy. Every interface is intended to keep resonant behavior predictable while surpassing the sense of ease and scale associated with the brand's flagship systems."
         ],
         "notes": [
           "Reference-level chassis architecture with dual-tonearm capability.",
@@ -119,15 +120,16 @@
       "category": "Turntables",
       "tagline": "Advanced Resonance Control",
       "description": [
-        "Our one tonearm turntable, utilizing advanced resonance control at a more affordable price point."
+        "Our one tonearm turntable, utilizing advanced resonance technology, manages to achieve a near flagship performance."
       ],
       "image": "/media/perpetual_000.jpg",
+      "note": "* photos shown with optional SCPS-P",
       "overview": {
         "title": "Overview",
         "paragraphs": [
           "Perpetual brings Kronos’ counter-rotational design philosophy into a refined single-tonearm platform, created for listeners who want the essence of Kronos performance in a more accessible configuration.",
-          "Our one-tonearm turntable, utilizing Discovery-type advanced resonance control at a more affordable price point.",
-          "Its architecture focuses on resonance control, drive stability, and a direct mechanical path between the record groove and the listener. By adapting key ideas from Discovery, Perpetual preserves timing accuracy, low-level detail, and the natural musical flow associated with Kronos turntables."
+          "Our one-tonearm turntable, utilizing Discovery-type advanced resonance control technology, manages to achieve a near flagship performance.",
+          "Its architecture focuses on resonance control, drive stability, By adapting key ideas from Discovery, It reveals low-level detail with unparalleled dynamic range, bringing out the true natural character of the recording."
         ],
         "notes": [
           "A single-tonearm Kronos platform inspired by Discovery’s advanced resonance-control architecture. ",
@@ -218,7 +220,8 @@
       "description": [
         "The original Kronos reference turntable. The PRO set a new standard in analogue reproduction by combining counter-rotation and overhead suspension."
       ],
-      "image": "/media/pro_000.jpg",
+      "note": "* photos shown with optional SCPS-1",
+      "image": "/media/pro_0.jpg",
       "overview": {
         "title": "Overview",
         "paragraphs": [
@@ -232,7 +235,7 @@
         "footerTag": "ORIGINAL REFERENCE · COUNTER-ROTATIONAL LEGACY"
       },
       "gallery": [
-        "/media/pro_000.jpg",
+        "/media/pro_0.jpg",
         "/media/products/Kronos Pro/pro6.jpg",
         "/media/products/Kronos Pro/pro8.jpg"
       ],
@@ -324,8 +327,8 @@
       "overview": {
         "title": "Overview",
         "paragraphs": [
-          "The Sparta turntable is the embodiment of Kronos Audio's core design principles, distilled into their purest form. Built to disappear into silence-so the recording remains. Every surface, every interface, every tolerance exists for one purpose: to preserve time.",
-          "At the heart of the Sparta are two counter-rotating platters, each driven by its own motor and suspended from above by a network of elastomers that isolate the mechanism from external vibrations. The result is a level of speed stability and resonance control that belies the Sparta's modest price point."
+          "The Sparta turntable is the embodiment of Kronos Audio's core design principles, distilled into their purest form. Built to disappear into silence so that only the music remains. Every surface, every interface, every tolerance exists for one purpose: to preserve time.",
+          "At the heart of the Sparta are two counter-rotating platters, each driven by its own motor and suspended from above by a network of elastomers that isolate the mechanism from external vibrations."
         ],
         "notes": [
           "Built to disappear into silence-so the recording remains.",
@@ -419,7 +422,7 @@
       "description": [
         "Patented RS technology Tonearm."
       ],
-      "image": "/media/tonearm_000.jpg",
+      "image": "/media/tonearm_0.jpg",
       "overview": {
         "title": "Overview",
         "paragraphs": [
@@ -433,10 +436,13 @@
         "footerTag": "PRECISION TONEARM SYSTEM · RS TECHNOLOGY"
       },
       "gallery": [
-        "/media/tonearm_000.jpg",
-        "/media/products/tonearm/RS.jpg",
-        "/media/products/Sparta/sparta1.jpg",
-        "/media/products/tonearm/RS1.jpg"
+        "/media/tonearm_0.jpg",
+        "/media/products/tonearm/RS_0.jpg",
+        "/media/products/tonearm/RS_1.jpg",
+        "/media/products/tonearm/RS_2.jpg",
+        "/media/products/tonearm/RS3.jpg",
+        "/media/products/tonearm/RS4.jpg"
+        
       ],
       "downloads": [
         {
@@ -534,8 +540,9 @@
         "title": "Overview",
         "paragraphs": [
           "Kronos phono stages are designed to preserve the integrity of analogue playback, translating delicate cartridge signals with precision, stability, and tonal coherence.",
-          "The Discovery Phono stage is a full-tube, three-chassis design with GZ32 rectification, 12AX7 / 6350 tubes, dual inputs, and a 5-step adjustable EQ, offering both single-ended and balanced outputs.",
-          "The Reference Phono stage provides a more compact full-tube, two-chassis configuration with dual inputs, a 3-step adjustable EQ, and single-ended output."
+          "<strong>The Discovery phono stage</strong> is meticulously engineered to preserve the integrity of the extremely delicate analogue signal.",
+          "<strong>The Reference Phono stage</strong> provides a more compact full-tube, two-chassis configuration with dual inputs, a 3-step adjustable EQ, and single-ended output.",
+          "Its advanced suspended architecture optimizes vibration control and isolation, resulting in exceptionally low noise, an expanded dynamic range, and outstanding tonal neutrality."
         ],
         "notes": [
           "Full-tube phono stages designed for precision analogue signal extraction.",
@@ -604,8 +611,9 @@
       "overview": {
         "title": "Overview",
         "paragraphs": [
-          "The racks and support solutions complete the Kronos playback environment by addressing the physical foundation beneath the system. Their role is to reduce environmental interference and give the analogue chain a more stable platform from floor to chassis.",
-          "Designed as part of a complete analogue solution, these support systems provide a controlled mechanical interface for turntables, electronics, and power supplies, helping each component operate with greater stability and consistency."
+          "The Kronos phono stage is the final element in completing the Kronos sonic signature.",
+          "By unifying turntable, tonearm, and phono amplification into a cohesive system, Kronos delivers a truly integrated analogue solution.",
+          "This holistic approach eliminates uncertainty, allowing every component to operate in perfect harmony—resulting in the highest level of playback performance."
         ],
         "notes": [
           "Engineered foundations for complete Kronos analogue systems.",
@@ -615,6 +623,11 @@
       },
       "gallery": [
         "/media/fullAn_000.jpg",
+        "/media/products/Rack/rack.jpg",
+        "/media/products/Rack/rack_0.jpg",
+        "/media/products/Rack/rack_1.jpg",
+        "/media/products/Rack/rack_2.jpg",
+        "/media/products/Rack/rack_3.jpg",
         "/media/whole/whole2.jpg"
       ],
       "downloads": [],

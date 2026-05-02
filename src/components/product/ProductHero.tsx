@@ -12,6 +12,7 @@ export type ProductHeroData = {
   dek?: string[];
   keyline?: string;
   highlights?: string[];
+  note?: string;
   cta?: { label: string; href: string };
   image: {
     src: string;
@@ -29,6 +30,7 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
     dek,
     keyline,
     highlights,
+    note,
     cta,
     image,
   } = data;
@@ -39,6 +41,7 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
       : [{ src: image.src, alt: image.alt }];
 
   const [index, setIndex] = useState(0);
+  const eyebrowColorClass = "text-yellow-200/70";
 
   return (
     <Section className="pt-[96px] md:pt-[112px] lg:pt-[128px]">
@@ -57,7 +60,7 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
         <div className="relative grid grid-cols-1 gap-10 px-6 py-10 md:grid-cols-12 md:gap-8 md:px-10 md:py-14 lg:px-14 lg:py-16">
           <div className="md:col-span-6 lg:col-span-5">
             {eyebrow ? (
-              <p className="text-xs tracking-[0.22em] text-yellow-200/70">
+              <p className={clsx("text-xs tracking-[0.22em]", eyebrowColorClass)}>
                 {eyebrow.toUpperCase()}
               </p>
             ) : null}
@@ -118,6 +121,16 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
                     →
                   </span>
                 </a>
+                {note ? (
+                  <p
+                    className={clsx(
+                      "mt-2 text-xs tracking-wider italic",
+                      eyebrowColorClass
+                    )}
+                  >
+                    {note}
+                  </p>
+                ) : null}
               </div>
             ) : null}
           </div>
