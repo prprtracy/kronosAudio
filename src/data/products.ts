@@ -87,8 +87,6 @@ export const products: Product[] = [
     description: [
       "The original Kronos reference turntable. The PRO set a new standard in analogue reproduction by combining counter-rotation and overhead suspension.",
     ],
-    
-    
     gallery: ["/media/placeholder-pro.jpg"],
     downloads: [],
     specs: [],
