@@ -194,6 +194,22 @@
       "tier": "standard"
     },
     {
+      "id": "ajasom",
+      "name": "AJASOM",
+      "country": "Portugal",
+      "contactPerson": "",
+      "address": "Praceta José Régio, 8A\n2720-330 Amadora\nPortugal",
+      "phone": "+351 21 474 87 09",
+      "mobile": "+351 96 392 95 10",
+      "email": "ajasom@ajasom.net",
+      "website": "https://www.ajasom.net/",
+      "city": "Amadora",
+      "region": "europe",
+      "lat": 38.747465,
+      "lng": -9.210277,
+      "tier": "standard"
+    },
+    {
       "id": "hiend-audio",
       "name": "HIEND-AUDIO",
       "country": "Ukraine",

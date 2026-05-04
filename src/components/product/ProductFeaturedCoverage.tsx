@@ -8,19 +8,34 @@ const coverageImages = [
   "/media/rewards/mag_pro_2.jpg",
 ];
 
-export function ProductFeaturedCoverage() {
+type ProductFeaturedCoverageProps = {
+  images?: string[];
+  imageAlt?: string;
+  eyebrow?: string;
+  title?: string;
+  copy?: string;
+};
+
+export function ProductFeaturedCoverage({
+  images = coverageImages,
+  imageAlt = "Kronos Pro magazine feature",
+  eyebrow = "Featured in Print",
+  title = "Kronos Pro - Editorial Feature",
+  copy = "Featured in international print media, Kronos Pro is recognized for its uncompromising approach to analogue playback, combining counter-rotational technology with precision mechanical design.",
+}: ProductFeaturedCoverageProps) {
   const [index, setIndex] = useState(0);
-  const imageSrc = coverageImages[index];
+  const imageSrc = images[index] ?? images[0];
+  const hasMultipleImages = images.length > 1;
 
   const showPrevious = () => {
     setIndex((current) =>
-      current === 0 ? coverageImages.length - 1 : current - 1
+      current === 0 ? images.length - 1 : current - 1
     );
   };
 
   const showNext = () => {
     setIndex((current) =>
-      current === coverageImages.length - 1 ? 0 : current + 1
+      current === images.length - 1 ? 0 : current + 1
     );
   };
 
@@ -35,51 +50,51 @@ export function ProductFeaturedCoverage() {
           <div className="group relative overflow-hidden rounded-lg border border-white/10 bg-white/[0.035]">
             <img
               src={imageSrc}
-              alt="Kronos Pro magazine feature"
+              alt={imageAlt}
               className="w-full object-cover transition duration-300 group-hover:scale-[1.01]"
             />
 
-            <div className="absolute bottom-3 right-3 flex gap-2">
-              <button
-                type="button"
-                aria-label="Previous featured coverage page"
-                onClick={showPrevious}
-                className={clsx(
-                  "rounded-full border border-white/10 bg-black/60 px-3 py-2",
-                  "text-xs text-white/75 backdrop-blur transition-colors",
-                  "hover:border-amber-200/30 hover:text-amber-200"
-                )}
-              >
-                Prev
-              </button>
-              <button
-                type="button"
-                aria-label="Next featured coverage page"
-                onClick={showNext}
-                className={clsx(
-                  "rounded-full border border-white/10 bg-black/60 px-3 py-2",
-                  "text-xs text-white/75 backdrop-blur transition-colors",
-                  "hover:border-amber-200/30 hover:text-amber-200"
-                )}
-              >
-                Next
-              </button>
-            </div>
+            {hasMultipleImages && (
+              <div className="absolute bottom-3 right-3 flex gap-2">
+                <button
+                  type="button"
+                  aria-label="Previous featured coverage page"
+                  onClick={showPrevious}
+                  className={clsx(
+                    "rounded-full border border-white/10 bg-black/60 px-3 py-2",
+                    "text-xs text-white/75 backdrop-blur transition-colors",
+                    "hover:border-amber-200/30 hover:text-amber-200"
+                  )}
+                >
+                  Prev
+                </button>
+                <button
+                  type="button"
+                  aria-label="Next featured coverage page"
+                  onClick={showNext}
+                  className={clsx(
+                    "rounded-full border border-white/10 bg-black/60 px-3 py-2",
+                    "text-xs text-white/75 backdrop-blur transition-colors",
+                    "hover:border-amber-200/30 hover:text-amber-200"
+                  )}
+                >
+                  Next
+                </button>
+              </div>
+            )}
           </div>
 
           <div>
             <p className="mb-2 text-xs uppercase tracking-[0.24em] text-amber-200/70">
-              Featured in Print
+              {eyebrow}
             </p>
 
             <h4 className="mb-3 text-lg font-semibold text-neutral-50">
-              Kronos Pro - Editorial Feature
+              {title}
             </h4>
 
             <p className="text-sm leading-7 text-neutral-300">
-              Featured in international print media, Kronos Pro is recognized
-              for its uncompromising approach to analogue playback, combining
-              counter-rotational technology with precision mechanical design.
+              {copy}
             </p>
 
             <a

@@ -127,6 +127,9 @@ function PartnerDetails({
       ? partner.website
       : `https://${partner.website}`
     : "";
+  const websiteLabel = websiteHref
+    ? new URL(websiteHref).hostname.replace(/^www\./, "")
+    : "";
 
   return (
     <div>
@@ -137,7 +140,7 @@ function PartnerDetails({
 
       <div className={clsx("mt-3 space-y-1 text-xs leading-relaxed text-neutral-400", compact && "text-[11px]")}>
         {partner.contactPerson && <p>Contact: {partner.contactPerson}</p>}
-        {partner.address && <p>{partner.address}</p>}
+        {partner.address && <p className="whitespace-pre-line">{partner.address}</p>}
         {partner.phone && <p>{partner.phone}</p>}
         {partner.email && (
           <p>
@@ -154,7 +157,7 @@ function PartnerDetails({
               rel="noreferrer"
               className="text-amber-300 hover:text-amber-200"
             >
-              {partner.website}
+              {websiteLabel}
             </a>
           </p>
         )}

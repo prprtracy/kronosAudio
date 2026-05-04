@@ -23,6 +23,7 @@ export type DistributorPartner = {
   contactPerson?: string;
   address?: string;
   phone?: string;
+  mobile?: string;
   email?: string;
   website?: string;
   region: RegionId;

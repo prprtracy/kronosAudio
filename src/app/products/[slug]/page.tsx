@@ -192,6 +192,30 @@ export default async function ProductDetailPage({ params }: PageProps) {
       href: "https://daviddenyerpr.co.uk/2020/05/29/hi-fi-plus-editors-choice-awards-2020-kronos-pro-reference-turntable/",
     },
   };
+  const featuredCoverageBySlug: Record<
+    string,
+    {
+      images: string[];
+      imageAlt: string;
+      title: string;
+      copy: string;
+    }
+  > = {
+    discovery: {
+      images: ["/media/rewards/mag_dis_1.jpg"],
+      imageAlt: "Kronos Discovery magazine feature",
+      title: "Discovery Turntable - Editorial Feature",
+      copy: "Recognized in international audio press, Discovery represents Kronos Audio's most advanced expression of counter-rotational analogue playback, combining mechanical precision with exceptional stability and low-noise performance.",
+    },
+    "kronos-pro": {
+      images: ["/media/rewards/mag_pro_1.jpg", "/media/rewards/mag_pro_2.jpg"],
+      imageAlt: "Kronos Pro magazine feature",
+      title: "Kronos Pro - Editorial Feature",
+      copy: "Featured in international print media, Kronos Pro is recognized for its uncompromising approach to analogue playback, combining counter-rotational technology with precision mechanical design.",
+    },
+  };
+  const featuredCoverage =
+    featuredCoverageBySlug[product.slug as keyof typeof featuredCoverageBySlug];
 
   const hero = {
     eyebrow: product.category ?? "Products",
@@ -255,7 +279,9 @@ export default async function ProductDetailPage({ params }: PageProps) {
             subtitle: item.type,
           }))}
         />
-        {product.slug === "kronos-pro" ? <ProductFeaturedCoverage /> : null}
+        {featuredCoverage ? (
+          <ProductFeaturedCoverage {...featuredCoverage} />
+        ) : null}
       </section>
 
       <section id="specs">

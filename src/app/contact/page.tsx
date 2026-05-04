@@ -68,9 +68,7 @@ export default async function ContactPage({
                       <div className="mb-3 text-xs uppercase tracking-[0.28em] text-neutral-400">
                         {item.label}
                       </div>
-                      <div className="whitespace-pre-line text-sm leading-7 text-neutral-200">
-                        {item.value}
-                      </div>
+                      <ContactItemValue value={item.value} />
                     </li>
                   ))}
                 </ul>
@@ -96,5 +94,33 @@ export default async function ContactPage({
         )}
       </div>
     </main>
+  );
+}
+
+function ContactItemValue({ value }: { value: string }) {
+  return (
+    <div className="text-sm leading-7 text-neutral-200">
+      {value.split("\n").map((line, index) => {
+        const email = line.match(/[^\s@]+@[^\s@]+\.[^\s@]+/)?.[0];
+
+        if (!line) {
+          return <br key={`blank-${index}`} />;
+        }
+
+        if (email) {
+          return (
+            <a
+              key={`${email}-${index}`}
+              href={`mailto:${email}`}
+              className="block hover:underline"
+            >
+              {line}
+            </a>
+          );
+        }
+
+        return <p key={`${line}-${index}`}>{line}</p>;
+      })}
+    </div>
   );
 }
