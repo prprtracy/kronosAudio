@@ -368,7 +368,7 @@ export function HomeNarrative({
               <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div
                   className={clsx(
-                    "grid items-start gap-10",
+                    "grid grid-cols-1 items-center gap-10 lg:gap-16",
                     isGrid4 || isSlideshow
                       ? "lg:grid-cols-[1.05fr_0.95fr]"
                       : "grid-cols-1",
@@ -378,7 +378,7 @@ export function HomeNarrative({
                   {/* LEFT — Text */}
                     <div
                       className={clsx(
-                        "max-w-2xl",
+                        "order-2 max-w-2xl",
                         hasVisualPanel && "max-w-none",
                         hasVisualPanel && (isTextRight ? "lg:order-2" : "lg:order-1")
                       )}
@@ -419,13 +419,13 @@ export function HomeNarrative({
                   {isGrid4 && (
                     <div
                       className={clsx(
-                        "hidden lg:block",
+                        "order-1",
                         isTextRight ? "lg:order-1" : "lg:order-2"
                       )}
                     >
                       <div
                         className={clsx(
-                          "grid grid-cols-2 gap-4",
+                          "grid grid-cols-2 gap-3 sm:gap-4",
                           grid4Variant === "museum" &&
                             "p-4 rounded-3xl border border-white/10 bg-white/[0.04]"
                         )}
@@ -437,18 +437,18 @@ export function HomeNarrative({
                             <div
                               key={`${src}-${i}`}
                               className={clsx(
-                                "relative rounded-2xl overflow-hidden border",
+                                "relative h-[160px] rounded-2xl overflow-hidden border sm:h-[220px] md:h-[260px] lg:h-auto",
                                 isMuseum
                                   ? "border-black/10 bg-white/95"
                                   : "border-white/10 bg-black/25",
-                                isMuseum ? "aspect-[1/1]" : "aspect-[4/3]"
+                                isMuseum ? "lg:aspect-[1/1]" : "lg:aspect-[4/3]"
                               )}
                             >
                               <Image
                                 src={src}
                                 alt=""
                                 fill
-                                sizes="(min-width: 1024px) 40vw, 0px"
+                                sizes="(min-width: 1024px) 25vw, 50vw"
                                 className={clsx(
                                   "transition-transform duration-500",
                                   isMuseum
