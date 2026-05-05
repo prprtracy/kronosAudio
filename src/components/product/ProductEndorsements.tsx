@@ -143,7 +143,7 @@ export function ProductEndorsements({
 
               <div className="relative">
                 <div className="absolute -left-2 -top-6 select-none text-6xl leading-none text-amber-200/15">
-                  "
+                  &quot;
                 </div>
 
                 {it.title ? (
@@ -194,7 +194,7 @@ export function ProductEndorsements({
                     "hover:border-amber-200/35 hover:bg-black/30 hover:text-amber-200"
                   )}
                 >
-                  Read Full Article <span className="ml-2">→</span>
+                  Read Full Article <span className="ml-2">-&gt;</span>
                 </Link>
               </div>
             </article>
