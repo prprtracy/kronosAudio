@@ -164,8 +164,8 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
                     className={clsx(
                       "absolute left-4 top-1/2 z-20 -translate-y-1/2",
                       "h-9 w-9 rounded-full",
-                      "border border-white/10 bg-black/35 backdrop-blur",
-                      "text-white/80 hover:text-white hover:bg-black/45",
+                      "border border-[#d4af37]/45 bg-[#d4af37] backdrop-blur",
+                      "text-white hover:text-white hover:bg-[#c09d2f]",
                       "transition-colors"
                     )}
                   >
@@ -181,8 +181,8 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
                     className={clsx(
                       "absolute right-4 top-1/2 z-20 -translate-y-1/2",
                       "h-9 w-9 rounded-full",
-                      "border border-white/10 bg-black/35 backdrop-blur",
-                      "text-white/80 hover:text-white hover:bg-black/45",
+                      "border border-[#d4af37]/45 bg-[#d4af37] backdrop-blur",
+                      "text-white hover:text-white hover:bg-[#c09d2f]",
                       "transition-colors"
                     )}
                   >

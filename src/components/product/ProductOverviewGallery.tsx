@@ -20,7 +20,7 @@ export function ProductOverviewGallery({ images }: Props) {
 
   return (
     <div className="space-y-4">
-      {/* 主图 */}
+      {/* Main image */}
       <div className="relative aspect-square w-full overflow-hidden bg-neutral-900">
         <Image
           src={images[index].src}
@@ -33,31 +33,40 @@ export function ProductOverviewGallery({ images }: Props) {
         {images.length > 1 && (
           <>
             <button
+              type="button"
+              aria-label="Previous image"
               onClick={prev}
-              className="absolute left-4 top-1/2 -translate-y-1/2 
-                         bg-black/60 px-3 py-2 text-sm text-white
-                         hover:bg-black"
+              className="absolute left-4 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2
+                         items-center justify-center rounded-full border border-white/15
+                         bg-black/40 text-2xl font-bold leading-none text-[#d4af37]
+                         shadow-lg backdrop-blur transition-colors
+                         hover:border-[#d4af37]/35 hover:bg-[#d4af37]/20"
             >
-              ←
+              {"\u2039"}
             </button>
             <button
+              type="button"
+              aria-label="Next image"
               onClick={next}
-              className="absolute right-4 top-1/2 -translate-y-1/2 
-                         bg-black/60 px-3 py-2 text-sm text-white
-                         hover:bg-black"
+              className="absolute right-4 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2
+                         items-center justify-center rounded-full border border-white/15
+                         bg-black/40 text-2xl font-bold leading-none text-[#d4af37]
+                         shadow-lg backdrop-blur transition-colors
+                         hover:border-[#d4af37]/35 hover:bg-[#d4af37]/20"
             >
-              →
+              {"\u203a"}
             </button>
           </>
         )}
       </div>
 
-      {/* 缩略图 */}
+      {/* Thumbnails */}
       {images.length > 1 && (
         <div className="flex gap-3 overflow-x-auto">
           {images.map((img, i) => (
             <button
               key={img.src}
+              type="button"
               onClick={() => setIndex(i)}
               className={clsx(
                 "relative h-20 w-20 flex-shrink-0 overflow-hidden border",

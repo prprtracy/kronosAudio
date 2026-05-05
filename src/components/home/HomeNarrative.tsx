@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import clsx from "clsx";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { HomeNarrativeSection } from "@/types/home";
@@ -27,6 +28,24 @@ function toHref(_locale: string, href: string) {
 
   return href.startsWith("/") ? href : `/${href}`;
 }
+
+const productGridLinksBySection: Record<
+  string,
+  readonly { href: string; label: string }[]
+> = {
+  "philosophy-detail": [
+    { href: "/products/discovery", label: "Discovery" },
+    { href: "/products/perpetual", label: "Perpetual" },
+    { href: "/products/kronos-pro", label: "Kronos Pro" },
+    { href: "/products/sparta", label: "Sparta" },
+  ],
+  legacy: [
+    { href: "/products/discovery", label: "Discovery" },
+    { href: "/products/kronos-pro", label: "Kronos Pro" },
+    { href: "/products/perpetual", label: "Perpetual" },
+    { href: "/products/sparta", label: "Sparta" },
+  ],
+};
 
 function ActionButtons({
   actions,
@@ -436,12 +455,15 @@ export function HomeNarrative({
                       >
                         {s.images!.slice(0, 4).map((src, i) => {
                           const isMuseum = grid4Variant === "museum";
+                          const productLink = productGridLinksBySection[s.id]?.[i];
 
-                          return (
+                          const imageCard = (
                             <div
                               key={`${src}-${i}`}
                               className={clsx(
                                 "relative h-[160px] rounded-2xl overflow-hidden border sm:h-[220px] md:h-[260px] lg:h-auto",
+                                "transition-transform duration-300 ease-out",
+                                productLink && "cursor-pointer hover:scale-[1.03] hover:shadow-[0_10px_30px_rgba(0,0,0,0.4)]",
                                 isMuseum
                                   ? "border-black/10 bg-white/95"
                                   : "border-white/10 bg-black/25",
@@ -469,6 +491,19 @@ export function HomeNarrative({
                                 </>
                               )}
                             </div>
+                          );
+
+                          if (!productLink) return imageCard;
+
+                          return (
+                            <Link
+                              key={`${src}-${i}`}
+                              href={productLink.href}
+                              aria-label={`View ${productLink.label}`}
+                              className="block rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/80"
+                            >
+                              {imageCard}
+                            </Link>
                           );
                         })}
                       </div>
