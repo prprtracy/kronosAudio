@@ -94,22 +94,22 @@ function SlideshowPanel({
   onGoTo: (i: number) => void;
 }) {
   return (
-    <div className="hidden lg:block">
-      <div className="relative rounded-3xl border border-white/10 bg-black/25 overflow-hidden">
+    <div className="w-full max-w-full">
+      <div className="relative w-full max-w-full rounded-3xl border border-white/10 bg-black/25 overflow-hidden">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-white/10" />
 
-        <div className="relative p-6">
+        <div className="relative p-3 sm:p-4 lg:p-6">
           {(() => {
             const slide = slides[activeIndex];
 
             if (slide.type === "image") {
               return (
-                <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-black/30 aspect-[16/10]">
+                <div className="relative h-[260px] overflow-hidden rounded-2xl border border-white/10 bg-black/30 sm:h-[320px] md:h-[420px] lg:h-auto lg:aspect-[16/10]">
                   <Image
                     src={slide.src}
                     alt={slide.alt ?? ""}
                     fill
-                    sizes="(min-width: 1024px) 40vw, 0px"
+                    sizes="(min-width: 1024px) 40vw, 100vw"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-black/10 via-transparent to-black/55" />
@@ -185,9 +185,10 @@ function SlideshowPanel({
               aria-label="Previous"
               onClick={onPrev}
               className={clsx(
-                "absolute left-3 top-1/2 -translate-y-1/2",
+                "absolute left-3 top-1/2 hidden -translate-y-1/2 lg:flex",
                 "h-9 w-9 rounded-full",
                 "border border-white/10 bg-black/35 backdrop-blur",
+                "items-center justify-center",
                 "text-white/80 hover:text-white hover:bg-black/45",
                 "transition-colors"
               )}
@@ -199,9 +200,10 @@ function SlideshowPanel({
               aria-label="Next"
               onClick={onNext}
               className={clsx(
-                "absolute right-3 top-1/2 -translate-y-1/2",
+                "absolute right-3 top-1/2 hidden -translate-y-1/2 lg:flex",
                 "h-9 w-9 rounded-full",
                 "border border-white/10 bg-black/35 backdrop-blur",
+                "items-center justify-center",
                 "text-white/80 hover:text-white hover:bg-black/45",
                 "transition-colors"
               )}
@@ -212,9 +214,9 @@ function SlideshowPanel({
         )}
 
         {totalSlides > 1 && (
-          <div className="px-6 pb-5">
+          <div className="px-3 pb-4 sm:px-4 lg:px-6 lg:pb-5">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
+              <div className="flex max-w-[75%] items-center gap-1 overflow-hidden sm:gap-1.5 lg:gap-2">
                 {slides.map((_, i) => (
                   <button
                     key={`${s.id}-dot-${i}`}
@@ -222,9 +224,9 @@ function SlideshowPanel({
                     aria-label={`Go to slide ${i + 1}`}
                     onClick={() => onGoTo(i)}
                     className={clsx(
-                      "h-2 w-2 rounded-full transition-all",
+                      "h-1.5 w-1.5 shrink-0 rounded-full transition-all lg:h-2 lg:w-2",
                       i === activeIndex
-                        ? "bg-amber-300 w-6"
+                        ? "w-4 bg-amber-300 lg:w-6"
                         : "bg-white/20 hover:bg-white/30"
                     )}
                   />
@@ -378,7 +380,9 @@ export function HomeNarrative({
                   {/* LEFT — Text */}
                     <div
                       className={clsx(
-                        "order-2 max-w-2xl",
+                        "max-w-2xl",
+                        isGrid4 && "order-2",
+                        isSlideshow && "order-1",
                         hasVisualPanel && "max-w-none",
                         hasVisualPanel && (isTextRight ? "lg:order-2" : "lg:order-1")
                       )}
@@ -477,7 +481,12 @@ export function HomeNarrative({
 
                   {/* RIGHT — Slideshow / Slice view */}
                   {isSlideshow && (
-                    <div className={clsx(isTextRight ? "lg:order-1" : "lg:order-2")}>
+                    <div
+                      className={clsx(
+                        "order-2 w-full max-w-full mt-8 lg:mt-0",
+                        isTextRight ? "lg:order-1" : "lg:order-2"
+                      )}
+                    >
                       <SlideshowPanel
                         s={s}
                         slides={slides}
