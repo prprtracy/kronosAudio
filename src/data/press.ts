@@ -167,6 +167,27 @@ const pressOverrides: Record<
   "kronos-pro-mono-and-stereo-kronos-audio-pro-turntable-kronoscope-rs-tonearm-review": {
     pdfUrl: "/media/press/pro_4.pdf",
   },
+  "sparta-the-absolute-sound-kronos-sparta-turntable": {
+    pdfUrl: "/media/press/spa_1.pdf",
+  },
+  "sparta-enjoythemusic-com-kronos-sparta-0-5-turntable-and-upgrade-to-full-sparta-review": {
+    pdfUrl: "/media/press/spa_2.pdf",
+  },
+  "sparta-positive-feedback-kronos-audio-products-sparta-turntable": {
+    pdfUrl: "/media/press/spa_3.pdf",
+  },
+  "tonearms-positive-feedback-kronoscope-rs-tonearm": {
+    pdfUrl: "/media/press/ton_1.pdf",
+  },
+  "tonearms-positive-feedback-kronos-discovery-resonance-suppression-tonearm": {
+    pdfUrl: "/media/press/ton_2.pdf",
+  },
+  "tonearms-mono-and-stereo-kronos-discovery-rs-tonearm-review": {
+    pdfUrl: "/media/press/ton_3.pdf",
+  },
+  "tonearms-mono-and-stereo-kronos-pro-turntable-kronoscope-rs-tonearm-review": {
+    pdfUrl: "/media/press/ton_4.pdf",
+  },
 };
 
 export const pressData: PressArticle[] = (
