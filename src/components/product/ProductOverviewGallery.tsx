@@ -21,7 +21,7 @@ export function ProductOverviewGallery({ images }: Props) {
   return (
     <div className="space-y-4">
       {/* Main image */}
-      <div className="relative aspect-square w-full overflow-hidden bg-neutral-900">
+      <div className="group relative aspect-square w-full overflow-hidden bg-neutral-900">
         <Image
           src={images[index].src}
           alt={images[index].alt ?? ""}
@@ -36,11 +36,12 @@ export function ProductOverviewGallery({ images }: Props) {
               type="button"
               aria-label="Previous image"
               onClick={prev}
-              className="absolute left-4 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2
-                         items-center justify-center rounded-full border border-white/15
-                         bg-black/40 text-2xl font-bold leading-none text-[#d4af37]
-                         shadow-lg backdrop-blur transition-colors
-                         hover:border-[#d4af37]/35 hover:bg-[#d4af37]/20"
+              className="absolute left-3 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2
+                         items-center justify-center rounded-full border border-white/10
+                         bg-black/30 text-xl leading-none text-[#d4af37]/80
+                         opacity-100 backdrop-blur-md transition-all duration-300
+                         hover:border-[#d4af37]/45 hover:bg-black/50 hover:text-[#d4af37]
+                         sm:left-5 sm:h-10 sm:w-10 md:opacity-0 md:group-hover:opacity-100"
             >
               {"\u2039"}
             </button>
@@ -48,11 +49,12 @@ export function ProductOverviewGallery({ images }: Props) {
               type="button"
               aria-label="Next image"
               onClick={next}
-              className="absolute right-4 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2
-                         items-center justify-center rounded-full border border-white/15
-                         bg-black/40 text-2xl font-bold leading-none text-[#d4af37]
-                         shadow-lg backdrop-blur transition-colors
-                         hover:border-[#d4af37]/35 hover:bg-[#d4af37]/20"
+              className="absolute right-3 top-1/2 z-10 flex h-8 w-8 -translate-y-1/2
+                         items-center justify-center rounded-full border border-white/10
+                         bg-black/30 text-xl leading-none text-[#d4af37]/80
+                         opacity-100 backdrop-blur-md transition-all duration-300
+                         hover:border-[#d4af37]/45 hover:bg-black/50 hover:text-[#d4af37]
+                         sm:right-5 sm:h-10 sm:w-10 md:opacity-0 md:group-hover:opacity-100"
             >
               {"\u203a"}
             </button>

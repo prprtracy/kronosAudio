@@ -94,22 +94,6 @@
           "title": "Final Thoughts on the KRONOS Discovery LP Playback System",
           "quote": "The most complete playback of LPs that I had ever heard.",
           "link": "https://positive-feedback.com/audio-discourse/an-audio-triangulation-part-3-final-thoughts-on-the-kronos-discovery-lp-playback-system/"
-        },
-        {
-          "initials": "SA",
-          "source": "Superior Audio",
-          "type": "Review / Press",
-          "title": "Kronos Discovery Turntable Drive-by reviewing at Long Valley",
-          "quote": "Listening impressions that ranked the Kronos Discovery among the reviewer's best analog experiences.",
-          "link": "https://www.enjoythemusic.com/superioraudio/equipment/1121/Kronos_Discovery_Turntable_Review.htm"
-        },
-        {
-          "initials": "PF",
-          "source": "Positive Feedback",
-          "type": "Editorial / Press",
-          "title": "Kronos Audio",
-          "quote": "The Kronos Discovery Turntable system is the finest TT that I've heard to date.",
-          "link": "https://positive-feedback.com/audio-discourse/kronos-audio/"
         }
       ]
     },
@@ -178,36 +162,20 @@
       ],
       "endorsements": [
         {
-          "initials": "MS",
-          "source": "Mono & Stereo",
-          "type": "News / Press",
-          "title": "Kronos Perpetual Turntable",
-          "quote": "A new benchmark in performance and value.",
-          "link": "https://www.monoandstereo.com/kronos-perpetual-turntable/"
-        },
-        {
-          "initials": "MS",
-          "source": "Mono & Stereo",
-          "type": "Editorial / Press",
-          "title": "Kronos Perpetual - Discovery Reference",
-          "quote": "Editorial coverage of the Kronos Perpetual installed with the Discovery Reference phono preamplifier.",
-          "link": "https://www.monoandstereo.com/kronos-perpetual-discovery-reference/"
-        },
-        {
-          "initials": "PF",
-          "source": "Positive Feedback",
+          "initials": "TAS",
+          "source": "The Absolute Sound",
           "type": "Show Report / Press",
-          "title": "AXPONA 2026",
-          "quote": "Show coverage featuring the Kronos Perpetual dual-platter counter-rotating turntable with super-capacitor power supply.",
-          "link": "https://positive-feedback.com/axpona-2026/"
+          "title": "The 2024 Munich High End Show: Michael Fremer on New Analog Products",
+          "quote": "Munich High End 2024 analog product coverage featuring the Kronos Perpetual turntable.",
+          "link": "https://www.theabsolutesound.com/articles/the-2024-munich-high-end-show-michael-fremer-on-new-analog-products/?utm_source=chatgpt.com"
         },
         {
-          "initials": "PF",
-          "source": "Positive Feedback",
-          "type": "Experience / Press",
-          "title": "E211: The KRONOS Perpetual Experience",
-          "quote": "An experience-focused editorial entry centered on an extended listen to the production release of the KRONOS Perpetual Turntable.",
-          "link": "https://positive-feedback.com/e211-the-kronos-perpetual-experience/"
+          "initials": "AP",
+          "source": "Analog Planet",
+          "type": "Show Report / Press",
+          "title": "High End Munich 2024 Postscript, Part 1",
+          "quote": "Show coverage featuring the Kronos Audio dual-platter turntable system at High End Munich 2024.",
+          "link": "https://www.analogplanet.com/content/high-end-munich-2024-postscript-part-1-new-gear-wilson-benesch-rui-borges-kronos-audio-dual?utm_source=chatgpt.com"
         }
       ]
     },
@@ -221,7 +189,7 @@
         "The original Kronos reference turntable. The PRO set a new standard in analogue reproduction by combining counter-rotation and overhead suspension."
       ],
       "note": "* photos shown with optional SCPS-1",
-      "image": "/media/pro_0.jpg",
+      "image": "/media/pro_000.jpg",
       "overview": {
         "title": "Overview",
         "paragraphs": [
@@ -235,7 +203,7 @@
         "footerTag": "ORIGINAL REFERENCE · COUNTER-ROTATIONAL LEGACY"
       },
       "gallery": [
-        "/media/pro_0.jpg",
+        "/media/pro_000.jpg",
         "/media/products/Kronos Pro/pro6.jpg",
         "/media/products/Kronos Pro/pro8.jpg"
       ],

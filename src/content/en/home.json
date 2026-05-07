@@ -61,7 +61,7 @@
       "grid4Variant": "cinematic",
       "images": [
         "/media/discovery_001.jpg",
-        "/media/pro_0.jpg",
+        "/media/pro_000.jpg",
         "/media/perpetual_001.jpg",
         "/media/products/Sparta/sparta_0.jpg"
       ],
@@ -78,7 +78,8 @@
     {
       "id": "recognition",
       "eyebrow": "The Recognition",
-      "headline": "Time tested firendships",
+      "headline": "Time tested friendship",
+      
       "copy": [
         "Kronos is renowned for its ultimate customer service. ",
         "Countless Kronos owners have become friends in music. Our pledge to keep our family happy over time.",

@@ -51,7 +51,6 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
           "bg-zinc-950 ring-1 ring-white/10"
         )}
       >
-        {/* subtle depth */}
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-44 left-1/2 h-[560px] w-[560px] -translate-x-1/2 rounded-full bg-yellow-500/10 blur-3xl" />
           <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-black/40" />
@@ -114,11 +113,11 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
               <div className="mt-8">
                 <a
                   href={cta.href}
-                  className="inline-flex items-center gap-2 text-xs tracking-[0.18em] text-white/60 hover:text-white/85 transition-colors"
+                  className="inline-flex items-center gap-2 text-xs tracking-[0.18em] text-white/60 transition-colors hover:text-white/85"
                 >
                   {cta.label.toUpperCase()}
                   <span aria-hidden className="text-white/35">
-                    →
+                    {"\u2192"}
                   </span>
                 </a>
                 {note ? (
@@ -136,8 +135,7 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
           </div>
 
           <div className="md:col-span-6 lg:col-span-7">
-            <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/10">
-              {/* Image */}
+            <div className="group relative overflow-hidden rounded-2xl ring-1 ring-white/10">
               <Image
                 key={gallery[index].src}
                 src={gallery[index].src}
@@ -151,10 +149,8 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
                 className="h-[320px] w-full object-cover md:h-[420px] lg:h-[520px]"
               />
 
-              {/* Controls */}
               {gallery.length > 1 && (
                 <>
-                  {/* Prev / Next */}
                   <button
                     type="button"
                     aria-label="Previous image"
@@ -162,14 +158,14 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
                       setIndex((i) => (i === 0 ? gallery.length - 1 : i - 1))
                     }
                     className={clsx(
-                      "absolute left-4 top-1/2 z-20 -translate-y-1/2",
-                      "h-9 w-9 rounded-full",
-                      "border border-[#d4af37]/45 bg-[#d4af37] backdrop-blur",
-                      "text-white hover:text-white hover:bg-[#c09d2f]",
-                      "transition-colors"
+                      "absolute left-3 top-1/2 z-20 -translate-y-1/2 sm:left-5",
+                      "flex h-8 w-8 items-center justify-center rounded-full sm:h-10 sm:w-10",
+                      "border border-white/10 bg-black/30 text-xl leading-none text-[#d4af37]/80 backdrop-blur-md",
+                      "opacity-100 transition-all duration-300 md:opacity-0 md:group-hover:opacity-100",
+                      "hover:border-[#d4af37]/45 hover:bg-black/50 hover:text-[#d4af37]"
                     )}
                   >
-                    ‹
+                    {"\u2039"}
                   </button>
 
                   <button
@@ -179,19 +175,17 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
                       setIndex((i) => (i === gallery.length - 1 ? 0 : i + 1))
                     }
                     className={clsx(
-                      "absolute right-4 top-1/2 z-20 -translate-y-1/2",
-                      "h-9 w-9 rounded-full",
-                      "border border-[#d4af37]/45 bg-[#d4af37] backdrop-blur",
-                      "text-white hover:text-white hover:bg-[#c09d2f]",
-                      "transition-colors"
+                      "absolute right-3 top-1/2 z-20 -translate-y-1/2 sm:right-5",
+                      "flex h-8 w-8 items-center justify-center rounded-full sm:h-10 sm:w-10",
+                      "border border-white/10 bg-black/30 text-xl leading-none text-[#d4af37]/80 backdrop-blur-md",
+                      "opacity-100 transition-all duration-300 md:opacity-0 md:group-hover:opacity-100",
+                      "hover:border-[#d4af37]/45 hover:bg-black/50 hover:text-[#d4af37]"
                     )}
                   >
-                    ›
+                    {"\u203a"}
                   </button>
 
-                  {/* Bottom controls */}
                   <div className="absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between">
-                    {/* dots */}
                     <div className="flex items-center gap-2">
                       {gallery.map((_, i) => (
                         <button
@@ -200,17 +194,16 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
                           aria-label={`Go to image ${i + 1}`}
                           onClick={() => setIndex(i)}
                           className={clsx(
-                            "h-2 rounded-full transition-all",
+                            "h-1.5 rounded-full transition-all duration-300",
                             i === index
-                              ? "w-6 bg-amber-300/80"
-                              : "w-2 bg-white/25 hover:bg-white/40"
+                              ? "w-5 bg-[#bfa76a]/75"
+                              : "w-1.5 bg-white/20 hover:bg-white/35"
                           )}
                         />
                       ))}
                     </div>
 
-                    {/* index */}
-                    <div className="text-[10px] tracking-[0.28em] uppercase text-white/60">
+                    <div className="text-[10px] uppercase tracking-[0.28em] text-white/60">
                       {index + 1}/{gallery.length}
                     </div>
                   </div>
@@ -224,10 +217,8 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
               </p>
             ) : null}
           </div>
-
         </div>
 
-        {/* Bottom hairline */}
         <div className="relative px-6 pb-7 md:px-10 lg:px-14">
           <div className="h-px w-full bg-white/10" />
         </div>

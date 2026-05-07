@@ -149,6 +149,24 @@ const pressOverrides: Record<
   "discovery-positive-feedback-final-thoughts-on-the-kronos-discovery-lp-playback-system": {
     pdfUrl: "/media/press/dis_3.pdf",
   },
+  "perpetual-the-absolute-sound-the-2024-munich-high-end-show-michael-fremer-on-new-analog-products": {
+    pdfUrl: "/media/press/per_1.pdf",
+  },
+  "perpetual-analog-planet-high-end-munich-2024-postscript-part-1": {
+    pdfUrl: "/media/press/per_2.pdf",
+  },
+  "kronos-pro-positive-feedback-kronos-pro-le-turntable": {
+    pdfUrl: "/media/press/pro_1.pdf",
+  },
+  "kronos-pro-mono-and-stereo-kronos-pro-turntable-with-scps-1-review": {
+    pdfUrl: "/media/press/pro_2.pdf",
+  },
+  "kronos-pro-analogue-fellowship-kronos-pro-ltd-turntable-the-review": {
+    pdfUrl: "/media/press/pro_3.pdf",
+  },
+  "kronos-pro-mono-and-stereo-kronos-audio-pro-turntable-kronoscope-rs-tonearm-review": {
+    pdfUrl: "/media/press/pro_4.pdf",
+  },
 };
 
 export const pressData: PressArticle[] = (

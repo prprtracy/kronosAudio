@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { PdfPageStack } from "@/components/press/PdfPageStack";
 import { getPressArticleBySlug, pressData } from "@/data/press";
 
 type PageProps = {
@@ -36,16 +37,13 @@ export default async function PressDetailPage({ params }: PageProps) {
 
   if (!article) notFound();
 
-  const summaryParagraphs = article.summaryParagraphs ?? [article.summary];
-  const sourceDomain =
-    article.sourceDomain ?? article.url.replace(/^https?:\/\/(www\.)?/, "").split("/")[0];
-  const productLabel = article.productName.startsWith("Kronos")
-    ? article.productName
-    : `Kronos ${article.productName}`;
+  const productHref = `/products/${article.productSlug}`;
+  const productButtonLabel =
+    article.productSlug === "phono" ? "PHONO" : article.productName.toUpperCase();
 
   return (
     <main className="min-h-screen bg-black text-white">
-      <section className="mx-auto max-w-5xl px-6 pb-24 pt-32 sm:pt-40">
+      <section className="mx-auto max-w-5xl px-6 pb-14 pt-32 sm:pt-40">
         <Link
           href={`/products/${article.productSlug}#reviews`}
           className="inline-flex text-xs uppercase tracking-[0.24em] text-neutral-400 transition-colors hover:text-amber-200"
@@ -77,139 +75,35 @@ export default async function PressDetailPage({ params }: PageProps) {
               &quot;{article.quote}&quot;
             </blockquote>
           </section>
-
-          <section className="mt-16 max-w-4xl">
-            <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-              Article Summary
-            </h2>
-            <div className="mt-7 space-y-6 text-base leading-8 text-neutral-300 sm:text-lg sm:leading-9">
-              {summaryParagraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </div>
-          </section>
-
-          {article.takeaways?.length ? (
-            <section className="mt-16">
-              <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-                Key Takeaways
-              </h2>
-              <div className="mt-7 grid gap-4 md:grid-cols-2">
-                {article.takeaways.map((takeaway) => (
-                  <article
-                    key={takeaway.title}
-                    className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors hover:border-amber-300/30 hover:bg-white/[0.06]"
-                  >
-                    <h3 className="text-lg font-semibold text-amber-100">
-                      {takeaway.title}
-                    </h3>
-                    <p className="mt-4 text-sm leading-7 text-neutral-300">
-                      {takeaway.text}
-                    </p>
-                  </article>
-                ))}
-              </div>
-            </section>
-          ) : null}
-
-          <section className="mt-16 rounded-2xl border border-white/10 bg-white/[0.035] p-6 sm:p-8">
-            <h2 className="text-sm font-semibold uppercase tracking-[0.28em] text-neutral-200">
-              Source Information
-            </h2>
-            <dl className="mt-6 grid gap-5 text-sm sm:grid-cols-2">
-              <div>
-                <dt className="text-neutral-500">Publication</dt>
-                <dd className="mt-1 font-medium text-neutral-100">
-                  {article.source}
-                </dd>
-              </div>
-              <div>
-                <dt className="text-neutral-500">Article Type</dt>
-                <dd className="mt-1 font-medium text-neutral-100">
-                  {article.category}
-                </dd>
-              </div>
-              <div>
-                <dt className="text-neutral-500">Product</dt>
-                <dd className="mt-1 font-medium text-neutral-100">
-                  {productLabel}
-                </dd>
-              </div>
-              <div>
-                <dt className="text-neutral-500">Original Source</dt>
-                <dd className="mt-1 font-medium text-neutral-100">
-                  {sourceDomain}
-                </dd>
-              </div>
-            </dl>
-          </section>
-
-          {article.pdfUrl ? (
-            <section className="mt-16">
-              <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.28em] text-amber-200/75">
-                    Saved Article
-                  </p>
-                  <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-                    Full PDF
-                  </h2>
-                </div>
-                <p className="max-w-md text-sm leading-6 text-neutral-400">
-                  This embedded copy is provided for convenient on-site reading. The
-                  original publication remains linked below.
-                </p>
-              </div>
-
-              <div className="overflow-hidden rounded-2xl border border-white/10 bg-neutral-950 shadow-[0_24px_70px_rgba(0,0,0,0.45)]">
-                <iframe
-                  src={`${article.pdfUrl}#toolbar=1&navpanes=0`}
-                  title={`${article.title} saved PDF`}
-                  className="h-[78vh] min-h-[640px] w-full bg-white"
-                />
-              </div>
-            </section>
-          ) : null}
-
-          <section className="mt-12 flex flex-wrap items-center gap-4">
-            <a
-              href={article.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-amber-300/60 px-6 py-3 text-xs uppercase tracking-[0.22em] text-amber-200 transition-colors hover:bg-amber-300 hover:text-black"
-            >
-              Visit Original Article -&gt;
-            </a>
-
-            {article.pdfUrl ? (
-              <a
-                href={article.pdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-amber-300/35 bg-amber-300/10 px-6 py-3 text-xs uppercase tracking-[0.22em] text-amber-100 transition-colors hover:border-amber-300/60 hover:bg-amber-300/15"
-              >
-                View Saved PDF -&gt;
-              </a>
-            ) : null}
-
-            {article.pdfUrl ? (
-              <a
-                href={article.pdfUrl}
-                download
-                className="inline-flex items-center justify-center rounded-full border border-white/10 px-6 py-3 text-xs uppercase tracking-[0.22em] text-neutral-300 transition-colors hover:border-amber-300/35 hover:text-amber-100"
-              >
-                Download PDF
-              </a>
-            ) : null}
-
-            <Link
-              href={`/products/${article.productSlug}`}
-              className="inline-flex items-center justify-center rounded-full border border-white/10 px-6 py-3 text-xs uppercase tracking-[0.22em] text-neutral-300 transition-colors hover:border-white/25 hover:text-white"
-            >
-              Explore {article.productName} -&gt;
-            </Link>
-          </section>
         </div>
+      </section>
+
+      {article.pdfUrl ? (
+        <section className="mx-auto max-w-5xl px-6 pb-10">
+          <PdfPageStack url={article.pdfUrl} title={article.title} />
+        </section>
+      ) : null}
+
+      <section className="mx-auto max-w-5xl px-6 pb-14 text-center text-xs leading-6 text-neutral-500">
+        <p>
+          <span className="text-neutral-600">Source:</span>{" "}
+          <span className="text-neutral-400">{article.source}</span>
+        </p>
+        <p className="mt-3 text-neutral-600">Published on:</p>
+        <a
+          href={article.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-auto block max-w-3xl break-words text-neutral-500 hover:text-amber-200"
+        >
+          {article.url}
+        </a>
+        <Link
+          href={productHref}
+          className="mt-8 inline-flex items-center justify-center rounded-full border border-amber-300/35 bg-black px-5 py-2 text-xs font-light uppercase tracking-[0.25em] text-neutral-300 transition duration-300 hover:border-amber-200/70 hover:bg-white/[0.04] hover:text-amber-100"
+        >
+          &larr; Return to {productButtonLabel}
+        </Link>
       </section>
     </main>
   );
