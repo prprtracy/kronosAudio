@@ -10,6 +10,7 @@ type ProductContent = {
     title?: string;
     quote: string;
     link?: string;
+    links?: string[];
   }[];
 };
 
@@ -27,6 +28,7 @@ export type PressArticle = {
   quote: string;
   takeaways?: { title: string; text: string }[];
   url: string;
+  urls?: string[];
   pdfUrl?: string;
   productName: string;
   productSlug: string;
@@ -103,6 +105,7 @@ const pressOverrides: Record<
       | "summaryParagraphs"
       | "quote"
       | "takeaways"
+      | "urls"
       | "pdfUrl"
       | "productSlug"
       | "sourceDomain"
@@ -188,6 +191,18 @@ const pressOverrides: Record<
   "tonearms-mono-and-stereo-kronos-pro-turntable-kronoscope-rs-tonearm-review": {
     pdfUrl: "/media/press/ton_4.pdf",
   },
+  "phono-mono-and-stereo-kronos-audio-discovery-phono-preamplifier": {
+    pdfUrl: "/media/press/pho_1.pdf",
+  },
+  "phono-audiofi-kronos-audio-reference-phono-preamp-is-this-the-best": {
+    pdfUrl: "/media/press/pho_2.pdf",
+  },
+  "phono-positive-feedback-e213-the-kronos-discovery-phonostage-a-new-benchmark": {
+    pdfUrl: "/media/press/pho_3.pdf",
+  },
+  "racks-analogue-fellowship-kronos-complete-analogue-solution": {
+    pdfUrl: "/media/press/full_1.pdf",
+  },
 };
 
 export const pressData: PressArticle[] = (
@@ -218,6 +233,7 @@ export const pressData: PressArticle[] = (
         }),
         quote: item.quote,
         url: item.link ?? "#",
+        urls: item.links?.length ? item.links : item.link ? [item.link] : [],
         productName: product.name,
         productSlug: product.slug,
         sourceDomain: getSourceDomain(item.link ?? ""),
@@ -229,6 +245,7 @@ export const pressData: PressArticle[] = (
         slug,
         title,
         url: baseArticle.url,
+        urls: baseArticle.urls,
         productName: baseArticle.productName,
       };
     })

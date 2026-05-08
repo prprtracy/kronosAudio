@@ -520,34 +520,30 @@
         {
           "initials": "MS",
           "source": "Mono & Stereo",
-          "type": "News / Press",
-          "title": "Kronos Discovery Phono",
-          "quote": "Launch coverage introducing the new Kronos Discovery Phono ahead of High End Munich 2024.",
-          "link": "https://www.monoandstereo.com/kronos-discovery-phono/"
-        },
-        {
-          "initials": "MS",
-          "source": "Mono & Stereo",
           "type": "Editorial / Press",
-          "title": "Kronos Discovery Phono Preamplifier",
-          "quote": "Editorial coverage of the Kronos Audio Discovery flagship reference tube phono preamplifier featuring a proprietary patented suspension system.",
-          "link": "https://www.monoandstereo.com/kronos-discovery-phono-preamplifier-2/"
+          "title": "Kronos Audio Discovery Phono Preamplifier",
+          "quote": "Editorial coverage of the Kronos Audio Discovery flagship reference tube phono preamplifier.",
+          "link": "https://www.monoandstereo.com/kronos-audio-discovery-phono-preamplifier/?utm_source=chatgpt.com",
+          "links": [
+            "https://www.monoandstereo.com/kronos-audio-discovery-phono-preamplifier/?utm_source=chatgpt.com",
+            "https://www.monoandstereo.com/kronos-discovery-phono-preamplifier-2/"
+          ]
         },
         {
-          "initials": "AP",
-          "source": "Analog Planet",
-          "type": "Show Report / Press",
-          "title": "High End Munich 2024 Postscript, Part 1",
-          "quote": "Show coverage featuring the Kronos Discovery phono preamp as a fully suspended design with dual power supplies.",
-          "link": "https://www.analogplanet.com/content/high-end-munich-2024-postscript-part-1-new-gear-wilson-benesch-rui-borges-kronos-audio-dual"
+          "initials": "AF",
+          "source": "AudioFi",
+          "type": "Review / Press",
+          "title": "Kronos Audio Reference Phono Preamp - Is This The Best?",
+          "quote": "Review coverage of the Kronos Audio Reference Phono preamplifier.",
+          "link": "https://audiofi.net/2018/05/kronos-audio-reference-phono-preamp-is-this-the-best/?utm_source=chatgpt.com"
         },
         {
-          "initials": "ST",
-          "source": "Stereophile",
-          "type": "Show Report / Press",
-          "title": "High End Munich 2024 coverage",
-          "quote": "Show coverage documenting the Kronos Discovery phono stage in a flagship analog playback system.",
-          "link": "https://www.stereophile.com/content/gobels-divin-comtesse-loudspeakers-and-sovereign-subs-wadax-studio-playerpilium"
+          "initials": "PF",
+          "source": "Positive Feedback",
+          "type": "Review / Press",
+          "title": "E213: The Kronos Discovery Phonostage - A New Benchmark",
+          "quote": "Review coverage positioning the Kronos Discovery phonostage as a new benchmark.",
+          "link": "https://positive-feedback.com/audio-analyst/e213-the-kronos-discovery-phonostage-a-new-benchmark/?utm_source=chatgpt.com"
         }
       ]
     },
@@ -589,10 +585,12 @@
       "specs": [],
       "endorsements": [
         {
-          "quote": "A complete analogue system depends on the stability of every mechanical interface, from floor to component.",
-          "source": "Kronos Audio",
-          "type": "System Note",
-          "link": "#"
+          "initials": "AF",
+          "source": "Analogue Fellowship",
+          "type": "Review / Press",
+          "title": "Kronos Complete Analogue Solution",
+          "quote": "Review coverage of the Kronos complete analogue solution as an integrated playback system.",
+          "link": "https://analoguefellowship.com/2018/07/18/kronos-complete-analogue-solution/?utm_source=chatgpt.com"
         }
       ]
     }

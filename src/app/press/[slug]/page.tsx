@@ -40,6 +40,7 @@ export default async function PressDetailPage({ params }: PageProps) {
   const productHref = `/products/${article.productSlug}`;
   const productButtonLabel =
     article.productSlug === "phono" ? "PHONO" : article.productName.toUpperCase();
+  const sourceUrls = article.urls?.length ? article.urls : [article.url];
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -90,14 +91,19 @@ export default async function PressDetailPage({ params }: PageProps) {
           <span className="text-neutral-400">{article.source}</span>
         </p>
         <p className="mt-3 text-neutral-600">Published on:</p>
-        <a
-          href={article.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mx-auto block max-w-3xl break-words text-neutral-500 hover:text-amber-200"
-        >
-          {article.url}
-        </a>
+        <div className="mt-1 space-y-1">
+          {sourceUrls.map((url) => (
+            <a
+              key={url}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-auto block max-w-3xl break-words text-neutral-500 hover:text-amber-200"
+            >
+              {url}
+            </a>
+          ))}
+        </div>
         <Link
           href={productHref}
           className="mt-8 inline-flex items-center justify-center rounded-full border border-amber-300/35 bg-black px-5 py-2 text-xs font-light uppercase tracking-[0.25em] text-neutral-300 transition duration-300 hover:border-amber-200/70 hover:bg-white/[0.04] hover:text-amber-100"
