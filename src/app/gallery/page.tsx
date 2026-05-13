@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Locale } from "@/i18n";
 import { normalizeLocale } from "@/lib/content";
 import { getGallery } from "@/lib/gallery";
@@ -25,7 +24,7 @@ export default async function GalleryPage({
             </p>
           )}
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight">
+          <h1 className="max-w-full text-3xl sm:text-5xl md:text-6xl font-semibold leading-tight tracking-tight">
             {content.headline}
           </h1>
 
@@ -34,7 +33,7 @@ export default async function GalleryPage({
               {content.intro.map((line) => (
                 <p
                   key={line}
-                  className="text-sm sm:text-base text-neutral-300 leading-relaxed"
+                  className="text-sm sm:text-base text-neutral-300 leading-relaxed break-words"
                 >
                   {line}
                 </p>

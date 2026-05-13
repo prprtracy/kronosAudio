@@ -188,7 +188,7 @@ export const products: Product[] = [
   {
     id: "racks",
     slug: "racks",
-    name: "Racks & Supports",
+    name: "Full Analogue Solution",
     tagline: "Engineered Foundations",
     description: [
       "Engineered foundations that control vibration and preserve mechanical integrity, allowing Kronos systems to perform at their highest level.",

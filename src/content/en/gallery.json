@@ -315,31 +315,31 @@
     },
     {
       "id": "racks",
-      "label": "Racks & Supports",
+      "label": "Full Analogue Solution",
       "items": [
         {
           "src": "/media/products/tonearm/RS1.jpg",
-          "alt": "Racks & Supports turntable"
+          "alt": "Full Analogue Solution turntable"
         },
         {
           "src": "/media/products/tonearm/RS2.jpg",
-          "alt": "Racks & Supports system"
+          "alt": "Full Analogue Solution system"
         },
         {
           "src": "/media/products/tonearm/RS3.jpg",
-          "alt": "Racks & Supports amplifier"
+          "alt": "Full Analogue Solution amplifier"
         },
         {
           "src": "/media/products/tonearm/RS4.jpg",
-          "alt": "Racks & Supports detail"
+          "alt": "Full Analogue Solution detail"
         },
         {
           "src": "/media/products/tonearm/RS5.jpg",
-          "alt": "Racks & Supports system in room"
+          "alt": "Full Analogue Solution system in room"
         },
         {
           "src": "/media/products/tonearm/RS6.jpg",
-          "alt": "Racks & Supports close-up"
+          "alt": "Full Analogue Solution close-up"
         }
       ]
     },

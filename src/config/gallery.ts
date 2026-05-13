@@ -1,6 +1,8 @@
 export type GalleryImageItem = {
   src: string;
   alt?: string;
+  imagePositionDesktop?: string;
+  imagePositionMobile?: string;
 };
 
 export type GallerySection = {
