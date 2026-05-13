@@ -47,7 +47,7 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
     <Section className="pt-[96px] md:pt-[112px] lg:pt-[128px]">
       <div
         className={clsx(
-          "relative overflow-hidden rounded-3xl",
+          "relative left-1/2 w-[min(100vw-24px,1400px)] -translate-x-1/2 overflow-hidden rounded-3xl",
           "bg-zinc-950 ring-1 ring-white/10"
         )}
       >
@@ -56,8 +56,8 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
           <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-black/40" />
         </div>
 
-        <div className="relative grid grid-cols-1 gap-10 px-6 py-10 md:grid-cols-12 md:gap-8 md:px-10 md:py-14 lg:px-14 lg:py-16">
-          <div className="md:col-span-6 lg:col-span-5">
+        <div className="relative grid grid-cols-1 gap-9 px-5 py-8 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:gap-8 md:px-7 md:py-12 lg:gap-10 lg:px-10 lg:py-14">
+          <div>
             {eyebrow ? (
               <p className={clsx("text-xs tracking-[0.22em]", eyebrowColorClass)}>
                 {eyebrow.toUpperCase()}
@@ -120,21 +120,11 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
                     {"\u2192"}
                   </span>
                 </a>
-                {note ? (
-                  <p
-                    className={clsx(
-                      "mt-2 text-xs tracking-wider italic",
-                      eyebrowColorClass
-                    )}
-                  >
-                    {note}
-                  </p>
-                ) : null}
               </div>
             ) : null}
           </div>
 
-          <div className="md:col-span-6 lg:col-span-7">
+          <div className="min-w-0">
             <div className="group relative overflow-hidden rounded-2xl ring-1 ring-white/10">
               <Image
                 key={gallery[index].src}
@@ -145,8 +135,9 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
                 priority={index === 0 && (image.priority ?? true)}
                 loading={index === 0 ? "eager" : "lazy"}
                 fetchPriority={index === 0 ? "high" : "auto"}
-                sizes="(min-width: 1024px) 58vw, (min-width: 768px) 50vw, 100vw"
-                className="h-[320px] w-full object-cover md:h-[420px] lg:h-[520px]"
+                sizes="(min-width: 1280px) 780px, (min-width: 768px) 58vw, calc(100vw - 40px)"
+                style={{ objectPosition: "center center" }}
+                className="aspect-[4/3] h-auto w-full object-cover md:aspect-[16/10] xl:aspect-[16/9]"
               />
 
               {gallery.length > 1 && (
@@ -211,6 +202,12 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
               )}
             </div>
 
+            {note ? (
+              <p className="mt-3 text-xs italic tracking-wide text-[#c6a66a]/80">
+                {note}
+              </p>
+            ) : null}
+
             {keyline ? (
               <p className="mt-3 text-xs tracking-[0.18em] text-white/50">
                 {keyline.toUpperCase()}
@@ -219,7 +216,7 @@ export function ProductHero({ data }: { data: ProductHeroData }) {
           </div>
         </div>
 
-        <div className="relative px-6 pb-7 md:px-10 lg:px-14">
+        <div className="relative px-5 pb-7 md:px-7 lg:px-10">
           <div className="h-px w-full bg-white/10" />
         </div>
       </div>

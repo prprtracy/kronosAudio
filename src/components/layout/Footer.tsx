@@ -109,17 +109,31 @@ export function Footer({ content }: { content: FooterContent }) {
           </p>
 
           {social && (
-            <div className="flex items-center gap-4 text-neutral-500">
-              {social.map((s) => (
-                <a
-                  key={s.id}
-                  href={s.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  {s.id}
-                </a>
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xs tracking-wide text-neutral-500 sm:justify-end">
+              {social.map((s, index) => (
+                <span key={s.id} className="inline-flex items-center gap-3">
+                  {index > 0 && (
+                    <span aria-hidden="true" className="text-neutral-700">
+                      ·
+                    </span>
+                  )}
+                  <a
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 transition-colors duration-200 hover:text-amber-400"
+                  >
+                    {s.id === "Facebook" && (
+                      <span
+                        aria-hidden="true"
+                        className="flex h-4 w-4 items-center justify-center rounded-full border border-current text-[10px] font-semibold leading-none"
+                      >
+                        f
+                      </span>
+                    )}
+                    {s.id}
+                  </a>
+                </span>
               ))}
             </div>
           )}

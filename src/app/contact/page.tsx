@@ -74,6 +74,25 @@ export default async function ContactPage({
                 </ul>
               )}
 
+              {section.title === "General Inquiries" && (
+                <div className="mt-8 border-t border-white/10 pt-6">
+                  <div className="mb-3 text-xs uppercase tracking-[0.28em] text-neutral-400">
+                    Follow Kronos
+                  </div>
+                  <a
+                    href="https://www.facebook.com/louis.desjardins.71"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm tracking-wide text-white transition-colors hover:text-amber-400"
+                  >
+                    Facebook
+                    <span aria-hidden="true" className="text-xs text-current">
+                      ↗
+                    </span>
+                  </a>
+                </div>
+              )}
+
               {section.cta && (
                 <Link
                   href={section.cta.href}

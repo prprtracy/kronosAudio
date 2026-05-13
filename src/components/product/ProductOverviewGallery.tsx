@@ -21,12 +21,13 @@ export function ProductOverviewGallery({ images }: Props) {
   return (
     <div className="space-y-4">
       {/* Main image */}
-      <div className="group relative aspect-square w-full overflow-hidden bg-neutral-900">
+      <div className="group relative aspect-[4/3] w-full overflow-hidden bg-neutral-900 md:aspect-[16/10] xl:aspect-[16/9]">
         <Image
           src={images[index].src}
           alt={images[index].alt ?? ""}
           fill
           className="object-contain"
+          style={{ objectPosition: "center center" }}
           priority={index === 0}
         />
 
