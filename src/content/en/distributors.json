@@ -23,6 +23,10 @@
       "label": "Asia-Pacific"
     },
     {
+      "id": "middle-east",
+      "label": "Middle East"
+    },
+    {
       "id": "mea",
       "label": "Middle East & Africa"
     }
@@ -252,6 +256,21 @@
       "region": "europe",
       "lat": 55.7558,
       "lng": 37.6173,
+      "tier": "standard"
+    },
+    {
+      "id": "il-audio",
+      "name": "IL AUDIO",
+      "country": "Israel",
+      "contactPerson": "Igal Lasri",
+      "address": "Jerusalem St 5\nKfar Sava 4418001\nIsrael",
+      "phone": "0545912363",
+      "email": "",
+      "website": "https://il-audio.com/",
+      "city": "Kfar Sava",
+      "region": "middle-east",
+      "lat": 32.1782,
+      "lng": 34.9076,
       "tier": "standard"
     },
     {

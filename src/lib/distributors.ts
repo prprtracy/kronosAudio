@@ -8,7 +8,13 @@ import { getContent } from "./content";
    Types – 100% 对齐 JSON
    ========================= */
 
-export type RegionId = "all" | "americas" | "europe" | "apac" | "mea";
+export type RegionId =
+  | "all"
+  | "americas"
+  | "europe"
+  | "apac"
+  | "middle-east"
+  | "mea";
 
 export type DistributorRegion = {
   id: RegionId;
