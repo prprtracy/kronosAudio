@@ -1,16 +1,15 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Locale } from "@/i18n";
+import { defaultLocale } from "@/i18n";
 import { getGallery } from "@/lib/gallery";
 import { normalizeLocale } from "@/lib/content";
-import {
-  GALLERY_PRODUCT_ORDER,
-  normalizeGallerySection,
-} from "@/config/galleryProducts";
 import { GalleryDownloadGrid } from "@/components/gallery/GalleryDownloadGrid";
 
 export async function generateStaticParams() {
-  return GALLERY_PRODUCT_ORDER.map((id) => ({ id }));
+  const content = await getGallery(defaultLocale);
+
+  return content.sections.map((section) => ({ id: section.id }));
 }
 
 export default async function GalleryProductPage({
@@ -27,8 +26,6 @@ export default async function GalleryProductPage({
     notFound();
   }
 
-  const product = normalizeGallerySection(section);
-
   return (
     <main className="pt-28 pb-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -41,16 +38,18 @@ export default async function GalleryProductPage({
 
         <div className="mt-10 max-w-3xl">
           <p className="text-[11px] uppercase tracking-[0.3em] text-amber-400/90">
-            {product.copy.eyebrow}
+            {section.eyebrow ?? section.label}
           </p>
           <h1 className="mt-5 text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl">
-            {product.copy.name}
+            {section.label}
           </h1>
-          <div className="mt-6 space-y-2 text-sm leading-6 text-neutral-300 sm:text-base">
-            {product.copy.description.map((line) => (
-              <p key={line}>{line}</p>
-            ))}
-          </div>
+          {section.description && (
+            <div className="mt-6 space-y-2 text-sm leading-6 text-neutral-300 sm:text-base">
+              {section.description.map((line) => (
+                <p key={line}>{line}</p>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="mt-14 border-t border-white/10 pt-10">
@@ -68,7 +67,7 @@ export default async function GalleryProductPage({
             </p>
           </div>
 
-          <GalleryDownloadGrid items={product.allItems} />
+          <GalleryDownloadGrid items={section.items} />
         </div>
       </div>
     </main>

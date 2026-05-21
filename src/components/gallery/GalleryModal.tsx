@@ -6,6 +6,7 @@ import Image from "next/image";
 type Props = {
   src: string;
   alt?: string;
+  caption?: string;
   onClose: () => void;
 };
 
@@ -17,7 +18,7 @@ function getDownloadName(src: string) {
   return filename ? decodeURIComponent(filename) : "kronos-gallery-image";
 }
 
-export function GalleryModal({ src, alt, onClose }: Props) {
+export function GalleryModal({ src, alt, caption, onClose }: Props) {
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
@@ -71,14 +72,28 @@ export function GalleryModal({ src, alt, onClose }: Props) {
         </div>
       </div>
 
-      <a
-        href={src}
-        download={getDownloadName(src)}
+      <div
+        className="absolute inset-x-4 bottom-5 mx-auto flex max-w-5xl flex-col gap-4 rounded-lg border border-white/10 bg-black/65 px-4 py-4 backdrop-blur-md sm:bottom-6 sm:flex-row sm:items-end sm:justify-between sm:px-5"
         onClick={(event) => event.stopPropagation()}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 rounded-full border border-white/20 bg-white px-5 py-3 text-center text-xs font-semibold tracking-[0.08em] text-black transition-colors hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/70 sm:text-sm"
       >
-        Download High-Resolution Image
-      </a>
+        <div className="min-w-0">
+          <p className="truncate text-xs text-neutral-200">
+            {getDownloadName(src)}
+          </p>
+          {caption && (
+            <p className="mt-1 max-w-3xl text-[11px] leading-5 text-neutral-400 sm:text-xs">
+              {caption}
+            </p>
+          )}
+        </div>
+        <a
+          href={src}
+          download={getDownloadName(src)}
+          className="shrink-0 rounded-full border border-white/20 bg-white px-5 py-3 text-center text-xs font-semibold tracking-[0.08em] text-black transition-colors hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/70 sm:text-sm"
+        >
+          Download High-Resolution Image
+        </a>
+      </div>
     </div>
   );
 }

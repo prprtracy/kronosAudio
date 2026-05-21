@@ -1,14 +1,17 @@
-export type GalleryImageItem = {
+export type GalleryItem = {
   src: string;
   alt?: string;
-  imagePositionDesktop?: string;
-  imagePositionMobile?: string;
+  caption?: string;
 };
 
 export type GallerySection = {
   id: string;
   label: string;
-  items: GalleryImageItem[];
+  eyebrow?: string;
+  category?: string;
+  description?: string[];
+  assemblyInstruction?: string;
+  items: GalleryItem[];
 };
 
 export type GalleryContent = {

@@ -55,9 +55,26 @@ export function createPressSlug({
   if (
     productSlug === "discovery" &&
     source === "Hi-Fi+" &&
-    title === "Kronos Discovery turntable"
+    (title === "Kronos Discovery turntable" ||
+      title === "KRONOS Discovery Turntable")
   ) {
     return "kronos-discovery-turntable";
+  }
+
+  if (
+    productSlug === "phono" &&
+    source === "Mono and Stereo" &&
+    title === "Mono and Stereo: Kronos Audio Discovery Phono Preamplifier"
+  ) {
+    return "phono-mono-and-stereo-kronos-audio-discovery-phono-preamplifier";
+  }
+
+  if (
+    productSlug === "phono" &&
+    source === "AudioFi" &&
+    title === "AudioFi: Kronos Audio Reference Phono Preamp - Is This the Best?"
+  ) {
+    return "phono-audiofi-kronos-audio-reference-phono-preamp-is-this-the-best";
   }
 
   return [productSlug, source, title ?? "press"]
@@ -144,10 +161,10 @@ const pressOverrides: Record<
     ],
     productSlug: "discovery",
     sourceDomain: "hifiplus.com",
-    pdfUrl: "/media/press/dis_2.pdf",
+    pdfUrl: "/media/press/dis_1.pdf",
   },
   "discovery-positive-feedback-the-kronos-discovery-lp-playback-system-sui-generis": {
-    pdfUrl: "/media/press/dis_1.pdf",
+    pdfUrl: "/media/press/dis_2.pdf",
   },
   "discovery-positive-feedback-final-thoughts-on-the-kronos-discovery-lp-playback-system": {
     pdfUrl: "/media/press/dis_3.pdf",
@@ -194,7 +211,16 @@ const pressOverrides: Record<
   "phono-mono-and-stereo-kronos-audio-discovery-phono-preamplifier": {
     pdfUrl: "/media/press/pho_1.pdf",
   },
+  "phono-mono-and-stereo-kronos-discovery-phono-preamplifier": {
+    pdfUrl: "/media/press/pho_1.pdf",
+  },
+  "phono-analog-planet-high-end-munich-2024-postscript-part-1": {
+    pdfUrl: "/media/press/per_2.pdf",
+  },
   "phono-audiofi-kronos-audio-reference-phono-preamp-is-this-the-best": {
+    pdfUrl: "/media/press/pho_2.pdf",
+  },
+  "phono-audiofi-audiofi-kronos-audio-reference-phono-preamp-is-this-the-best": {
     pdfUrl: "/media/press/pho_2.pdf",
   },
   "phono-positive-feedback-e213-the-kronos-discovery-phonostage-a-new-benchmark": {
@@ -249,7 +275,7 @@ export const pressData: PressArticle[] = (
         productName: baseArticle.productName,
       };
     })
-);
+).filter((article) => Boolean(article.pdfUrl));
 
 export function getPressArticleBySlug(slug: string) {
   return pressData.find((article) => article.slug === slug);

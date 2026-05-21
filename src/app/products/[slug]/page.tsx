@@ -11,7 +11,7 @@ import { ProductFeaturedCoverage } from "@/components/product/ProductFeaturedCov
 import { ProductSpecs } from "@/components/product/ProductSpecs";
 import { ProductAnchorNav } from "@/components/product/ProductAnchorNav";
 import { ProductDownloads } from "@/components/product/ProductDownloads";
-import { createPressSlug } from "@/data/press";
+import { createPressSlug, getPressArticleBySlug } from "@/data/press";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -278,11 +278,17 @@ export default async function ProductDetailPage({ params }: PageProps) {
             quote: item.quote,
             url:
               item.link && item.link.length > 0 && item.type?.includes("Press")
-                ? `/press/${createPressSlug({
-                    productSlug: product.slug,
-                    source: item.source,
-                    title: item.title,
-                  })}`
+                ? (() => {
+                    const pressSlug = createPressSlug({
+                      productSlug: product.slug,
+                      source: item.source,
+                      title: item.title,
+                    });
+
+                    return getPressArticleBySlug(pressSlug)
+                      ? `/press/${pressSlug}`
+                      : item.link;
+                  })()
                 : item.link && item.link.length > 0
                   ? item.link
                   : "#",

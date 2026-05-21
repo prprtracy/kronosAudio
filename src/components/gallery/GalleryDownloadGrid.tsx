@@ -14,12 +14,17 @@ const WATERMARK_SRC = "/media/logo-retina.png";
 type Item = {
   src: string;
   alt?: string;
+  caption?: string;
 };
 
 function getDownloadName(src: string) {
   const filename = src.split("/").pop();
 
   return filename ? decodeURIComponent(filename) : "kronos-gallery-image";
+}
+
+function getItemCaption(item: Item) {
+  return item.caption ?? item.alt;
 }
 
 export function GalleryDownloadGrid({ items }: { items: Item[] }) {
@@ -58,14 +63,21 @@ export function GalleryDownloadGrid({ items }: { items: Item[] }) {
               />
             </button>
 
-            <div className="flex items-center justify-between gap-4 px-4 py-3">
-              <p className="min-w-0 truncate text-xs text-neutral-300">
-                {getDownloadName(item.src)}
-              </p>
+            <div className="flex items-start justify-between gap-4 px-4 py-4">
+              <div className="min-w-0">
+                <p className="truncate text-xs text-neutral-200">
+                  {getDownloadName(item.src)}
+                </p>
+                {getItemCaption(item) && (
+                  <p className="mt-1 line-clamp-2 text-[11px] leading-5 text-neutral-500">
+                    {getItemCaption(item)}
+                  </p>
+                )}
+              </div>
               <a
                 href={item.src}
                 download={getDownloadName(item.src)}
-                className="shrink-0 text-[10px] font-medium uppercase tracking-[0.18em] text-amber-400 transition-colors hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400/70"
+                className="shrink-0 pt-0.5 text-[10px] font-medium uppercase tracking-[0.18em] text-amber-400 transition-colors hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400/70"
               >
                 Download
               </a>
@@ -78,6 +90,7 @@ export function GalleryDownloadGrid({ items }: { items: Item[] }) {
         <GalleryModal
           src={active.src}
           alt={active.alt}
+          caption={getItemCaption(active)}
           onClose={() => setActive(null)}
         />
       )}

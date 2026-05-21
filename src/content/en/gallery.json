@@ -2,184 +2,53 @@
   "eyebrow": "Gallery",
   "headline": "Systems & Presence",
   "intro": [
-    "A visual archive of Kronos systems, components, and craftsmanship."
+    "A curated visual journey through Kronos analogue systems, engineering, and detail."
   ],
   "sections": [
     {
       "id": "discovery",
       "label": "Discovery",
+      "assemblyInstruction": "/media/downloads/DISCOVERY%20assembly%20instruction%202026.pdf",
       "items": [
         {
-          "src": "/media/products/Discovery/discovery1.jpg",
-          "alt": "Discovery system"
-        },
-        {
-          "src": "/media/products/Discovery/discovery2.jpg",
-          "alt": "Discovery detail"
-        },
-        {
-          "src": "/media/products/Discovery/discovery3.jpg",
-          "alt": "Discovery turntable"
-        },
-        {
-          "src": "/media/products/Discovery/discovery4.jpg",
-          "alt": "Discovery amplifier"
-        },
-        {
-          "src": "/media/products/Discovery/discovery5.jpg",
-          "alt": "Discovery system in room"
-        },
-        {
-          "src": "/media/products/Discovery/discovery6.jpg",
-          "alt": "Discovery close-up"
-        },
-        {
-          "src": "/media/products/Discovery/discovery7.jpg",
-          "alt": "Discovery system side view"
+          "src": "/media/discovery_000.jpg",
+          "alt": "Discovery configured with dual tonearms and the SCPS-D reference power supply."
         },
         {
           "src": "/media/products/Discovery/discovery8.jpg",
-          "alt": "Discovery amplifier detail"
+          "alt": "Machined suspension tower detail highlighting Kronos engineering precision."
         },
         {
-          "src": "/media/products/Discovery/discovery9.jpg",
-          "alt": "Discovery system front view"
+          "src": "/media/products/Discovery/discovery1.jpg",
+          "alt": "A full-system view showcasing Discovery’s suspended architecture."
         },
         {
-          "src": "/media/products/Discovery/discovery10.jpg",
-          "alt": "Discovery turntable close-up"
+          "src": "/media/products/Discovery/discovery3.jpg",
+          "alt": "The Discovery reference turntable displayed with the SCPS control platform."
+        },
+        {
+          "src": "/media/products/Discovery/discovery4.jpg",
+          "alt": "Close-up detail of Discovery’s platter and precision tonearm assembly."
+        },
+        {
+          "src": "/media/products/Discovery/discovery5.jpg",
+          "alt": "Discovery integrated within a complete high-end analogue listening environment."
         },
         {
           "src": "/media/products/Discovery/discovery11.jpg",
-          "alt": "Discovery system ambient"
+          "alt": "Discovery reference system presented in a low-light listening environment."
         },
         {
           "src": "/media/products/Discovery/discovery12.jpg",
-          "alt": "Discovery amplifier side view"
+          "alt": "Angled overhead view highlighting Discovery’s layered suspended chassis."
         },
         {
           "src": "/media/products/Discovery/discovery13.jpeg",
-          "alt": "Discovery system top view"
+          "alt": "Bottom internal view revealing Discovery’s precision-engineered control architecture."
         },
         {
           "src": "/media/products/Discovery/discovery14.jpeg",
-          "alt": "Discovery turntable detail"
-        }
-      ]
-    },
-    {
-      "id": "pro",
-      "label": "Kronos Pro",
-      "items": [
-        {
-          "src": "/media/products/Kronos Pro/pro1.jpg",
-          "alt": "Kronos Pro system"
-        },
-        {
-          "src": "/media/products/Kronos Pro/pro2.jpg",
-          "alt": "Kronos Pro detail"
-        },
-        {
-          "src": "/media/products/Kronos Pro/pro3.jpg",
-          "alt": "Kronos Pro turntable"
-        },
-        {
-          "src": "/media/products/Kronos Pro/pro4.jpg",
-          "alt": "Kronos Pro amplifier"
-        },
-        {
-          "src": "/media/products/Kronos Pro/pro5.jpg",
-          "alt": "Kronos Pro system in room"
-        },
-        {
-          "src": "/media/products/Kronos Pro/pro6.jpg",
-          "alt": "Kronos Pro close-up"
-        },
-        {
-          "src": "/media/products/Kronos Pro/pro7.jpg",
-          "alt": "Kronos Pro system side view"
-        },
-        {
-          "src": "/media/products/Kronos Pro/pro8.jpg",
-          "alt": "Kronos Pro amplifier detail"
-        },
-        {
-          "src": "/media/products/Kronos Pro/pro9.jpg",
-          "alt": "Kronos Pro system front view"
-        },
-        {
-          "src": "/media/products/Kronos Pro/pro10.jpg",
-          "alt": "Kronos Pro turntable close-up"
-        }
-      ]
-    },
-    {
-      "id": "sparta",
-      "label": "Sparta",
-      "items": [
-        {
-          "src": "/media/products/Sparta/sparta1.jpg",
-          "alt": "Sparta turntable"
-        },
-        {
-          "src": "/media/products/Sparta/sparta2.jpg",
-          "alt": "Sparta system"
-        },
-        {
-          "src": "/media/products/Sparta/sparta3.jpg",
-          "alt": "Sparta amplifier"
-        },
-        {
-          "src": "/media/products/Sparta/sparta4.jpg",
-          "alt": "Sparta detail"
-        },
-        {
-          "src": "/media/products/Sparta/sparta5.jpg",
-          "alt": "Sparta system in room"
-        },
-        {
-          "src": "/media/products/Sparta/sparta6.jpg",
-          "alt": "Sparta close-up"
-        },
-        {
-          "src": "/media/products/Sparta/sparta7.jpg",
-          "alt": "Sparta system side view"
-        },
-        {
-          "src": "/media/products/Sparta/sparta8.jpg",
-          "alt": "Sparta amplifier detail"
-        },
-        {
-          "src": "/media/products/Sparta/sparta9.jpg",
-          "alt": "Sparta system front view"
-        },
-        {
-          "src": "/media/products/Sparta/sparta10.jpg",
-          "alt": "Sparta turntable close-up"
-        },
-        {
-          "src": "/media/products/Sparta/sparta11.jpg",
-          "alt": "Sparta system ambient"
-        },
-        {
-          "src": "/media/products/Sparta/sparta12.jpg",
-          "alt": "Sparta amplifier side view"
-        },
-        {
-          "src": "/media/products/Sparta/sparta13.jpg",
-          "alt": "Sparta system top view"
-        },
-        {
-          "src": "/media/products/Sparta/sparta14.jpg",
-          "alt": "Sparta turntable detail"
-        },
-        {
-          "src": "/media/products/Sparta/sparta15.jpg",
-          "alt": "Sparta system rear view"
-        },
-        {
-          "src": "/media/products/Sparta/sparta16.jpeg",
-          "alt": "Sparta amplifier rear view"
+          "alt": "Close-up of the platter assembly and tonearm interface during playback."
         }
       ]
     },
@@ -188,75 +57,254 @@
       "label": "Perpetual",
       "items": [
         {
-          "src": "/media/products/Perpetual/perpetual1.jpg",
-          "alt": "Perpetual turntable"
+          "src": "/media/perpetual_000.jpg",
+          "alt": "The Perpetual reference turntable system paired with the dual SCPS power supply platform."
         },
         {
-          "src": "/media/products/Perpetual/perpetual2.jpg",
-          "alt": "Perpetual system"
+          "src": "/media/products/Perpetual/per_6.jpg",
+          "alt": "Exploded assembly presentation revealing the layered suspended architecture of the Perpetual system."
+        },
+        {
+          "src": "/media/products/Perpetual/per_1.jpg",
+          "alt": "Top view of the Perpetual control architecture and dual-mono electronic layout."
+        },
+        {
+          "src": "/media/products/Perpetual/per_2.jpg",
+          "alt": "Three-quarter studio view highlighting the integrated suspension structure and control platform."
+        },
+        {
+          "src": "/media/products/Perpetual/per_3.jpg",
+          "alt": "The Perpetual system showcasing its suspended chassis and reference power management platform."
+        },
+        {
+          "src": "/media/products/Perpetual/per_4.jpg",
+          "alt": "Internal circuitry detail beneath the transparent Perpetual top plate."
+        },
+        {
+          "src": "/media/products/Perpetual/per_5.jpg",
+          "alt": "The Perpetual system secured within its dedicated transport and isolation platform."
         },
         {
           "src": "/media/products/Perpetual/perpetual3.jpg",
-          "alt": "Perpetual amplifier"
+          "alt": "Hands-on setup and calibration of the Perpetual reference turntable system."
         },
         {
           "src": "/media/products/Perpetual/perpetual4.jpg",
-          "alt": "Perpetual detail"
+          "alt": "Close-up detail of the Perpetual dual-mono control and speed management interface."
         },
         {
           "src": "/media/products/Perpetual/perpetual5.jpg",
-          "alt": "Perpetual system in room"
+          "alt": "Layered platter and suspended chassis detail from the Perpetual reference platform."
         },
-        {
-          "src": "/media/products/Perpetual/perpetual6.jpg",
-          "alt": "Perpetual close-up"
-        },
+        
         {
           "src": "/media/products/Perpetual/perpetual7.jpg",
-          "alt": "Perpetual system side view"
+          "alt": "Side profile view emphasizing the multi-layer suspended architecture of the Perpetual system."
         },
-        {
-          "src": "/media/products/Perpetual/perpetual8.jpg",
-          "alt": "Perpetual amplifier detail"
-        },
+        
         {
           "src": "/media/products/Perpetual/perpetual9.jpg",
-          "alt": "Perpetual system front view"
+          "alt": "The Perpetual reference system presented within a live demonstration environment."
         },
         {
           "src": "/media/products/Perpetual/perpetual10.jpg",
-          "alt": "Perpetual turntable close-up"
+          "alt": "The Perpetual reference control platform showcasing its dual-mono circuitry and suspended chassis structure."
+        }
+  
+      ]
+    },
+    {
+      "id": "pro",
+      "label": "Kronos Pro",
+      "assemblyInstruction": "/media/downloads/KronosPro%20assembly%20instructions%202014.pdf",
+      "items": [
+        {
+          "src": "/media/pro_000.jpg",
+          "alt": "The Kronos Pro reference turntable system paired with its dedicated control platform."
         },
         {
-          "src": "/media/products/Perpetual/perpetual11.jpg",
-          "alt": "Perpetual system ambient"
+          "src": "/media/products/Kronos Pro/pro1.jpg",
+          "alt": "Close-up detail of the Kronos Pro platter assembly and suspended architecture."
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro3.jpg",
+          "alt": "Precision-machined platter and bearing system captured during playback."
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro4.jpg",
+          "alt": "Kronos Pro integrated within a complete high-end analogue listening environment."
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro5.jpg",
+          "alt": "A full-system view highlighting the sculptural suspended chassis of the Kronos Pro."
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro6.jpg",
+          "alt": "Angled detail view emphasizing the layered construction and tonearm platform."
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro8.jpg",
+          "alt": "Control display detail highlighting the Kronos Pro reference speed management system."
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro9.jpg",
+          "alt": "Front three-quarter view emphasizing the suspended chassis and dual-layer construction."
+        },
+        {
+          "src": "/media/products/Kronos Pro/pro10.jpg",
+          "alt": "Side profile detail showcasing the Kronos Pro platter assembly and tonearm platform."
+        }
+      ]
+    },
+    {
+      "id": "sparta",
+      "label": "Sparta",
+      "assemblyInstruction": "/media/downloads/Sparta%20assembly%20instructions%202026.pdf",
+      "items": [
+        {
+          "src": "/media/products/Sparta/sparta_0.jpg",
+          "alt": "The Sparta turntable system paired with its dedicated external power supply."
+        },
+        {
+          "src": "/media/products/Sparta/sparta_001.jpg",
+          "alt": "Front-facing studio view showcasing Sparta’s compact suspended architecture."
+        },
+  
+        {
+          "src": "/media/products/Sparta/sparta2.jpg",
+          "alt": "Close-up suspension tower detail highlighting the precision-machined chassis assembly."
+        },
+        {
+          "src": "/media/products/Sparta/sparta3.jpg",
+          "alt": "Integrated spirit level detail used for precise turntable calibration and setup."
+        },
+        {
+          "src": "/media/products/Sparta/sparta4.jpg",
+          "alt": "Side detail view emphasizing the suspended structure and tonearm support platform."
+        },
+        {
+          "src": "/media/products/Sparta/sparta5.jpg",
+          "alt": "Machined chassis and suspension detail reflecting the Spartan engineering philosophy."
+        },
+        {
+          "src": "/media/products/Sparta/sparta6.jpg",
+          "alt": "Precision-machined platter detail resting on a carbon fiber isolation surface."
+        },
+        {
+          "src": "/media/products/Sparta/sparta7.jpg",
+          "alt": "Dedicated Sparta external power supply designed for precise motor control and speed stability."
+        },
+  
+        {
+          "src": "/media/products/Sparta/sparta9.jpg",
+          "alt": "Suspension pillar detail emphasizing Sparta’s compact layered construction."
+        },
+        
+        {
+          "src": "/media/products/Sparta/sparta12.jpg",
+          "alt": "Tonearm platform and chassis detail highlighting Kronos machining precision."
+        },
+        {
+          "src": "/media/products/Sparta/sparta13.jpg",
+          "alt": "Engraved Kronos Sparta logo detail machined directly into the suspended chassis."
+        },
+        
+        {
+          "src": "/media/products/Sparta/sparta16.jpeg",
+          "alt": "Abstract low-light capture reflecting the atmosphere of analogue playback."
+        }
+      ]
+    },
+    {
+      "id": "tonearm",
+      "label": "Tonearms",
+      "assemblyInstruction": "/media/downloads/RS%20assembly%20instructions%202026.pdf",
+      "items": [
+        {
+          "src": "/media/tonearm_0.jpg",
+          "alt": "The RS tonearm featuring a carbon fiber arm tube and suspended bearing platform."
+        },
+      
+        {
+          "src": "/media/products/tonearm/RS_0.jpg",
+          "alt": "Close-up detail of the RS tonearm assembly and precision-machined bearing structure."
+        },
+        {
+          "src": "/media/products/tonearm/RS_1.jpg",
+          "alt": "The RS tonearm captured in a studio configuration highlighting its carbon fiber construction."
+        },
+        {
+          "src": "/media/products/tonearm/RS_2.jpg",
+          "alt": "Three-quarter view of the RS tonearm showcasing its suspended pivot architecture."
+        },
+        {
+          "src": "/media/products/tonearm/RS3.jpg",
+          "alt": "Close-up detail of the RS tonearm headshell and cartridge assembly during playback."
+        },
+        {
+          "src": "/media/products/tonearm/RS4.jpg",
+          "alt": "Low-light detail capture of the RS tonearm mounted within a reference analogue system."
+        },
+        {
+          "src": "/media/products/tonearm/tonearm_00.jpg",
+          "alt": "Side and top profile views of the Kronos Scope tonearm platform."
+        },
+        {
+          "src": "/media/products/tonearm/tonearm0.jpg",
+          "alt": "Engineering rendering of the Kronos Scope tonearm illustrating its suspended pivot architecture."
+        },
+        {
+          "src": "/media/products/tonearm/tonearm2.jpg",
+          "alt": "The RS tonearm mounted on the Kronos Pro reference turntable system."
+        },
+        
+        {
+          "src": "/media/products/tonearm/discovery9.jpg",
+          "alt": "Close-up of the Discovery tonearm base and suspended mounting platform."
+        },
+        {
+          "src": "/media/products/tonearm/RS1.jpg",
+          "alt": "The RS tonearm integrated within a complete Kronos analogue playback system."
+        },
+        {
+          "src": "/media/products/tonearm/tonearm3.jpeg",
+          "alt": "Structural lattice detail reflecting Kronos’ approach to resonance control and rigidity."
+        },
+        {
+          "src": "/media/products/tonearm/tonearm1.jpg",
+          "alt": "Early engineering drawing study for the Kronos Scope tonearm platform and bearing geometry."
         }
       ]
     },
     {
       "id": "phono",
       "label": "Phono",
-      "items": [ 
+      "items": [
+        {
+          "src": "/media/phono_000.jpg",
+          "alt": "Phono turntable"
+        },
+        {
+          "src": "/media/products/Phono/phono_1.jpg",
+          "alt": "Phono turntable"
+        },
+        {
+          "src": "/media/products/Phono/phono_2.jpg",
+          "alt": "Phono turntable"
+        },
+        {
+          "src": "/media/products/Phono/phono_3.jpg",
+          "alt": "Phono turntable"
+        },
+        {
+          "src": "/media/products/Phono/phono_4.jpg",
+          "alt": "Phono turntable"
+        },
         {
           "src": "/media/products/Phono/phono1.jpg",
           "alt": "Phono turntable"
         },
-        {
-          "src": "/media/products/Phono/phono2.jpg",
-          "alt": "Phono system"
-        },
-        {
-          "src": "/media/products/Phono/phono3.jpg",
-          "alt": "Phono amplifier"
-        },
-        {
-          "src": "/media/products/Phono/phono4.jpg",
-          "alt": "Phono detail"
-        },
-        {
-          "src": "/media/products/Phono/phono5.jpg",
-          "alt": "Phono system in room"
-        },
+   
         {
           "src": "/media/products/Phono/phono6.jpg",
           "alt": "Phono close-up"
@@ -276,41 +324,8 @@
         {
           "src": "/media/products/Phono/phono10.jpg",
           "alt": "Phono turntable close-up"
-        },
-        {
-          "src": "/media/products/Phono/phono11.jpg",
-          "alt": "Phono system ambient"
-        },
-        {
-          "src": "/media/products/Phono/phono12.jpg",
-          "alt": "Phono amplifier side view"
-        },
-        {
-          "src": "/media/products/Phono/phono13.jpg",
-          "alt": "Phono system top view"
         }
-      ]
-    },
-    {
-      "id": "tonearm",
-      "label": "Tonearm",
-      "items": [
-        {
-          "src": "/media/products/tonearm/tonearm1.jpg",
-          "alt": "Tonearm turntable"
-        },
-        {
-          "src": "/media/products/tonearm/tonearm2.jpg",
-          "alt": "Tonearm system"
-        },
-        {
-          "src": "/media/products/tonearm/tonearm3.jpeg",
-          "alt": "Tonearm amplifier"
-        },
-        {
-          "src": "/media/products/tonearm/tonearm4.jpeg",
-          "alt": "Tonearm detail"
-        }
+       
       ]
     },
     {
@@ -318,46 +333,57 @@
       "label": "Full Analogue Solution",
       "items": [
         {
-          "src": "/media/products/tonearm/RS1.jpg",
+          "src": "/media/fullAn_000.jpg",
           "alt": "Full Analogue Solution turntable"
         },
+        
         {
-          "src": "/media/products/tonearm/RS2.jpg",
-          "alt": "Full Analogue Solution system"
+          "src": "/media/products/Rack/rack.jpg",
+          "alt": "Full Analogue Solution rack"
         },
         {
-          "src": "/media/products/tonearm/RS3.jpg",
-          "alt": "Full Analogue Solution amplifier"
+          "src": "/media/products/Rack/rack_0.jpg",
+          "alt": "Full Analogue Solution rack detail"
         },
         {
-          "src": "/media/products/tonearm/RS4.jpg",
-          "alt": "Full Analogue Solution detail"
+          "src": "/media/products/Rack/rack_1.jpg",
+          "alt": "Full Analogue Solution rack system"
         },
         {
-          "src": "/media/products/tonearm/RS5.jpg",
-          "alt": "Full Analogue Solution system in room"
+          "src": "/media/products/Rack/rack_2.jpg",
+          "alt": "Full Analogue Solution rack close-up"
         },
         {
-          "src": "/media/products/tonearm/RS6.jpg",
-          "alt": "Full Analogue Solution close-up"
-        }
-      ]
-    },
-    {
-      "id": "whole",
-      "label": "Whole System",
-      "items": [
-        {
-          "src": "/media/whole/whole1.jpg",
-          "alt": "Whole system turntable"
+          "src": "/media/products/Rack/rack_3.jpg",
+          "alt": "Full Analogue Solution rack close-up"
         },
         {
-          "src": "/media/whole/whole2.jpg",
-          "alt": "Whole system system"
+          "src": "/media/products/Rack/rack_4.jpg",
+          "alt": "Full Analogue Solution rack close-up"
         },
         {
-          "src": "/media/whole/whole3.jpeg",
-          "alt": "Whole system amplifier"
+          "src": "/media/products/Rack/rack_5.jpg",
+          "alt": "Full Analogue Solution rack close-up"
+        },
+        {
+          "src": "/media/products/Rack/rack_6.jpg",
+          "alt": "Full Analogue Solution rack close-up"
+        },
+        {
+          "src": "/media/products/Rack/rack_7.jpg",
+          "alt": "Full Analogue Solution rack close-up"
+        },
+        {
+          "src": "/media/products/Rack/whole1.jpg",
+          "alt": "Full Analogue Solution whole system turntable"
+        },
+        {
+          "src": "/media/products/Rack/whole2.jpg",
+          "alt": "Full Analogue Solution whole system"
+        },
+        {
+          "src": "/media/products/Rack/whole3.jpeg",
+          "alt": "Full Analogue Solution system detail"
         }
       ]
     }

@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { orderGallerySections } from "@/config/galleryProducts";
+import type { GalleryItem, GallerySection } from "@/config/gallery";
 import {
   imagePositionStyle,
   mergeImagePosition,
@@ -17,17 +17,9 @@ const galleryActionClass =
 const assemblyButtonClass =
   "inline-flex w-full items-center justify-center rounded-full border border-amber-200/20 bg-black/20 px-4 py-2.5 text-center text-[11px] font-medium uppercase tracking-[0.28em] text-amber-200/80 transition-colors hover:border-amber-200/35 hover:bg-black/30 hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400/70 sm:w-auto";
 
-type Item = {
-  src: string;
-  alt?: string;
-  imagePositionDesktop?: string;
-  imagePositionMobile?: string;
-};
-
-type Section = {
-  id: string;
-  label: string;
-  items: Item[];
+type PreviewSection = GallerySection & {
+  heroItem: GalleryItem;
+  supportingItems: GalleryItem[];
 };
 
 function Watermark({ variant }: { variant: "hero" | "thumb" | "modal" }) {
@@ -56,10 +48,10 @@ function GalleryImageButton({
   variant,
   onSelect,
 }: {
-  item: Item;
+  item: GalleryItem;
   priority?: boolean;
   variant: "hero" | "thumb" | "card";
-  onSelect: (item: Item) => void;
+  onSelect: (item: GalleryItem) => void;
 }) {
   const imageClass =
     variant === "hero"
@@ -72,7 +64,7 @@ function GalleryImageButton({
       : variant === "card"
         ? "aspect-[16/7.8]"
         : "aspect-[16/8.6]";
-  const position = mergeImagePosition(item.src, item);
+  const position = mergeImagePosition(item.src);
 
   return (
     <button
@@ -99,19 +91,26 @@ function GalleryImageButton({
   );
 }
 
-export function GalleryGrid({ sections }: { sections: Section[] }) {
-  const [active, setActive] = useState<Item | null>(null);
+export function GalleryGrid({ sections }: { sections: GallerySection[] }) {
+  const [active, setActive] = useState<GalleryItem | null>(null);
 
-  const orderedSections = useMemo(
-    () => orderGallerySections(sections),
+  const previewSections = useMemo<PreviewSection[]>(
+    () =>
+      sections
+        .filter((section) => section.items.length > 0)
+        .map((section) => ({
+          ...section,
+          heroItem: section.items[0],
+          supportingItems: section.items.slice(1, 5),
+        })),
     [sections]
   );
 
   return (
     <>
       <div className="space-y-0">
-        {orderedSections.map((section, index) =>
-          section.hero ? (
+        {previewSections.map((section, index) =>
+          section.heroItem ? (
             <section
               key={section.id}
               id={section.id}
@@ -121,16 +120,18 @@ export function GalleryGrid({ sections }: { sections: Section[] }) {
             >
               <div className="lg:pt-14">
                 <p className="text-[11px] uppercase tracking-[0.28em] text-amber-400">
-                  {section.copy.eyebrow}
+                  {section.eyebrow ?? section.label}
                 </p>
                 <h2 className="mt-5 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-3xl">
-                  {section.copy.name}
+                  {section.label}
                 </h2>
-                <div className="mt-6 space-y-1 text-sm leading-6 text-neutral-300 break-words">
-                  {section.copy.description.map((line) => (
-                    <p key={line}>{line}</p>
-                  ))}
-                </div>
+                {section.description && (
+                  <div className="mt-6 space-y-1 text-sm leading-6 text-neutral-300 break-words">
+                    {section.description.map((line) => (
+                      <p key={line}>{line}</p>
+                    ))}
+                  </div>
+                )}
                 <div className="mt-8 flex flex-col items-start gap-4">
                   <Link
                     href={`/gallery/${section.id}`}
@@ -141,9 +142,9 @@ export function GalleryGrid({ sections }: { sections: Section[] }) {
                       -&gt;
                     </span>
                   </Link>
-                  {section.copy.assemblyPdf && (
+                  {section.assemblyInstruction && (
                     <a
-                      href={section.copy.assemblyPdf}
+                      href={section.assemblyInstruction}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={assemblyButtonClass}
@@ -156,14 +157,14 @@ export function GalleryGrid({ sections }: { sections: Section[] }) {
 
               <div className="min-w-0">
                 <GalleryImageButton
-                  item={section.hero}
+                  item={section.heroItem}
                   priority={index === 0}
                   variant="hero"
                   onSelect={setActive}
                 />
 
                 <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
-                  {section.supporting.slice(0, 4).map((item) => (
+                  {section.supportingItems.slice(0, 4).map((item) => (
                     <GalleryImageButton
                       key={item.src}
                       item={item}
@@ -182,6 +183,7 @@ export function GalleryGrid({ sections }: { sections: Section[] }) {
         <GalleryModal
           src={active.src}
           alt={active.alt}
+          caption={active.caption ?? active.alt}
           onClose={() => setActive(null)}
         />
       )}

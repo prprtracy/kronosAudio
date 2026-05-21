@@ -43,7 +43,7 @@
         { "key": "Tonearm length", "value": "9 to 12 inches" },
         { "key": "Dimensions(inches)", "value": "28 in (W) x 14.5 in (D) x 11.5 in (H)" },
         { "key": "Dimensions(cm)", "value": "71 cm (W) x 37 cm (D) x 29 cm (H)" },
-        { "key": "Weight", "value": "70 lbs / 32 kg" },
+        { "key": "Weight", "value": "154 lbs / 70 kg" },
         { "key": "Crate dimensions(inches)", "value": "37 in (W) x 17.5 in (D) x 13 in (H) / Crate" },
         { "key": "Crate dimensions(cm)", "value": "94 cm (W) x 44.5 cm (D) x 33 cm (H) / Crate" },
         { "key": "Shipping weight", "value": "250 lbs / 113 kg" },
@@ -75,9 +75,9 @@
           "initials": "H+",
           "source": "Hi-Fi+",
           "type": "Review / Press",
-          "title": "Kronos Discovery turntable",
+          "title": "KRONOS Discovery Turntable",
           "quote": "A formal review examining the Discovery as a ground-up design rather than a larger Kronos Pro.",
-          "link": "https://hifiplus.com/articles/kronos-discovery-turntable/"
+          "link": "https://www.kronosaudio.com/press/kronos-discovery-turntable"
         },
         {
           "initials": "PF",
@@ -85,7 +85,7 @@
           "type": "Editorial / Press",
           "title": "The KRONOS Discovery LP Playback System - Sui Generis",
           "quote": "The KRONOS Discovery turntable defies comparison to all other world-class turntables in my experience, creating a class of its own.",
-          "link": "https://positive-feedback.com/audio-discourse/an-audio-triangulation-part-1the-kronos-discovery-lp-playback-system-sui-generis/"
+          "link": "https://www.kronosaudio.com/press/discovery-positive-feedback-the-kronos-discovery-lp-playback-system-sui-generis"
         },
         {
           "initials": "PF",
@@ -93,7 +93,7 @@
           "type": "Editorial / Press",
           "title": "Final Thoughts on the KRONOS Discovery LP Playback System",
           "quote": "The most complete playback of LPs that I had ever heard.",
-          "link": "https://positive-feedback.com/audio-discourse/an-audio-triangulation-part-3-final-thoughts-on-the-kronos-discovery-lp-playback-system/"
+          "link": "https://www.kronosaudio.com/press/discovery-positive-feedback-final-thoughts-on-the-kronos-discovery-lp-playback-system"
         }
       ]
     },
@@ -124,8 +124,12 @@
       },
       "gallery": [
         "/media/perpetual_000.jpg",
-        "/media/products/Perpetual/perpetual2.jpg",
-        "/media/products/Perpetual/perpetual5.jpg"
+        "/media/products/Perpetual/per_6.jpg",
+        "/media/products/Perpetual/per_1.jpg",
+        "/media/products/Perpetual/per_2.jpg",
+        "/media/products/Perpetual/per_3.jpg",
+        "/media/products/Perpetual/per_4.jpg",
+        "/media/products/Perpetual/per_5.jpg"
       ],
       "downloads": [],
       "specs": [
@@ -166,16 +170,16 @@
           "source": "The Absolute Sound",
           "type": "Show Report / Press",
           "title": "The 2024 Munich High End Show: Michael Fremer on New Analog Products",
-          "quote": "Munich High End 2024 analog product coverage featuring the Kronos Perpetual turntable.",
-          "link": "https://www.theabsolutesound.com/articles/the-2024-munich-high-end-show-michael-fremer-on-new-analog-products/?utm_source=chatgpt.com"
+          "quote": "Show coverage from Michael Fremer on new analog products at the 2024 Munich High End Show.",
+          "link": "https://www.kronosaudio.com/press/perpetual-the-absolute-sound-the-2024-munich-high-end-show-michael-fremer-on-new-analog-products"
         },
         {
           "initials": "AP",
           "source": "Analog Planet",
           "type": "Show Report / Press",
           "title": "High End Munich 2024 Postscript, Part 1",
-          "quote": "Show coverage featuring the Kronos Audio dual-platter turntable system at High End Munich 2024.",
-          "link": "https://www.analogplanet.com/content/high-end-munich-2024-postscript-part-1-new-gear-wilson-benesch-rui-borges-kronos-audio-dual?utm_source=chatgpt.com"
+          "quote": "Analog Planet show coverage from High End Munich 2024 featuring new analog products and the Kronos Perpetual.",
+          "link": "https://www.kronosaudio.com/press/perpetual-analog-planet-high-end-munich-2024-postscript-part-1"
         }
       ]
     },
@@ -189,7 +193,7 @@
         "The original Kronos reference turntable. The PRO set a new standard in analogue reproduction by combining counter-rotation and overhead suspension."
       ],
       "note": "* photos shown with optional SCPS-1",
-      "image": "/media/pro_000.jpg",
+      "image": "/media/pro_0.jpg",
       "overview": {
         "title": "Overview",
         "paragraphs": [
@@ -203,7 +207,7 @@
         "footerTag": "ORIGINAL REFERENCE · COUNTER-ROTATIONAL LEGACY"
       },
       "gallery": [
-        "/media/pro_000.jpg",
+        "/media/pro_0.jpg",
         "/media/products/Kronos Pro/pro6.jpg",
         "/media/products/Kronos Pro/pro8.jpg"
       ],
@@ -307,6 +311,7 @@
       },
       "gallery": [
         "/media/products/Sparta/sparta_0.jpg",
+        "/media/products/Sparta/sparta_001.jpg",
         "/media/products/Sparta/sparta_1.jpg",
         "/media/products/Sparta/sparta13.jpg",
         "/media/products/Sparta/sparta14.jpg"
@@ -509,9 +514,8 @@
         "/media/products/Phono/phono_2.jpg",
         "/media/products/Phono/phono_3.jpg",
         "/media/products/Phono/phono_4.jpg",
-        "/media/products/Phono/phono10.jpg",
-        "/media/products/Phono/phono11.jpg",
-        "/media/products/Phono/phono12.jpg"
+        "/media/products/Phono/phono10.jpg"
+        
 
       ],
       "downloads": [],
@@ -519,31 +523,27 @@
       "endorsements": [
         {
           "initials": "MS",
-          "source": "Mono & Stereo",
-          "type": "Editorial / Press",
-          "title": "Kronos Audio Discovery Phono Preamplifier",
-          "quote": "Editorial coverage of the Kronos Audio Discovery flagship reference tube phono preamplifier.",
-          "link": "https://www.monoandstereo.com/kronos-audio-discovery-phono-preamplifier/?utm_source=chatgpt.com",
-          "links": [
-            "https://www.monoandstereo.com/kronos-audio-discovery-phono-preamplifier/?utm_source=chatgpt.com",
-            "https://www.monoandstereo.com/kronos-discovery-phono-preamplifier-2/"
-          ]
+          "source": "Mono and Stereo",
+          "type": "Review / Press",
+          "title": "Mono and Stereo: Kronos Audio Discovery Phono Preamplifier",
+          "quote": "An in-depth review of the Kronos Discovery phono preamplifier and its analogue playback performance.",
+          "link": "https://www.kronosaudio.com/press/phono-mono-and-stereo-kronos-audio-discovery-phono-preamplifier"
         },
         {
           "initials": "AF",
           "source": "AudioFi",
           "type": "Review / Press",
-          "title": "Kronos Audio Reference Phono Preamp - Is This The Best?",
-          "quote": "Review coverage of the Kronos Audio Reference Phono preamplifier.",
-          "link": "https://audiofi.net/2018/05/kronos-audio-reference-phono-preamp-is-this-the-best/?utm_source=chatgpt.com"
+          "title": "AudioFi: Kronos Audio Reference Phono Preamp - Is This the Best?",
+          "quote": "A feature exploring the Kronos Audio Reference Phono Preamp and its engineering approach to analogue playback.",
+          "link": "https://www.kronosaudio.com/press/phono-audiofi-kronos-audio-reference-phono-preamp-is-this-the-best"
         },
         {
           "initials": "PF",
           "source": "Positive Feedback",
-          "type": "Review / Press",
+          "type": "Editorial / Press",
           "title": "E213: The Kronos Discovery Phonostage - A New Benchmark",
-          "quote": "Review coverage positioning the Kronos Discovery phonostage as a new benchmark.",
-          "link": "https://positive-feedback.com/audio-analyst/e213-the-kronos-discovery-phonostage-a-new-benchmark/?utm_source=chatgpt.com"
+          "quote": "A detailed evaluation positioning the Kronos Discovery phonostage as a new benchmark in phono amplification.",
+          "link": "https://www.kronosaudio.com/press/phono-positive-feedback-e213-the-kronos-discovery-phonostage-a-new-benchmark"
         }
       ]
     },
@@ -551,7 +551,7 @@
       "id": "racks",
       "slug": "racks",
       "name": "Full Analogue Solution",
-      "category": "Full Analogue Solution",
+      "category": "Racks & Supports",
       "tagline": "Engineered Foundations",
       "description": [
         "Engineered foundations that control vibration and preserve mechanical integrity, allowing Kronos systems to perform at their highest level."
@@ -579,7 +579,7 @@
         "/media/products/Rack/rack_3.jpg",
         "/media/products/Rack/rack_4.jpg",
         "/media/products/Rack/rack_5.jpg",
-        "/media/whole/whole2.jpg"
+        "/media/products/Rack/whole2.jpg"
       ],
       "downloads": [],
       "specs": [],
@@ -589,8 +589,8 @@
           "source": "Analogue Fellowship",
           "type": "Review / Press",
           "title": "Kronos Complete Analogue Solution",
-          "quote": "Review coverage of the Kronos complete analogue solution as an integrated playback system.",
-          "link": "https://analoguefellowship.com/2018/07/18/kronos-complete-analogue-solution/?utm_source=chatgpt.com"
+          "quote": "A complete analogue system depends on the stability of every mechanical interface, from floor to component.",
+          "link": "https://analoguefellowship.com/"
         }
       ]
     }
