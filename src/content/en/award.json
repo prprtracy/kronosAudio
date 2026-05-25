@@ -1,63 +1,314 @@
 {
   "eyebrow": "Awards & Recognition",
-  "headline": "KRONOS REWARDS",
+  "headline": "HONORED WORLDWIDE",
   "intro": [
-    "Kronos is renowned for its ultimate customer service. "
+    "International recognition earned through innovation in analogue playback."
   ],
-  "sections": [
+  "featured": [
     {
-      "id": "whole",
-      "label": "",
-      "items": [
-        {
-          "src": "/media/rewards/reward1.jpg",
-          "alt": "Kronos at a show"
-        },
-        {
-          "src": "/media/rewards/reward2.jpg",
-          "alt": "Kronos award"
-        },
-        {
-          "src": "/media/rewards/reward3.jpg",
-          "alt": "Kronos trophy"
-        },
-        {
-          "src": "/media/rewards/reward4.jpg",
-          "alt": "Kronos recognition"
-        },
-        {
-          "src": "/media/rewards/reward5.jpg",
-          "alt": "Kronos exhibition"
-        },
-        {
-          "src": "/media/rewards/reward6.jpg",
-          "alt": "Kronos presentation"
-        },
-        {
-          "src": "/media/rewards/reward7.jpg",
-          "alt": "Kronos event"
-        },
-        {
-          "src": "/media/rewards/reward8.jpg",
-          "alt": "Kronos celebration"
-        },
-        {
-          "src": "/media/rewards/reward9.jpg",
-          "alt": "Kronos honor"
-        },
-        {
-          "src": "/media/rewards/reward10.jpg",
-          "alt": "Kronos distinction"
-        },
-        {
-          "src": "/media/rewards/reward11.jpg",
-          "alt": "Kronos accolade"
-        },
-        {
-          "src": "/media/rewards/reward12.jpeg",
-          "alt": "Kronos fame"
-        }
-      ]
+      "year": "2021",
+      "title": "PRODUCT OF THE YEAR",
+      "product": "Kronos Discovery",
+      "source": "High-End Audio",
+      "image": "/media/rewards/hifi.png",
+      "url": ""
+    },
+    {
+      "year": "2020",
+      "title": "BEST COMPONENT",
+      "product": "Kronos Pro",
+      "source": "High-End Report",
+      "image": "/media/rewards/hifi.jpg",
+      "url": "",
+      "size": "wide"
+    },
+    {
+      "year": "2024",
+      "title": "HI-FI+ EDITORS' CHOICE",
+      "product": "Kronos Discovery",
+      "source": "Hi-Fi+",
+      "image": "/media/rewards/hifi2024.png",
+      "url": ""
+    }
+  ],
+  "archive": [
+    {
+      "year": "2025",
+      "title": "ANALOG EXCELLENCE",
+      "product": "Kronos Discovery",
+      "source": "International Audio Press",
+      "image": "/media/rewards/2025-reward11.jpg",
+      "url": "",
+      "size": "wide"
+    },
+    {
+      "year": "2024",
+      "title": "HI-FI+ EDITORS' CHOICE",
+      "product": "Kronos Discovery",
+      "source": "Hi-Fi+",
+      "image": "/media/rewards/2024-hifi_editor_Awards.jpg",
+      "imageMaxHeight": 360,
+      "url": "",
+      "size": "tall"
+    },
+    {
+      "year": "2024",
+      "title": "BEST SOUND OF SHOW",
+      "product": "Kronos Perpetual",
+      "source": "Audio Showrooms",
+      "image": "/media/rewards/2024-reward5.jpg",
+      "imageMaxHeight": 220,
+      "url": "",
+      "size": "wide"
+    },
+    {
+      "year": "2024",
+      "title": "REFERENCE PLAYBACK AWARD",
+      "product": "Kronos Sparta",
+      "source": "Audio Review",
+      "image": "/media/rewards/2024-reward2.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2024",
+      "title": "SHOW HIGHLIGHT",
+      "product": "Kronos Sparta",
+      "source": "High-End Report",
+      "image": "/media/rewards/2024-reward3.jpg",
+      "imageMaxHeight": 220,
+      "url": "",
+      "size": "wide"
+    },
+    {
+      "year": "2022",
+      "title": "BEST OF MONO",
+      "product": "Kronos Pro",
+      "source": "Mono & Stereo",
+      "image": "/media/rewards/2022-bestOfMono.jpg",
+      "url": "",
+      "size": "large"
+    },
+    {
+      "year": "2022",
+      "title": "EDITORIAL RECOGNITION",
+      "product": "Kronos",
+      "source": "Analog Magazine",
+      "image": "/media/rewards/2022-reward1.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2022",
+      "title": "BEST PERFORMANCE",
+      "product": "Kronos Pro",
+      "source": "Hi-Fi Journal",
+      "image": "/media/rewards/2022-reward2.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2022",
+      "title": "ANALOG AWARD",
+      "product": "Kronos Pro",
+      "source": "Audio Review",
+      "image": "/media/rewards/2022-reward3.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2021",
+      "title": "PRODUCT OF THE YEAR",
+      "product": "Kronos Discovery",
+      "source": "High-End Audio",
+      "image": "/media/rewards/2021-reward3.jpg",
+      "imageMaxHeight": 220,
+      "url": "",
+      "size": "wide"
+    },
+    {
+      "year": "2021",
+      "title": "REFERENCE AWARD",
+      "product": "Kronos Pro",
+      "source": "Audio Press",
+      "image": "/media/rewards/2021-reward1.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2021",
+      "title": "BEST ANALOG SOURCE",
+      "product": "Kronos Discovery",
+      "source": "Listening Notes",
+      "image": "/media/rewards/2021-reward2.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2021",
+      "title": "SPECIAL RECOGNITION",
+      "product": "Kronos Discovery",
+      "source": "Audio Showrooms",
+      "image": "/media/rewards/2021-reward12.jpeg",
+      "url": "",
+      "size": "wide"
+    },
+    {
+      "year": "2020",
+      "title": "EDITOR'S CHOICE",
+      "product": "Kronos",
+      "source": "Hi-Fi+",
+      "image": "/media/rewards/2020-reward1.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2020",
+      "title": "BEST COMPONENT",
+      "product": "Kronos Pro",
+      "source": "High-End Report",
+      "image": "/media/rewards/2020-reward2.jpg",
+      "imageMaxHeight": 220,
+      "url": "",
+      "size": "wide"
+    },
+    {
+      "year": "2019",
+      "title": "BEST SOUND",
+      "product": "Kronos SCPS-S",
+      "source": "Audio Show",
+      "image": "/media/rewards/2019-reward1.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2019",
+      "title": "ANALOG REFERENCE",
+      "product": "Kronos",
+      "source": "Review Panel",
+      "image": "/media/rewards/2019-reward2.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2019",
+      "title": "SHOW AWARD",
+      "product": "Kronos Pro",
+      "source": "High-End Audio",
+      "image": "/media/rewards/2019-reward3.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2019",
+      "title": "STATEMENT PRODUCT",
+      "product": "Kronos Sparta",
+      "source": "Analog Press",
+      "image": "/media/rewards/2019-reward4.jpg",
+      "imageMaxHeight": 220,
+      "url": "",
+      "size": "wide"
+    },
+    {
+      "year": "2019",
+      "title": "MUSIC SYSTEM AWARD",
+      "product": "Kronos",
+      "source": "Audio Review",
+      "image": "/media/rewards/2019-reward5.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2019",
+      "title": "LISTENER'S CHOICE",
+      "product": "Kronos Pro",
+      "source": "Show Report",
+      "image": "/media/rewards/2019-reward6.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2019",
+      "title": "AUDIOPHILE AWARD",
+      "product": "Kronos Sparta",
+      "source": "Audio Journal",
+      "image": "/media/rewards/2019-reward7.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2016",
+      "title": "BEST SOUND OF SHOW",
+      "product": "Kronos Sparta",
+      "source": "Show Report",
+      "image": "/media/rewards/2016-reward1.jpg",
+      "url": "",
+      "size": "wide"
+    },
+    {
+      "year": "2016",
+      "title": "REFERENCE TURNTABLE",
+      "product": "Kronos Sparta",
+      "source": "Audio Press",
+      "image": "/media/rewards/2016-reward2.jpg",
+      "url": "",
+      "size": "large"
+    },
+    {
+      "year": "2016",
+      "title": "ANALOG PRODUCT AWARD",
+      "product": "Kronos Sparta",
+      "source": "Hi-Fi Journal",
+      "image": "/media/rewards/2016-reward3.jpg",
+      "imageMaxHeight": 360,
+      "url": "",
+      "size": "tall"
+    },
+    {
+      "year": "2016",
+      "title": "EDITORIAL DISTINCTION",
+      "product": "Kronos Pro",
+      "source": "Audio Review",
+      "image": "/media/rewards/2016-reward4.jpg",
+      "url": "",
+      "size": "large"
+    },
+    {
+      "year": "2016",
+      "title": "HIGH-END RECOGNITION",
+      "product": "Kronos Sparta",
+      "source": "Listening Room",
+      "image": "/media/rewards/2016reward5.jpg",
+      "imageMaxHeight": 360,
+      "url": "",
+      "size": "tall"
+    },
+    {
+      "year": "2016",
+      "title": "PRESS AWARD",
+      "product": "Kronos Pro",
+      "source": "Analog Magazine",
+      "image": "/media/rewards/2016-reward9.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2015",
+      "title": "BEST ANALOG PLAYBACK",
+      "product": "Kronos Pro",
+      "source": "Audio Press",
+      "image": "/media/rewards/2015-reward7.jpg",
+      "url": "",
+      "size": "medium"
+    },
+    {
+      "year": "2015",
+      "title": "SHOW FAVORITE",
+      "product": "Kronos Pro",
+      "source": "High-End Report",
+      "image": "/media/rewards/2015-reward10.jpg",
+      "url": "",
+      "size": "medium"
     }
   ],
   "caption": "Images shown may include optional configurations."

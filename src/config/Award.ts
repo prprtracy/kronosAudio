@@ -3,6 +3,17 @@ export type AwardImageItem = {
   alt?: string;
 };
 
+export type AwardItem = {
+  year?: string;
+  title: string;
+  product: string;
+  source: string;
+  image: string;
+  imageMaxHeight?: number;
+  url?: string;
+  size?: "small" | "medium" | "large" | "wide" | "tall";
+};
+
 export type AwardSection = {
   id: string;
   label: string;
@@ -13,6 +24,8 @@ export type AwardContent = {
   eyebrow?: string;
   headline: string;
   intro?: string[];
-  sections: AwardSection[];
+  featured?: AwardItem[];
+  archive?: AwardItem[];
+  sections?: AwardSection[];
   caption?: string;
 };
