@@ -35,40 +35,44 @@
       "downloads": [
         {
           "label": "Download Assembly Instructions",
-          "url": "/media/downloads/DISCOVERY assembly instruction 2026.pdf"
+          "url": "/media/downloads/DISCOVERY_assembly.pdf"
         }
       ],
       "specs": [
-        { "key": "Rotational speed", "value": "33.3 rpm & 45 rpm" },
-        { "key": "Tonearm length", "value": "9 to 12 inches" },
-        { "key": "Dimensions(inches)", "value": "28 in (W) x 14.5 in (D) x 11.5 in (H)" },
-        { "key": "Dimensions(cm)", "value": "71 cm (W) x 37 cm (D) x 29 cm (H)" },
-        { "key": "Weight", "value": "154 lbs / 70 kg" },
-        { "key": "Crate dimensions(inches)", "value": "37 in (W) x 17.5 in (D) x 13 in (H) / Crate" },
-        { "key": "Crate dimensions(cm)", "value": "94 cm (W) x 44.5 cm (D) x 33 cm (H) / Crate" },
-        { "key": "Shipping weight", "value": "250 lbs / 113 kg" },
-        { "key": "Power supply", "value": "Dual channel pure class A linear DC" },
-        { "key": "AC voltage input", "value": "110V or 220V factory set" },
-        { "key": "DC voltage output", "value": "0 to 5 volt, CPU controlled, factory calibrated" },
-        { "key": "DC transmission", "value": "Pico 3 pin cable" },
-        { "key": "Transmission", "value": "Pico 4 pin cable" },
-        { "key": "Motors", "value": "2432 precious metal brushes DC motors (qty 2)" },
-        { "key": "Motor mounts", "value": "Delrin capped aluminum tubes" },
-        { "key": "Speed guidance system", "value": "Continuous open loop feedback, user speed adjustable" },
-        { "key": "Sensors type", "value": "Optical diode I/O top motor tachymeter" },
-        { "key": "Correction cycle", "value": "60 times /rotation. 0.15% max., 0.05% min." },
-        { "key": "Strobe", "value": "CPU generated 120 Hz with LED output" },
-        { "key": "Tonearm length", "value": "9 inches to 10.5 inches (229 mm to 267 mm)" },
-        { "key": "Platters type", "value": "Composite compressed phenolic/aluminum, balanced" },
-        { "key": "Platter weight", "value": "17 lbs (7.7 kg) / platter" },
-        { "key": "Drive", "value": "1 silicone/viton 2.3 string belt / platter" },
-        { "key": "Main bearings", "value": "Dual hydraulic isolated inverted sleeve and ball" },
-        { "key": "Shaft type", "value": "Grounded heat hardened tool steel" },
-        { "key": "Ball type", "value": "High-precision ceramic" },
-        { "key": "Lubricant", "value": "8 ml. variable viscosity synthetic oil" },
-        { "key": "Service interval", "value": "5 years (clean and re-oil)" },
-        { "key": "Suspension", "value": "Full floating top suspended" },
-        { "key": "Elastomers", "value": "317 o-rings , viton/silicone proprietary mix" }
+        { "key": "ROTATIONAL SPEED", "value": "33.3 rpm and 45 rpm" },
+        { "key": "TONEARM LENGTH", "value": "9 inches to 12 inches" },
+        { "key": "DIMENSIONS (INCHES)", "value": "24.5 in (W) x 15 in (D) x 10.5 in (H)" },
+        { "key": "DIMENSIONS (CM)", "value": "62 cm (W) x 38 cm (D) x 27 cm (H)" },
+        { "key": "TURNTABLE WEIGHT", "value": "120 lbs / 54 kg" },
+        { "key": "POWER SUPPLY WEIGHT", "value": "52 lbs / 24 kg" },
+        { "key": "SCPS-D WEIGHT", "value": "43 lbs / 20 kg" },
+        { "key": "CRATE DIMENSIONS (INCHES)", "value": "37 in (W) x 17.5 in (D) x 13 in (H)" },
+        { "key": "CRATE DIMENSIONS (CM)", "value": "94 cm (W) x 44.5 cm (D) x 33 cm (H)" },
+        { "key": "SHIPPING WEIGHT", "value": "250 lbs / 113 kg" },
+        { "key": "SCPS-D SHIPPING WEIGHT", "value": "48 lbs / 21.5 kg" },
+        { "key": "POWER SUPPLY", "value": "Dedicated external low-noise linear DC power supply" },
+        { "key": "AC VOLTAGE INPUT", "value": "110V or 220V factory set" },
+        { "key": "DC VOLTAGE OUTPUT", "value": "0 to 5 volt, dual mono CPU controlled, factory calibrated" },
+        { "key": "DRIVE SYSTEM", "value": "Dual counter-rotating platter architecture" },
+        { "key": "MOTORS", "value": "DCX precious metal brushes DC motors (qty 2)" },
+        { "key": "MOTOR MOUNTS", "value": "Delrin enclosure, height adjustable" },
+        { "key": "SPEED GUIDANCE SYSTEM", "value": "2 continuous open feedback hall effect" },
+        { "key": "SENSORS TYPE", "value": "2 optical diode I/O and 2 motor tachymeter" },
+        { "key": "SPEED ACCURACY", "value": "Adaptive closed-loop monitoring system" },
+        { "key": "CORRECTION CYCLE", "value": "60 times / rotation. 0.1% max., 0.05% min." },
+        { "key": "PLATTER TYPE", "value": "Composite layers with copper and encapsulated, balanced" },
+        { "key": "PLATTER WEIGHT", "value": "17 lbs (7.7 kg) / platter" },
+        { "key": "DRIVE", "value": "2 silicone/viton 2.3 string belts / platter" },
+        { "key": "COMPENSATION PULLEY", "value": "Teflon and chrome steel bearing" },
+        { "key": "LUBRICANT", "value": "Petroleum grease" },
+        { "key": "SERVICE INTERVAL", "value": "3 months (clean and re-grease)" },
+        { "key": "MAIN BEARINGS", "value": "Dual hydraulic isolated inverted sleeve and ball" },
+        { "key": "SHAFT TYPE", "value": "Ground heat-hardened tool steel" },
+        { "key": "BALL TYPE", "value": "Precision ceramic" },
+        { "key": "LUBRICANT (MAIN BEARING)", "value": "8 ml variable viscosity synthetic oil" },
+        { "key": "SERVICE INTERVAL (MAIN BEARING)", "value": "5 years (clean and re-oil)" },
+        { "key": "SUSPENSION", "value": "Full floating top suspended" },
+        { "key": "ELASTOMERS", "value": "317 o-rings, viton/silicone proprietary mix" }
       ],
       "endorsements": [
         {
@@ -134,7 +138,7 @@
        "downloads": [
         {
           "label": "Download Assembly Instructions",
-          "url": "/media/downloads/Assumbly Instruction Perpetual 2026.pdf"
+          "url": "/media/downloads/Assumbly Instruction Perpetual.pdf"
         }
       ],
       "specs": [
@@ -327,7 +331,13 @@
       "downloads": [
         {
           "label": "Download Assembly Instructions",
+          "type": "PDF DOCUMENT",
           "url": "/media/downloads/Sparta assembly instructions 2026.pdf"
+        },
+        {
+          "label": "Download SCPS-1 Instructions",
+          "type": "PDF DOCUMENT",
+          "url": "/media/downloads/SCPS-1 assembly instructions 2026.pdf"
         }
       ],
       "specs": [

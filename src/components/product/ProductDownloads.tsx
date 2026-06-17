@@ -3,6 +3,7 @@ import { Section } from "@/components/section/Section";
 
 type DownloadItem = {
   label: string;
+  type?: string;
   url?: string;
 };
 
@@ -67,7 +68,7 @@ export function ProductDownloads({
                     {item.label}
                   </div>
                   <div className="mt-1 text-[11px] tracking-[0.22em] uppercase text-white/45">
-                    PDF document
+                    {item.type ?? "PDF DOCUMENT"}
                   </div>
                 </div>
 

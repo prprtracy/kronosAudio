@@ -7,6 +7,7 @@ export type Money = {
 
 export type DownloadItem = {
   label: string;
+  type?: string;
   url: string;
 };
 
