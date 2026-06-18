@@ -122,7 +122,6 @@
         "notes": [
           "A single-tonearm Kronos platform inspired by Discovery’s advanced resonance-control architecture. ",
           "Designed to deliver high precision, stability, and musical refinement in a more approachable form."
-      
         ],
         "footerTag": "SINGLE-TONEARM PLATFORM · UPGRADEABLE ARCHITECTURE"
       },
@@ -227,6 +226,11 @@
         {
           "label": "Download Assembly Instructions",
           "url": "/media/downloads/KronosPro assembly instructions 2014.pdf"
+        },
+        {
+          "label": "Download SCPS-1 Instructions",
+          "type": "PDF DOCUMENT",
+          "url": "/media/downloads/SCPS-1 assembly instructions 2026.pdf"
         }
       ],
       "specs": [
@@ -333,11 +337,6 @@
           "label": "Download Assembly Instructions",
           "type": "PDF DOCUMENT",
           "url": "/media/downloads/Sparta assembly instructions 2026.pdf"
-        },
-        {
-          "label": "Download SCPS-1 Instructions",
-          "type": "PDF DOCUMENT",
-          "url": "/media/downloads/SCPS-1 assembly instructions 2026.pdf"
         }
       ],
       "specs": [
