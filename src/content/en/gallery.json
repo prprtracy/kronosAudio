@@ -8,7 +8,7 @@
     {
       "id": "discovery",
       "label": "Discovery",
-      "assemblyInstruction": "/media/downloads/DISCOVERY%20assembly%20instruction%202026.pdf",
+      "assemblyInstruction": "/media/downloads/DISCOVERY_assembly_instructions_2026.pdf",
       "items": [
         {
           "src": "/media/discovery_000.jpg",
@@ -218,7 +218,7 @@
     {
       "id": "tonearm",
       "label": "Tonearms",
-      "assemblyInstruction": "/media/downloads/RS%20assembly%20instructions%202026.pdf",
+      "assemblyInstruction": "/media/downloads/RS_Assembly_Instructions_2026.pdf",
       "items": [
         {
           "src": "/media/tonearm_0.jpg",

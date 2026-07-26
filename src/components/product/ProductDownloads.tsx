@@ -56,29 +56,30 @@ export function ProductDownloads({
             {validItems.map((item) => (
               <li
                 key={item.url}
-                className={clsx(
-                  "group flex items-center justify-between gap-6",
-                  "rounded-2xl border border-white/10 bg-black/30 backdrop-blur",
-                  "px-5 py-4",
-                  "transition-colors hover:border-white/20"
-                )}
               >
-                <div className="min-w-0">
-                  <div className="truncate text-sm text-white/85">
-                    {item.label}
-                  </div>
-                  <div className="mt-1 text-[11px] tracking-[0.22em] uppercase text-white/45">
-                    {item.type ?? "PDF DOCUMENT"}
-                  </div>
-                </div>
-
                 <a
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="shrink-0 text-xs tracking-[0.18em] uppercase text-white/55 group-hover:text-white/85 transition-colors"
+                  className={clsx(
+                    "group flex items-center justify-between gap-6",
+                    "rounded-2xl border border-white/10 bg-black/30 backdrop-blur",
+                    "px-5 py-4",
+                    "transition-colors hover:border-white/20"
+                  )}
                 >
-                  View →
+                  <div className="min-w-0">
+                    <div className="truncate text-sm text-white/85">
+                      {item.label}
+                    </div>
+                    <div className="mt-1 text-[11px] tracking-[0.22em] uppercase text-white/45">
+                      {item.type ?? "PDF DOCUMENT"}
+                    </div>
+                  </div>
+
+                  <span className="shrink-0 text-xs tracking-[0.18em] uppercase text-white/55 group-hover:text-white/85 transition-colors">
+                    View →
+                  </span>
                 </a>
               </li>
             ))}

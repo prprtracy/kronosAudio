@@ -35,7 +35,12 @@
       "downloads": [
         {
           "label": "Download Assembly Instructions",
-          "url": "/media/downloads/DISCOVERY_assembly.pdf"
+          "url": "/media/downloads/DISCOVERY_assembly_instructions_2026.pdf"
+        },
+        {
+          "label": "Download SCPS-D Instructions",
+          "type": "PDF DOCUMENT",
+          "url": "/media/downloads/SCPS-D Assembly2026.pdf"
         }
       ],
       "specs": [
@@ -138,6 +143,12 @@
         {
           "label": "Download Assembly Instructions",
           "url": "/media/downloads/Assumbly Instruction Perpetual.pdf"
+        },
+        {
+          "label": "Download SCPS-P Instructions",
+          "type": "PDF DOCUMENT",
+          "url": "",
+          "_todo": "TODO: Add the SCPS-P instructions PDF to /public/media/downloads and replace this with its verified public URL."
         }
       ],
       "specs": [
@@ -337,6 +348,12 @@
           "label": "Download Assembly Instructions",
           "type": "PDF DOCUMENT",
           "url": "/media/downloads/Sparta assembly instructions 2026.pdf"
+        },
+        {
+          "label": "Download SCPS-S Instructions",
+          "type": "PDF DOCUMENT",
+          "url": "",
+          "_todo": "TODO: Add the SCPS-S instructions PDF to /public/media/downloads and replace this with its verified public URL."
         }
       ],
       "specs": [
@@ -430,7 +447,7 @@
       "downloads": [
         {
           "label": "Download Assembly Instructions",
-          "url": "/media/downloads/RS assembly instructions 2026.pdf"
+          "url": "/media/downloads/RS_Assembly_Instructions_2026.pdf"
         }
       ],
       "specs": [

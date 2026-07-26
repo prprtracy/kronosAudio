@@ -9,6 +9,7 @@ export type DownloadItem = {
   label: string;
   type?: string;
   url: string;
+  _todo?: string;
 };
 
 export type ProductOverview = {
