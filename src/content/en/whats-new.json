@@ -1,0 +1,51 @@
+{
+  "page": {
+    "eyebrow": "KRONOS AUDIO",
+    "title": "What's New",
+    "description": "The latest news, reviews, events and stories from Kronos Audio."
+  },
+  "items": [
+    {
+      "id": "bav-hi-end-show-2026",
+      "date": "August 28\u201330, 2026",
+      "category": "Events",
+      "title": "BAV HI-END SHOW 2026",
+      "summary": "Meet Louis Desjardins, CEO, Founder and Head Designer of Kronos Audio, at BAV HI-END SHOW 2026 in Bangkok.",
+      "image": "/media/whats-new/bav-hi-end-show-2026/aug282026.jpg",
+      "imageAlt": "Louis Desjardins of Kronos Audio featured as a special guest at BAV HI-END SHOW 2026",
+      "slug": "bav-hi-end-show-2026",
+      "location": "Bangkok, Thailand",
+      "venue": {
+        "name": "Bangkok Marriott Marquis Queen's Park Hotel",
+        "address": "Sukhumvit 22",
+        "floor": "3rd Floor",
+        "room": "Thai Borromphimarn 3"
+      },
+      "body": [
+        "Kronos Audio is pleased to join BAV HI-END SHOW 2026 in Bangkok from August 28\u201330, 2026.",
+        "Meet our special guest, Louis Desjardins, CEO, Founder and Head Designer of Kronos Audio, and experience a carefully selected system featuring exceptional ultra-high-end audio components.",
+        "We look forward to welcoming visitors for three days of music, discovery and uncompromising analogue playback."
+      ],
+      "gallery": [
+        {
+          "image": "/media/whats-new/bav-hi-end-show-2026/aug282026-1.jpg",
+          "alt": "BAV HI-END SHOW 2026 system presentation featuring Kronos Audio"
+        },
+        {
+          "image": "/media/whats-new/bav-hi-end-show-2026/aug282026-2.jpg",
+          "alt": "Kronos Perpetual turntable presentation for BAV HI-END SHOW 2026"
+        }
+      ]
+    },
+    {
+      "id": "axpona-2026",
+      "date": "August 2026",
+      "category": "Events",
+      "title": "Kronos Audio at AXPONA 2026",
+      "summary": "Join us in Chicago for live demonstrations of our latest turntables and tonearms.",
+      "image": "/media/whats-new/axpona-2026.jpg",
+      "imageAlt": "Kronos Audio turntable",
+      "slug": "axpona-2026"
+    }
+  ]
+}

@@ -270,9 +270,11 @@ function SlideshowPanel({
 export function HomeNarrative({
   sections,
   locale,
+  startIndex = 0,
 }: {
   sections: HomeNarrativeSection[];
   locale: string;
+  startIndex?: number;
 }) {
   const [slideIndexById, setSlideIndexById] = useState<Record<string, number>>(
     {}
@@ -305,9 +307,9 @@ export function HomeNarrative({
   };
 
   return (
-    <main>
+    <div>
       {sections.map((s: HomeNarrativeSection, idx: number) => {
-        const isHero = idx === 0;
+        const isHero = idx + startIndex === 0;
 
         const contentSide = s.contentSide ?? "left";
         const isTextRight = contentSide === "right";
@@ -548,6 +550,6 @@ export function HomeNarrative({
           </section>
         );
       })}
-    </main>
+    </div>
   );
 }

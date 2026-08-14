@@ -13,6 +13,13 @@ export type HomeNarrativeAction = {
   target?: "_blank" | "_self";
 };
 
+export type HomeWhatsNew = {
+  enabled: boolean;
+  eyebrow: string;
+  featuredId: string;
+  ctaLabel: string;
+};
+
 export type HomeSlide =
   | {
       type: "image";

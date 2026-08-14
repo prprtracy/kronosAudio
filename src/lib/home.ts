@@ -1,9 +1,12 @@
 import "server-only";
 import type { Locale } from "@/i18n";
-import type { HomeNarrativeSection } from "@/types/home";
+import type { HomeNarrativeSection, HomeWhatsNew } from "@/types/home";
 import { getContent } from "@/lib/content";
 
-type HomeContent = { narrative: HomeNarrativeSection[] };
+export type HomeContent = {
+  narrative: HomeNarrativeSection[];
+  whatsNew: HomeWhatsNew;
+};
 
 export async function getHome(locale: Locale): Promise<HomeContent> {
   return getContent<HomeContent>(locale, "home.json");

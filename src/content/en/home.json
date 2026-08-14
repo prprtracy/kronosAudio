@@ -1,4 +1,10 @@
 {
+  "whatsNew": {
+    "enabled": true,
+    "eyebrow": "WHAT'S NEW",
+    "featuredId": "bav-hi-end-show-2026",
+    "ctaLabel": "DISCOVER MORE"
+  },
   "narrative": [
     {
       "id": "philosophy",
