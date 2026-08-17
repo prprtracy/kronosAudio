@@ -81,6 +81,14 @@
       ],
       "endorsements": [
         {
+          "initials": "GTT",
+          "source": "GTT Audio",
+          "type": "Perspective / Press",
+          "title": "Two platters. Two tonearms. One reference.",
+          "quote": "Discovery is Kronos Audio's flagship two-tonearm turntable — the counter-rotating platter architecture carried to its fullest, on a new exo-skeleton chassis.",
+          "link": "https://gttaudio.com/portfolio/kronos-audio/perspectives/discovery"
+        },
+        {
           "initials": "H+",
           "source": "Hi-Fi+",
           "type": "Review / Press",
@@ -187,6 +195,14 @@
         { "key": "elastomers", "value": "317 o-rings, viton/silicone proprietary mix" }
       ],
       "endorsements": [
+        {
+          "initials": "GTT",
+          "source": "GTT Audio",
+          "type": "Perspective / Press",
+          "title": "The reference, in a single tonearm.",
+          "quote": "Perpetual brings Kronos's counter-rotating platter architecture — the resonance control of the flagship Discovery — to a one-tonearm turntable.",
+          "link": "https://gttaudio.com/portfolio/kronos-audio/perspectives/perpetual"
+        },
         {
           "initials": "TAS",
           "source": "The Absolute Sound",
