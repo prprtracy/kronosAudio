@@ -363,21 +363,7 @@
       "lng": 101.6067,
       "tier": "standard"
     },
-    {
-      "id": "music-image",
-      "name": "Music Image",
-      "country": "Singapore",
-      "contactPerson": "",
-      "address": "23 JL Gelong Baru Utara Jakarta Barat 11440 Indonesia",
-      "phone": "+65 9363 9977",
-      "email": "info@musicimage.net",
-      "website": "musicimage.net",
-      "city": "Singapore",
-      "region": "apac",
-      "lat": 1.3521,
-      "lng": 103.8198,
-      "tier": "standard"
-    },
+
     {
       "id": "absolute-hi-end",
       "name": "Absolute Hi End",

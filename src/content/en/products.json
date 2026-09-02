@@ -150,13 +150,12 @@
        "downloads": [
         {
           "label": "Download Assembly Instructions",
-          "url": "/media/downloads/Assumbly Instruction Perpetual.pdf"
+          "url": "/media/downloads/Perpetual_Assumbly_Instruction_2026.pdf"
         },
         {
           "label": "Download SCPS-P Instructions",
           "type": "PDF DOCUMENT",
-          "url": "",
-          "_todo": "TODO: Add the SCPS-P instructions PDF to /public/media/downloads and replace this with its verified public URL."
+          "url": "/media/downloads/SCPS_P_Assumbly_Instruction_2026.pdf"
         }
       ],
       "specs": [
@@ -631,7 +630,18 @@
         "/media/products/Rack/rack_5.jpg",
         "/media/products/Rack/whole2.jpg"
       ],
-      "downloads": [],
+      "downloads": [
+        {
+          "label": "Download Assembly Instructions",
+          "type": "PDF DOCUMENT",
+          "url": "/media/downloads/Stand_Assembly_Instruction_2026.pdf"
+        },
+        {
+          "label": "Download Packing Instructions",
+          "type": "PDF DOCUMENT",
+          "url": "/media/downloads/Stand_Packing_Instruction_2026.pdf"
+        }
+      ],
       "specs": [],
       "endorsements": [
         {
