@@ -16,7 +16,6 @@ export type HomeNarrativeAction = {
 export type HomeWhatsNew = {
   enabled: boolean;
   eyebrow: string;
-  featuredId: string;
   ctaLabel: string;
 };
 

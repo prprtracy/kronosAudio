@@ -1,12 +1,12 @@
 import { getHome } from "@/lib/home";
-import { getWhatsNewItem } from "@/lib/whats-new";
+import { getWhatsNew } from "@/lib/whats-new";
 import { HomeNarrative } from "@/components/home/HomeNarrative";
 import { HomeWhatsNew } from "@/components/home/HomeWhatsNew";
 
 export default async function HomePage() {
   const { narrative: sections, whatsNew } = await getHome("en");
   const featuredStory = whatsNew.enabled
-    ? await getWhatsNewItem("en", whatsNew.featuredId)
+    ? (await getWhatsNew("en")).items[0]
     : null;
   const splitIndex = Math.min(1, sections.length);
 

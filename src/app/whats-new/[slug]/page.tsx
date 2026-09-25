@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getWhatsNew, getWhatsNewItemBySlug } from "@/lib/whats-new";
 
 type PageProps = {
@@ -27,6 +27,7 @@ export default async function WhatsNewDetailPage({ params }: PageProps) {
   const item = await getWhatsNewItemBySlug("en", slug);
 
   if (!item) notFound();
+  if (item.externalUrl) redirect(item.externalUrl);
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-black text-neutral-100">

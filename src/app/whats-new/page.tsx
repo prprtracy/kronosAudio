@@ -25,7 +25,9 @@ export default async function WhatsNewPage() {
               className="grid gap-7 border-b border-white/12 py-8 sm:grid-cols-[240px_minmax(0,1fr)] sm:items-center sm:gap-10"
             >
               <Link
-                href={`/whats-new/${item.slug}`}
+                href={item.externalUrl ?? `/whats-new/${item.slug}`}
+                    target={item.externalUrl ? "_blank" : undefined}
+                    rel={item.externalUrl ? "noopener noreferrer" : undefined}
                 aria-label={item.title}
                 className="relative block aspect-[3/2] overflow-hidden bg-neutral-900"
               >
@@ -40,10 +42,13 @@ export default async function WhatsNewPage() {
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-neutral-400">
                   {item.date} <span aria-hidden="true">&middot;</span> {item.category}
+                  {item.source ? <> <span aria-hidden="true">&middot;</span> {item.source}</> : null}
                 </p>
                 <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
                   <Link
-                    href={`/whats-new/${item.slug}`}
+                    href={item.externalUrl ?? `/whats-new/${item.slug}`}
+                    target={item.externalUrl ? "_blank" : undefined}
+                    rel={item.externalUrl ? "noopener noreferrer" : undefined}
                     className="transition-colors hover:text-amber-200"
                   >
                     {item.title}
