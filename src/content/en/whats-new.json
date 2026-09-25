@@ -6,6 +6,22 @@
   },
   "items": [
     {
+      "id": "in-conversation-with-louis-desjardins",
+      "date": "September 24, 2026",
+      "category": "Press",
+      "source": "Yarlung Records",
+      "title": "In Conversation with Louis Desjardins at Kronos Audio",
+      "summary": "Yarlung Records interviews Louis Desjardins, founder and CEO of Kronos Audio, about music, analogue playback, the company's origins and the thinking behind its counter-rotating turntable technology.",
+      "homeImage": {
+        "image": "/media/whats-new/in-conversation-with-louis-desjardins/yarlung-cover.jpeg",
+        "alt": "Kronos Audio turntable alongside a Yarlung Audio reference preamplifier"
+      },
+      "image": "/media/production/louis.jpg",
+      "imageAlt": "Louis Desjardins, founder and CEO of Kronos Audio",
+      "slug": "in-conversation-with-louis-desjardins",
+      "externalUrl": "https://yarlungrecords.substack.com/p/in-conversation-with-louis-desjardins"
+    },
+    {
       "id": "bav-hi-end-show-2026",
       "date": "August 28\u201330, 2026",
       "category": "Events",

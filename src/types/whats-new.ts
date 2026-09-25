@@ -6,7 +6,10 @@ export interface WhatsNewItem {
   summary: string;
   image: string;
   imageAlt: string;
+  homeImage?: WhatsNewImage;
   slug: string;
+  source?: string;
+  externalUrl?: string;
   location?: string;
   venue?: {
     name: string;
